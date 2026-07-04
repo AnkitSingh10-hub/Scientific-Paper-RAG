@@ -15,9 +15,3 @@ def extract_text(pdf_path):
     doc.close()
 
     return all_text
-
-
-if __name__ == "__main__":
-    text = extract_text(pdf_path)
-
-    print(text[:1000])

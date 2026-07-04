@@ -1,14 +1,14 @@
 from read_pdf import extract_text
-from chunking import chunk_text
+from chunking import fixed_chunks
+from embedding import embed_chunks
+from vector_store import store
 
-pdf_path = "data/papers/AgenticAI.pdf"
+text = extract_text("data/papers/AgenticAI.pdf")
 
-text = extract_text(pdf_path)
+chunks = fixed_chunks(text)
 
-chunks = chunk_text(text, chunk_size=500)
+embeddings = embed_chunks(chunks)
 
-print(f"Total chunks: {len(chunks)}")
+store(chunks, embeddings)
 
-print("\nFirst chunk:\n")
-
-print(chunks[0])
+print("Finished indexing.")

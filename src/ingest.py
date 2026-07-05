@@ -3,18 +3,18 @@ import os
 from read_pdf import clean_pdf_for_rag
 from chunking import (
     FixedChunker,
-    SentenceChunker,
-    CharacterChunker,
-    RecursiveCharacterChunker,
     TokenChunker,
 )
-from embeddings import embed_chunks
+from embeddings import BGEEmbedding
 from vector_store import store
 
 
-def ingest(pdf_path, chunker=None):
+def ingest(pdf_path, chunker=None, embedder=None):
     if chunker is None:
         chunker = FixedChunker(chunk_size=1500, overlap=100)
+
+    if embedder is None:
+        embedder = BGEEmbedding()
 
     print(f"Reading {pdf_path} ...")
     text = clean_pdf_for_rag(pdf_path)
@@ -23,12 +23,18 @@ def ingest(pdf_path, chunker=None):
     chunks = chunker.chunk(text)
     print(f"Created {len(chunks)} chunks.")
 
-    print("Embedding chunks ...")
-    embeddings = embed_chunks(chunks)
+    print(f"Embedding with {embedder.model_name} ...")
+    embeddings = embedder.embed(chunks)
 
     print("Storing in Chroma ...")
     paper_name = os.path.basename(pdf_path)
-    store(chunks, embeddings, paper_name=paper_name)
+
+    store(
+        chunks,
+        embeddings,
+        paper_name=paper_name,
+        embedding_model=embedder.model_name,
+    )
 
     print("Done. Chunks stored:", len(chunks))
 
@@ -36,5 +42,9 @@ def ingest(pdf_path, chunker=None):
 if __name__ == "__main__":
     ingest(
         "data/papers/AgenticAI.pdf",
-        chunker=TokenChunker(chunk_size=1500, chunk_overlap=100),
+        chunker=TokenChunker(
+            chunk_size=1500,
+            chunk_overlap=100,
+        ),
+        embedder=BGEEmbedding(),
     )

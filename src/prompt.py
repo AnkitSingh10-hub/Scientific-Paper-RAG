@@ -1,5 +1,4 @@
 def create_prompt(context, question):
-    print(question)
 
     context_text = "\n\n".join(context)
 

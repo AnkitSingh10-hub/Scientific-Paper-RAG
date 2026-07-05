@@ -21,6 +21,8 @@ def ask(question):
 
     prompt = create_prompt(context, question)
 
+    print(prompt)
+
     answer = generate(prompt)
 
     return answer

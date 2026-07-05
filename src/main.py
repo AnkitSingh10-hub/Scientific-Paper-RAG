@@ -2,7 +2,7 @@ from pipeline import ask
 
 
 while True:
-    question = input("\nWhat is Agentic AI ")
+    question = input("\nWrite the question here?")
 
     if question.lower() == "exit":
         break

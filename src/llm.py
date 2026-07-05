@@ -8,16 +8,18 @@ ollama = OpenAI(
 )
 
 
-def generate(prompt):
-    print("\n")
-
+def generate(system_prompt, user_prompt):
     response = ollama.chat.completions.create(
-        model="mistral:latest",
+        model="qwen3.5:4b",
         messages=[
             {
+                "role": "system",
+                "content": system_prompt,
+            },
+            {
                 "role": "user",
-                "content": prompt,
-            }
+                "content": user_prompt,
+            },
         ],
     )
 

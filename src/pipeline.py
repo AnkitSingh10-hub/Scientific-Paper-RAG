@@ -19,10 +19,8 @@ def ask(question):
         print(doc[:250])
         print("-" * 80)
 
-    prompt = create_prompt(context, question)
+    system_prompt, user_prompt = create_prompt(context, question)
 
-    print(prompt)
-
-    answer = generate(prompt)
+    answer = generate(system_prompt, user_prompt)
 
     return answer

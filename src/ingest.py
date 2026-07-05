@@ -1,7 +1,13 @@
 import os
 
 from read_pdf import clean_pdf_for_rag
-from chunking import FixedChunker, SentenceChunker
+from chunking import (
+    FixedChunker,
+    SentenceChunker,
+    CharacterChunker,
+    RecursiveCharacterChunker,
+    TokenChunker,
+)
 from embeddings import embed_chunks
 from vector_store import store
 
@@ -30,5 +36,5 @@ def ingest(pdf_path, chunker=None):
 if __name__ == "__main__":
     ingest(
         "data/papers/AgenticAI.pdf",
-        chunker=SentenceChunker(chunk_size=1500, overlap_sentences=1),
+        chunker=TokenChunker(chunk_size=1500, chunk_overlap=100),
     )

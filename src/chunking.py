@@ -1,6 +1,12 @@
 import re
 from abc import ABC, abstractmethod
 
+from langchain_text_splitters import (
+    CharacterTextSplitter as _LCCharacterTextSplitter,
+    RecursiveCharacterTextSplitter as _LCRecursiveCharacterTextSplitter,
+    TokenTextSplitter as _LCTokenTextSplitter,
+)
+
 
 class Chunker(ABC):
     """Base interface all chunkers implement."""
@@ -89,3 +95,62 @@ class SentenceChunker(Chunker):
             chunks.append(" ".join(current))
 
         return chunks
+
+
+class CharacterChunker(Chunker):
+    """Wraps LangChain's CharacterTextSplitter.
+
+    Splits on a single separator (default: double newline, i.e. paragraphs).
+    If a chunk is still too big after splitting on the separator, it will
+    NOT be split further — this is the key difference from Recursive below.
+    """
+
+    def __init__(self, chunk_size=1500, chunk_overlap=200, separator="\n\n"):
+        self._splitter = _LCCharacterTextSplitter(
+            separator=separator,
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            length_function=len,
+        )
+
+    def chunk(self, text):
+        return self._splitter.split_text(text)
+
+
+class RecursiveCharacterChunker(Chunker):
+    """Wraps LangChain's RecursiveCharacterTextSplitter.
+
+    Tries a list of separators in order (paragraph -> sentence -> word ->
+    character), recursively splitting oversized pieces with the next
+    separator down the list until each chunk fits chunk_size. Generally
+    the best default general-purpose splitter.
+    """
+
+    def __init__(self, chunk_size=1500, chunk_overlap=200, separators=None):
+        self._splitter = _LCRecursiveCharacterTextSplitter(
+            separators=separators or ["\n\n", "\n", ". ", " ", ""],
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            length_function=len,
+        )
+
+    def chunk(self, text):
+        return self._splitter.split_text(text)
+
+
+class TokenChunker(Chunker):
+    """Wraps LangChain's TokenTextSplitter.
+
+    Splits by tiktoken token count rather than characters, so chunk_size
+    aligns with the actual token ids that embedding/LLM models consume.
+    """
+
+    def __init__(self, chunk_size=300, chunk_overlap=50, encoding_name="cl100k_base"):
+        self._splitter = _LCTokenTextSplitter(
+            encoding_name=encoding_name,
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+        )
+
+    def chunk(self, text):
+        return self._splitter.split_text(text)

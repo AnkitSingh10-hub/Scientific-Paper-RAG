@@ -5,14 +5,14 @@ import os
 
 load_dotenv()
 
-login(token=os.getenv("RAG_TOKEN"))
-
+_token = os.getenv("RAG_TOKEN")
+if _token:
+    login(token=_token)
 
 model = SentenceTransformer("BAAI/bge-small-en-v1.5")
 
 
 def embed_chunks(chunks):
-
     embeddings = model.encode(
         chunks,
         normalize_embeddings=True,

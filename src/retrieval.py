@@ -3,6 +3,7 @@ from vector_store import collection
 
 
 def retrieve(query, k=5):
-    query_embedding = model.encode(query)
+
+    query_embedding = model.encode(query, normalize_embeddings=True)
     results = collection.query(query_embeddings=[query_embedding.tolist()], n_results=k)
     return results

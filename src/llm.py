@@ -10,7 +10,7 @@ ollama = OpenAI(
 
 def generate(prompt):
     print("\n")
-    print(prompt)
+
     response = ollama.chat.completions.create(
         model="mistral:latest",
         messages=[
@@ -20,5 +20,5 @@ def generate(prompt):
             }
         ],
     )
-    print(response.choices[0].message.content)
+
     return response.choices[0].message.content

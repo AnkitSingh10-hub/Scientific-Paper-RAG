@@ -1,17 +1,20 @@
 import os
 
-from read_pdf import extract_text
-from chunking import fixed_chunks
+from read_pdf import clean_pdf_for_rag
+from chunking import FixedChunker, SentenceChunker
 from embeddings import embed_chunks
 from vector_store import store
 
 
-def ingest(pdf_path):
-    print(f"Reading {pdf_path} ...")
-    text = extract_text(pdf_path)
+def ingest(pdf_path, chunker=None):
+    if chunker is None:
+        chunker = FixedChunker(chunk_size=1500, overlap=100)
 
-    print("Chunking text ...")
-    chunks = fixed_chunks(text)
+    print(f"Reading {pdf_path} ...")
+    text = clean_pdf_for_rag(pdf_path)
+
+    print(f"Chunking text with {type(chunker).__name__} ...")
+    chunks = chunker.chunk(text)
     print(f"Created {len(chunks)} chunks.")
 
     print("Embedding chunks ...")
@@ -25,4 +28,7 @@ def ingest(pdf_path):
 
 
 if __name__ == "__main__":
-    ingest("data/papers/AgenticAI.pdf")
+    ingest(
+        "data/papers/AgenticAI.pdf",
+        chunker=SentenceChunker(chunk_size=1500, overlap_sentences=1),
+    )

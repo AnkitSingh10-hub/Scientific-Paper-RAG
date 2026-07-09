@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 
 load_dotenv()
 
-_token = os.getenv("RAG_TOKEN")
+_token = os.getenv("HF_TOKEN")
 if _token:
     login(token=_token)
 

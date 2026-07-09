@@ -3,8 +3,10 @@ from prompt import create_prompt
 from llm import generate
 
 
-def ask(question):
-    results = retrieve(question)
+def ask_with_context(question, k=5):
+    """Run retrieval + generation, returning both the answer and the
+    retrieved context chunks (needed for evaluation)."""
+    results = retrieve(question, k=k)
 
     context = results["documents"][0]
     distances = results["distances"][0]
@@ -23,4 +25,9 @@ def ask(question):
 
     answer = generate(system_prompt, user_prompt)
 
+    return answer, context
+
+
+def ask(question):
+    answer, _ = ask_with_context(question)
     return answer

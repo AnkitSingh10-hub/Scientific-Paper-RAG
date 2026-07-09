@@ -5,7 +5,7 @@ from chunking import (
     FixedChunker,
     TokenChunker,
 )
-from embeddings import BGEEmbedding
+from embeddings import E5Embedding
 from vector_store import store
 
 
@@ -14,7 +14,7 @@ def ingest(pdf_path, chunker=None, embedder=None):
         chunker = FixedChunker(chunk_size=1500, overlap=100)
 
     if embedder is None:
-        embedder = BGEEmbedding()
+        embedder = E5Embedding()
 
     print(f"Reading {pdf_path} ...")
     text = clean_pdf_for_rag(pdf_path)
@@ -46,5 +46,5 @@ if __name__ == "__main__":
             chunk_size=1500,
             chunk_overlap=100,
         ),
-        embedder=BGEEmbedding(),
+        embedder=E5Embedding(),
     )

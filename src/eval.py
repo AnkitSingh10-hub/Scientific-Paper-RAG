@@ -64,7 +64,7 @@ def calculate_dcg(relevances: list[int], k: int) -> float:
     return dcg
 
 
-def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 6) -> float:
+def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 10) -> float:
     """Calculate nDCG for a single keyword (binary relevance, case-insensitive)."""
     keyword_lower = keyword.lower()
 
@@ -80,7 +80,7 @@ def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 6) -> float
     return dcg / idcg if idcg > 0 else 0.0
 
 
-def evaluate_retrieval(test: TestQuestion, k: int = 6) -> RetrievalEval:
+def evaluate_retrieval(test: TestQuestion, k: int = 10) -> RetrievalEval:
     """
     Evaluate retrieval performance for a test question.
 

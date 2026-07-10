@@ -3,3 +3,4 @@ timestamp,embedding_model,llm_model,chroma_collection,note,avg_mrr,avg_ndcg,avg_
             chunk_size=1000,
             chunk_overlap=100,
         )",0.5402,0.5879,81.09,4.812,4.531,4.25,32,2026-07-10_17-36-34_e5-base-v2.csv
+2026-07-10_18-29-37,e5-base-v2,Mistral-Large-3,research_papers,,0.5588,0.5939,75.21,4.625,4.25,4.188,32,2026-07-10_18-29-37_e5-base-v2.csv

@@ -8,7 +8,7 @@ from vector_store import store
 
 def ingest(pdf_path, chunker=None, embedder=None):
     if chunker is None:
-        chunker = FixedChunker(chunk_size=1000, overlap=100)
+        chunker = FixedChunker(chunk_size=500, overlap=100)
 
     if embedder is None:
         embedder = E5Embedding()
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     ingest(
         "data/papers/AgenticAI.pdf",
         chunker=RecursiveCharacterChunker(
-            chunk_size=700,
+            chunk_size=500,
             chunk_overlap=100,
         ),
         embedder=E5Embedding(),

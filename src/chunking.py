@@ -5,6 +5,7 @@ from langchain_text_splitters import (
     CharacterTextSplitter as _LCCharacterTextSplitter,
     RecursiveCharacterTextSplitter as _LCRecursiveCharacterTextSplitter,
     TokenTextSplitter as _LCTokenTextSplitter,
+    SemanticChunker as _LCSemanticChunker
 )
 
 
@@ -105,7 +106,7 @@ class CharacterChunker(Chunker):
     NOT be split further — this is the key difference from Recursive below.
     """
 
-    def __init__(self, chunk_size=1500, chunk_overlap=200, separator="\n\n"):
+    def __init__(self, chunk_size=500, chunk_overlap=100, separator="\n\n"):
         self._splitter = _LCCharacterTextSplitter(
             separator=separator,
             chunk_size=chunk_size,
@@ -126,7 +127,7 @@ class RecursiveCharacterChunker(Chunker):
     the best default general-purpose splitter.
     """
 
-    def __init__(self, chunk_size=1500, chunk_overlap=200, separators=None):
+    def __init__(self, chunk_size=500, chunk_overlap=100, separators=None):
         self._splitter = _LCRecursiveCharacterTextSplitter(
             separators=separators or ["\n\n", "\n", ". ", " ", ""],
             chunk_size=chunk_size,
@@ -154,3 +155,5 @@ class TokenChunker(Chunker):
 
     def chunk(self, text):
         return self._splitter.split_text(text)
+
+

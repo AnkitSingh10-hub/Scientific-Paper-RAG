@@ -2,7 +2,13 @@ import os
 
 from read_pdf import clean_pdf_for_rag
 from chunking import FixedChunker, TokenChunker, RecursiveCharacterChunker
-from embeddings import E5Embedding
+from embeddings import (
+    E5Embedding,
+    BGEEmbedding,
+    MiniLMEmbedding,
+    MPNetEmbedding,
+    AzureCohereEmbedding,
+)
 from vector_store import store
 
 
@@ -11,7 +17,7 @@ def ingest(pdf_path, chunker=None, embedder=None):
         chunker = FixedChunker(chunk_size=500, overlap=100)
 
     if embedder is None:
-        embedder = E5Embedding()
+        embedder = MPNetEmbedding()
 
     print(f"Reading {pdf_path} ...")
     text = clean_pdf_for_rag(pdf_path)

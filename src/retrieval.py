@@ -1,4 +1,4 @@
-from embeddings import E5Embedding
+from embeddings import E5Embedding, BGEEmbedding, MiniLMEmbedding, MPNetEmbedding
 from vector_store import collection
 
 embedder = E5Embedding()

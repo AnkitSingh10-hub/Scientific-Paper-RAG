@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 import os
 from abc import ABC, abstractmethod
+import requests
 
 load_dotenv()
 

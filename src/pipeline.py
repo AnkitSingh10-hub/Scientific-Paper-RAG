@@ -3,7 +3,7 @@ from prompt import create_prompt
 from llm import generate
 
 
-def ask_with_context(question, k=5):
+def ask_with_context(question, k=6):
     """Run retrieval + generation, returning both the answer and the
     retrieved context chunks (needed for evaluation)."""
     results = retrieve(question, k=k)

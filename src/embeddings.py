@@ -78,12 +78,9 @@ class E5Embedding(Embedder):
     def model_name(self):
         return "e5-base-v2"
 
-    def embed(self, chunks):
-
-        chunks = [f"passage: {c}" for c in chunks]
-
+    def embed(self, chunks, is_query=False):
+        prefix = "query: " if is_query else "passage: "
+        chunks = [f"{prefix}{c}" for c in chunks]
         return self.model.encode(
-            chunks,
-            normalize_embeddings=True,
-            show_progress_bar=True,
+            chunks, normalize_embeddings=True, show_progress_bar=True
         )

@@ -64,7 +64,7 @@ def calculate_dcg(relevances: list[int], k: int) -> float:
     return dcg
 
 
-def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 10) -> float:
+def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 6) -> float:
     """Calculate nDCG for a single keyword (binary relevance, case-insensitive)."""
     keyword_lower = keyword.lower()
 
@@ -80,13 +80,13 @@ def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 10) -> floa
     return dcg / idcg if idcg > 0 else 0.0
 
 
-def evaluate_retrieval(test: TestQuestion, k: int = 10) -> RetrievalEval:
+def evaluate_retrieval(test: TestQuestion, k: int = 6) -> RetrievalEval:
     """
     Evaluate retrieval performance for a test question.
 
     Args:
         test: TestQuestion object containing question and keywords
-        k: Number of top chunks to retrieve (default 10)
+        k: Number of top chunks to retrieve (default 6)
 
     Returns:
         RetrievalEval object with MRR, nDCG, and keyword coverage metrics

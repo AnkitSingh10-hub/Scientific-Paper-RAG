@@ -2,7 +2,7 @@ import sys
 import math
 from pydantic import BaseModel, Field
 
-from .test import TestQuestion, load_tests
+from test import TestQuestion, load_tests
 from retrieval import retrieve
 from pipeline import ask_with_context
 from llm import generate_json

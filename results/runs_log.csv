@@ -1,0 +1,4 @@
+timestamp,embedding_model,llm_model,chroma_collection,note,avg_mrr,avg_ndcg,avg_coverage_%,avg_accuracy,avg_completeness,avg_relevance,n_tests,detail_file
+2026-07-10_15-45-09,e5-base-v2,Mistral-Large-3,research_papers,,0.5402,0.5879,81.09,4.406,4,4.062,32,2026-07-10_15-45-09_e5-base-v2.csv
+2026-07-10_16-20-20,bge-small-en-v1.5,Mistral-Large-3,research_papers,,0.5113,0.5606,78.85,3.875,3.625,3.719,32,2026-07-10_16-20-20_bge-small-en-v1.5.csv
+2026-07-10_16-20-40,bge-small-en-v1.5,Mistral-Large-3,research_papers,RecursiveChunker,0.5113,0.5606,78.85,3.875,3.625,3.719,32,2026-07-10_16-20-40_bge-small-en-v1.5.csv

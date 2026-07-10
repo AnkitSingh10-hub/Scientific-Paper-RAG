@@ -1,10 +1,7 @@
 import os
 
 from read_pdf import clean_pdf_for_rag
-from chunking import (
-    FixedChunker,
-    TokenChunker,
-)
+from chunking import FixedChunker, TokenChunker, RecursiveCharacterChunker
 from embeddings import E5Embedding
 from vector_store import store
 
@@ -42,8 +39,8 @@ def ingest(pdf_path, chunker=None, embedder=None):
 if __name__ == "__main__":
     ingest(
         "data/papers/AgenticAI.pdf",
-        chunker=TokenChunker(
-            chunk_size=1500,
+        chunker=RecursiveCharacterChunker(
+            chunk_size=1000,
             chunk_overlap=100,
         ),
         embedder=E5Embedding(),

@@ -28,6 +28,9 @@ Full Evaluation tab:
     - Shows full per-test result tables (sortable in the Gradio UI)
 """
 
+import os
+import datetime
+
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
@@ -40,12 +43,38 @@ from eval import (
     evaluate_all_retrieval,
     evaluate_all_answers,
 )
+from retrieval import embedder as retrieval_embedder
+from llm import DEFAULT_MODEL as LLM_MODEL
+from vector_store import collection as chroma_collection
 
 TESTS = load_tests()
+
+# Results are saved relative to wherever you launch the script from
+# (matches the same convention vector_store.py uses for "db/chroma_db").
+RESULTS_DIR = "results"
+RUNS_LOG_PATH = os.path.join(RESULTS_DIR, "runs_log.csv")
 
 
 def _test_choices():
     return [f"{i}: {t.question[:70]}" for i, t in enumerate(TESTS)]
+
+
+def _run_metadata():
+    """Pulled live from your actual code, not typed in manually, so it can't drift."""
+    return {
+        "embedding_model": retrieval_embedder.model_name,
+        "llm_model": LLM_MODEL,
+        "chroma_collection": chroma_collection.name,
+    }
+
+
+def _config_banner():
+    meta = _run_metadata()
+    return (
+        f"**Embedding model:** `{meta['embedding_model']}`  |  "
+        f"**LLM model:** `{meta['llm_model']}`  |  "
+        f"**Chroma collection:** `{meta['chroma_collection']}`"
+    )
 
 
 def run_single_test(test_choice, progress=gr.Progress()):
@@ -214,7 +243,122 @@ def run_full_eval(progress=gr.Progress()):
         cat_fig,
         retrieval_df,
         answer_df,
+        retrieval_df,  # duplicated into gr.State so the Save button can access it later
+        answer_df,
     )
+
+
+def save_full_eval(retrieval_df, answer_df, note):
+    """Write this run's full results + metadata to results/, and append a
+    summary row to results/runs_log.csv for cross-run comparison."""
+    if retrieval_df is None or answer_df is None or retrieval_df.empty:
+        return "⚠️ Run a full evaluation first, then save.", load_runs_log()
+
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    meta = _run_metadata()
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    safe_embed_name = meta["embedding_model"].replace("/", "-")
+    run_id = f"{timestamp}_{safe_embed_name}"
+
+    merged = retrieval_df.merge(
+        answer_df, on=["idx", "question", "category"], suffixes=("", "_ans")
+    )
+    for key, val in meta.items():
+        merged[key] = val
+    merged["note"] = note
+    merged["timestamp"] = timestamp
+
+    detail_path = os.path.join(RESULTS_DIR, f"{run_id}.csv")
+    merged.to_csv(detail_path, index=False)
+
+    summary_row = {
+        "timestamp": timestamp,
+        **meta,
+        "note": note,
+        "avg_mrr": round(retrieval_df["mrr"].mean(), 4),
+        "avg_ndcg": round(retrieval_df["ndcg"].mean(), 4),
+        "avg_coverage_%": round(retrieval_df["coverage_%"].mean(), 2),
+        "avg_accuracy": round(answer_df["accuracy"].mean(), 3),
+        "avg_completeness": round(answer_df["completeness"].mean(), 3),
+        "avg_relevance": round(answer_df["relevance"].mean(), 3),
+        "n_tests": len(retrieval_df),
+        "detail_file": f"{run_id}.csv",
+    }
+    log_row_df = pd.DataFrame([summary_row])
+    if os.path.exists(RUNS_LOG_PATH):
+        log_row_df.to_csv(RUNS_LOG_PATH, mode="a", header=False, index=False)
+    else:
+        log_row_df.to_csv(RUNS_LOG_PATH, index=False)
+
+    status = f"✅ Saved detailed results to `{detail_path}` and logged summary to `{RUNS_LOG_PATH}`."
+    return status, load_runs_log()
+
+
+def load_runs_log():
+    if os.path.exists(RUNS_LOG_PATH):
+        return pd.read_csv(RUNS_LOG_PATH)
+    return pd.DataFrame(
+        columns=[
+            "timestamp",
+            "embedding_model",
+            "llm_model",
+            "chroma_collection",
+            "note",
+            "avg_mrr",
+            "avg_ndcg",
+            "avg_coverage_%",
+            "avg_accuracy",
+            "avg_completeness",
+            "avg_relevance",
+            "n_tests",
+            "detail_file",
+        ]
+    )
+
+
+def build_comparison_chart():
+    log_df = load_runs_log()
+    if log_df.empty:
+        return log_df, go.Figure(), go.Figure()
+
+    log_df = log_df.copy()
+    log_df["run_label"] = log_df["timestamp"] + " | " + log_df["embedding_model"]
+
+    retrieval_fig = go.Figure()
+    for metric, color in [("avg_mrr", "#6366f1"), ("avg_ndcg", "#8b5cf6")]:
+        retrieval_fig.add_trace(
+            go.Bar(
+                name=metric, x=log_df["run_label"], y=log_df[metric], marker_color=color
+            )
+        )
+    retrieval_fig.update_layout(
+        title="Retrieval Quality Across Runs",
+        barmode="group",
+        template="plotly_white",
+        height=380,
+        xaxis_tickangle=-30,
+    )
+
+    answer_fig = go.Figure()
+    for metric, color in [
+        ("avg_accuracy", "#10b981"),
+        ("avg_completeness", "#f59e0b"),
+        ("avg_relevance", "#3b82f6"),
+    ]:
+        answer_fig.add_trace(
+            go.Bar(
+                name=metric, x=log_df["run_label"], y=log_df[metric], marker_color=color
+            )
+        )
+    answer_fig.update_layout(
+        title="Answer Quality Across Runs",
+        barmode="group",
+        template="plotly_white",
+        height=380,
+        xaxis_tickangle=-30,
+    )
+
+    return log_df, retrieval_fig, answer_fig
 
 
 with gr.Blocks(title="RAG Evaluation Dashboard", theme=gr.themes.Soft()) as demo:
@@ -222,6 +366,12 @@ with gr.Blocks(title="RAG Evaluation Dashboard", theme=gr.themes.Soft()) as demo
     gr.Markdown(
         "Visualize retrieval and answer-quality metrics from `eval.py` without reading CLI output."
     )
+    gr.Markdown(_config_banner())
+
+    # Holds the last full-eval dataframes so the Save button can use them
+    # without re-running the whole evaluation.
+    retrieval_state = gr.State(None)
+    answer_state = gr.State(None)
 
     with gr.Tab("Single Test"):
         with gr.Row():
@@ -288,8 +438,58 @@ with gr.Blocks(title="RAG Evaluation Dashboard", theme=gr.themes.Soft()) as demo
                 category_plot,
                 retrieval_table,
                 answer_table,
+                retrieval_state,
+                answer_state,
             ],
         )
+
+        gr.Markdown("---")
+        gr.Markdown(
+            "### Save this run\n"
+            "Saves a detailed CSV plus a summary row (tagged with the embedding model, "
+            "LLM model, and Chroma collection shown above) to `results/`, so you can "
+            "compare configs later in the **Run History** tab."
+        )
+        with gr.Row():
+            note_input = gr.Textbox(
+                label="Note (e.g. chunker/config used for this run)",
+                placeholder="e.g. TokenChunker(chunk_size=1500, overlap=100)",
+                scale=3,
+            )
+            save_btn = gr.Button("💾 Save Results", variant="secondary", scale=1)
+        save_status = gr.Markdown()
+
+    with gr.Tab("Run History"):
+        gr.Markdown(
+            "All runs you've saved with the button above, so you can compare "
+            "embedding models / LLMs / chunking configs side by side."
+        )
+        refresh_btn = gr.Button("🔄 Refresh")
+        history_table = gr.Dataframe(label="Saved Runs", value=load_runs_log())
+        with gr.Row():
+            history_retrieval_plot = gr.Plot(label="Retrieval Comparison")
+            history_answer_plot = gr.Plot(label="Answer Quality Comparison")
+
+        def _refresh_history():
+            log_df, r_fig, a_fig = build_comparison_chart()
+            return log_df, r_fig, a_fig
+
+        refresh_btn.click(
+            _refresh_history,
+            inputs=[],
+            outputs=[history_table, history_retrieval_plot, history_answer_plot],
+        )
+        demo.load(
+            _refresh_history,
+            inputs=[],
+            outputs=[history_table, history_retrieval_plot, history_answer_plot],
+        )
+
+    save_btn.click(
+        save_full_eval,
+        inputs=[retrieval_state, answer_state, note_input],
+        outputs=[save_status, history_table],
+    )
 
 if __name__ == "__main__":
     demo.launch()

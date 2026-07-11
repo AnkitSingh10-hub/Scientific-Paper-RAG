@@ -1,75 +1,68 @@
 import re
-from abc import ABC, abstractmethod
+from collections import namedtuple
 
 from langchain_text_splitters import (
     CharacterTextSplitter as _LCCharacterTextSplitter,
     RecursiveCharacterTextSplitter as _LCRecursiveCharacterTextSplitter,
     TokenTextSplitter as _LCTokenTextSplitter,
-    
 )
 
 
-class Chunker(ABC):
-    """Base interface all chunkers implement."""
+# Every chunker factory below returns one of these. `chunk` is a plain
+# function you call directly, `name` is just a string for logging.
+#
+#   chunker = make_fixed_chunker(chunk_size=500, overlap=100)
+#   chunker.chunk(text)   -> list[str]
+#   chunker.name          -> "FixedChunker"
+Chunker = namedtuple("Chunker", ["chunk", "name"])
 
-    @abstractmethod
-    def chunk(self, text):
-        """Split text into a list of chunk strings."""
-        raise NotImplementedError
+
+_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])")
 
 
-class FixedChunker(Chunker):
+def _split_sentences(text):
+    text = text.strip()
+    if not text:
+        return []
+
+    sentences = _SENTENCE_SPLIT_RE.split(text)
+    return [s.strip() for s in sentences if s.strip()]
+
+
+def make_fixed_chunker(chunk_size=500, overlap=100):
     """Splits text into fixed-size character windows with overlap.
 
     Fast and simple, but can cut sentences/words in half.
     """
+    if overlap >= chunk_size:
+        raise ValueError("overlap must be smaller than chunk_size")
 
-    def __init__(self, chunk_size=500, overlap=100):
-        if overlap >= chunk_size:
-            raise ValueError("overlap must be smaller than chunk_size")
-
-        self.chunk_size = chunk_size
-        self.overlap = overlap
-
-    def chunk(self, text):
+    def chunk(text):
         chunks = []
         start = 0
 
         while start < len(text):
-            end = start + self.chunk_size
+            end = start + chunk_size
             chunks.append(text[start:end])
-            start += self.chunk_size - self.overlap
+            start += chunk_size - overlap
 
         return chunks
 
+    return Chunker(chunk=chunk, name="FixedChunker")
 
-class SentenceChunker(Chunker):
+
+def make_sentence_chunker(chunk_size=500, overlap_sentences=1):
     """Splits text into sentences, then groups sentences into chunks up to
     ~chunk_size characters, carrying the last `overlap_sentences` sentences
     of a chunk over into the next one for context continuity.
 
     Avoids cutting sentences in half, which FixedChunker can do.
     """
+    if overlap_sentences < 0:
+        raise ValueError("overlap_sentences must be >= 0")
 
-    _SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])")
-
-    def __init__(self, chunk_size=500, overlap_sentences=1):
-        if overlap_sentences < 0:
-            raise ValueError("overlap_sentences must be >= 0")
-
-        self.chunk_size = chunk_size
-        self.overlap_sentences = overlap_sentences
-
-    def _split_sentences(self, text):
-        text = text.strip()
-        if not text:
-            return []
-
-        sentences = self._SENTENCE_SPLIT_RE.split(text)
-        return [s.strip() for s in sentences if s.strip()]
-
-    def chunk(self, text):
-        sentences = self._split_sentences(text)
+    def chunk(text):
+        sentences = _split_sentences(text)
         if not sentences:
             return []
 
@@ -80,13 +73,11 @@ class SentenceChunker(Chunker):
         for sentence in sentences:
             sentence_len = len(sentence) + 1  # +1 for the joining space
 
-            if current and current_len + sentence_len > self.chunk_size:
+            if current and current_len + sentence_len > chunk_size:
                 chunks.append(" ".join(current))
 
                 # carry over the last N sentences for overlap
-                current = (
-                    current[-self.overlap_sentences :] if self.overlap_sentences else []
-                )
+                current = current[-overlap_sentences:] if overlap_sentences else []
                 current_len = sum(len(s) + 1 for s in current)
 
             current.append(sentence)
@@ -97,28 +88,32 @@ class SentenceChunker(Chunker):
 
         return chunks
 
+    return Chunker(chunk=chunk, name="SentenceChunker")
 
-class CharacterChunker(Chunker):
+
+def make_character_chunker(chunk_size=500, chunk_overlap=100, separator="\n\n"):
     """Wraps LangChain's CharacterTextSplitter.
 
     Splits on a single separator (default: double newline, i.e. paragraphs).
     If a chunk is still too big after splitting on the separator, it will
     NOT be split further — this is the key difference from Recursive below.
     """
+    splitter = _LCCharacterTextSplitter(
+        separator=separator,
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+    )
 
-    def __init__(self, chunk_size=500, chunk_overlap=100, separator="\n\n"):
-        self._splitter = _LCCharacterTextSplitter(
-            separator=separator,
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
-            length_function=len,
-        )
+    def chunk(text):
+        return splitter.split_text(text)
 
-    def chunk(self, text):
-        return self._splitter.split_text(text)
+    return Chunker(chunk=chunk, name="CharacterChunker")
 
 
-class RecursiveCharacterChunker(Chunker):
+def make_recursive_character_chunker(
+    chunk_size=500, chunk_overlap=100, separators=None
+):
     """Wraps LangChain's RecursiveCharacterTextSplitter.
 
     Tries a list of separators in order (paragraph -> sentence -> word ->
@@ -126,34 +121,32 @@ class RecursiveCharacterChunker(Chunker):
     separator down the list until each chunk fits chunk_size. Generally
     the best default general-purpose splitter.
     """
+    splitter = _LCRecursiveCharacterTextSplitter(
+        separators=separators or ["\n\n", "\n", ". ", " ", ""],
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+    )
 
-    def __init__(self, chunk_size=500, chunk_overlap=100, separators=None):
-        self._splitter = _LCRecursiveCharacterTextSplitter(
-            separators=separators or ["\n\n", "\n", ". ", " ", ""],
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
-            length_function=len,
-        )
+    def chunk(text):
+        return splitter.split_text(text)
 
-    def chunk(self, text):
-        return self._splitter.split_text(text)
+    return Chunker(chunk=chunk, name="RecursiveCharacterChunker")
 
 
-class TokenChunker(Chunker):
+def make_token_chunker(chunk_size=300, chunk_overlap=50, encoding_name="cl100k_base"):
     """Wraps LangChain's TokenTextSplitter.
 
     Splits by tiktoken token count rather than characters, so chunk_size
     aligns with the actual token ids that embedding/LLM models consume.
     """
+    splitter = _LCTokenTextSplitter(
+        encoding_name=encoding_name,
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+    )
 
-    def __init__(self, chunk_size=300, chunk_overlap=50, encoding_name="cl100k_base"):
-        self._splitter = _LCTokenTextSplitter(
-            encoding_name=encoding_name,
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
-        )
+    def chunk(text):
+        return splitter.split_text(text)
 
-    def chunk(self, text):
-        return self._splitter.split_text(text)
-
-
+    return Chunker(chunk=chunk, name="TokenChunker")

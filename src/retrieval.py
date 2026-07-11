@@ -1,15 +1,15 @@
 from embeddings import (
-    E5Embedding,
-    BGEEmbedding,
-    MiniLMEmbedding,
-    MPNetEmbedding,
-    AzureAICohereEmbedding,
-    AzureOpenAIEmbedding,
-    AzureE5Embedding,
+    make_e5_embedder,
+    make_bge_embedder,
+    make_minilm_embedder,
+    make_mpnet_embedder,
+    make_azure_cohere_embedder,
+    make_azure_openai_embedder,
+    make_azure_e5_embedder,
 )
 from vector_store import collection
 
-embedder = AzureE5Embedding()
+embedder = make_azure_e5_embedder()
 
 
 def retrieve(query, k=10):

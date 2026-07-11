@@ -1,6 +1,6 @@
 timestamp,embedding_model,llm_model,chroma_collection,note,avg_mrr,avg_ndcg,avg_coverage_%,avg_accuracy,avg_completeness,avg_relevance,avg_unanswerable_accuracy,n_tests,n_retrieval_scoreable,detail_file
-2026-07-11_20-11-52,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=200",0.7109,0.7347,92.94,4.885,4.558,4.423,5.0,52,47,2026-07-11_20-11-52_e5-large-v2.csv
-2026-07-11_20-25-18,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=100",0.6973,0.7165,88.69,4.846,4.538,4.327,5.0,52,47,2026-07-11_20-25-18_e5-large-v2.csv
-2026-07-11_20-44-26,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=150",0.7055,0.7316,92.06,4.865,4.538,4.365,5.0,52,47,2026-07-11_20-44-26_e5-large-v2.csv
-2026-07-11_21-00-12,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=300",0.7168,0.7417,92.94,4.904,4.577,4.423,5.0,52,47,2026-07-11_21-00-12_e5-large-v2.csv
-2026-07-11_21-28-33,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=300, k=15",0.7172,0.7272,93.48,4.923,4.577,4.365,5.0,52,47,2026-07-11_21-28-33_e5-large-v2.csv
+2026-07-11_20-11-52,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=200",0.7109,0.7347,92.94,4.885,4.558,4.423,5,52,47,2026-07-11_20-11-52_e5-large-v2.csv
+2026-07-11_20-25-18,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=100",0.6973,0.7165,88.69,4.846,4.538,4.327,5,52,47,2026-07-11_20-25-18_e5-large-v2.csv
+2026-07-11_20-44-26,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=150",0.7055,0.7316,92.06,4.865,4.538,4.365,5,52,47,2026-07-11_20-44-26_e5-large-v2.csv
+2026-07-11_21-00-12,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=300",0.7168,0.7417,92.94,4.904,4.577,4.423,5,52,47,2026-07-11_21-00-12_e5-large-v2.csv
+2026-07-11_21-28-33,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=300, k=15",0.7172,0.7272,93.48,4.923,4.577,4.365,5,52,47,2026-07-11_21-28-33_e5-large-v2.csv

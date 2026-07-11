@@ -43,3 +43,19 @@ timestamp,embedding_model,llm_model,chroma_collection,note,avg_mrr,avg_ndcg,avg_
             chunk_size=500,
             chunk_overlap=100,
         )",0.6965,0.707,86.25,4.812,4.438,4.312,32,2026-07-11_13-50-38_e5-large-v2.csv
+2026-07-11_14-35-00,embed-v-4-0,Mistral-Large-3,research_papers,"RecursiveCharacterChunker(
+            chunk_size=500,
+            chunk_overlap=100,
+        )",0.6415,0.6694,85.99,4.812,4.438,4.281,32,2026-07-11_14-35-00_embed-v-4-0.csv
+2026-07-11_15-11-19,text-embedding-3-small,Mistral-Large-3,research_papers,"RecursiveCharacterChunker(
+            chunk_size=500,
+            chunk_overlap=100,
+        )",0.6773,0.7024,85.36,4.875,4.5,4.469,32,2026-07-11_15-11-19_text-embedding-3-small.csv
+2026-07-11_16-21-41,text-embedding-3-small,Mistral-Large-3,research_papers,"RecursiveCharacterChunker(
+            chunk_size=500,
+            chunk_overlap=100,
+        )",0.6801,0.7066,88.75,4.906,4.531,4.531,32,2026-07-11_16-21-41_text-embedding-3-small.csv
+2026-07-11_17-25-19,e5-large-v2,Mistral-Large-3,research_papers,"RecursiveCharacterChunker(
+            chunk_size=500,
+            chunk_overlap=100,
+        )",0.7057,0.7199,88.07,4.875,4.469,4.312,32,2026-07-11_17-25-19_e5-large-v2.csv

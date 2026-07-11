@@ -285,10 +285,36 @@ def save_full_eval(retrieval_df, answer_df, note):
         "detail_file": f"{run_id}.csv",
     }
     log_row_df = pd.DataFrame([summary_row])
-    if os.path.exists(RUNS_LOG_PATH):
-        log_row_df.to_csv(RUNS_LOG_PATH, mode="a", header=False, index=False)
-    else:
-        log_row_df.to_csv(RUNS_LOG_PATH, index=False)
+
+    # Writing runs_log.csv can hit a transient PermissionError on Windows if
+    # it's open in Excel or being synced by OneDrive. Retry briefly, then
+    # fail gracefully - the detail CSV above already saved successfully, so
+    # we don't want a locked log file to blow up the whole callback.
+    import time
+
+    log_write_error = None
+    for attempt in range(5):
+        try:
+            if os.path.exists(RUNS_LOG_PATH):
+                log_row_df.to_csv(RUNS_LOG_PATH, mode="a", header=False, index=False)
+            else:
+                log_row_df.to_csv(RUNS_LOG_PATH, index=False)
+            log_write_error = None
+            break
+        except PermissionError as e:
+            log_write_error = e
+            time.sleep(0.5 * (attempt + 1))
+
+    if log_write_error is not None:
+        status = (
+            f"✅ Saved detailed results to `{detail_path}`.\n\n"
+            f"⚠️ Could NOT update `{RUNS_LOG_PATH}` - it looks like it's locked "
+            f"(commonly because it's open in Excel, or being synced by OneDrive "
+            f"if this project lives under a synced folder). Close whatever has "
+            f"it open and click Save again; your detailed run wasn't lost, "
+            f"it's already in `{detail_path}`."
+        )
+        return status, load_runs_log()
 
     status = f"✅ Saved detailed results to `{detail_path}` and logged summary to `{RUNS_LOG_PATH}`."
     return status, load_runs_log()

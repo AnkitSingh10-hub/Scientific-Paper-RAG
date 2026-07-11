@@ -49,10 +49,22 @@ def extract_paragraphs(pdf_path):
             if skip_block or not lines_text:
                 continue
 
-            # Drop blocks that are pure noise
+            # Drop blocks that are pure noise.
+            # NOTE: figure/table captions in this paper are often full
+            # explanatory paragraphs, not just a "Figure N:" label - so we
+            # only strip the boilerplate label prefix from the first line
+            # instead of discarding the whole block (which used to delete
+            # real content, e.g. the PRISMA counts embedded in the Figure 7
+            # caption).
             first_line = lines_text[0]
             if CAPTION_PATTERN.match(first_line):
-                continue
+                remainder = CAPTION_PATTERN.sub("", first_line, count=1).strip()
+                # also strip a leading ". " or ": " left behind after the label removal
+                remainder = re.sub(r"^[.:]\s*", "", remainder)
+                lines_text = ([remainder] if remainder else []) + lines_text[1:]
+                if not lines_text:
+                    continue
+
             if len(lines_text) == 1:
                 only = lines_text[0]
                 if (
@@ -65,8 +77,17 @@ def extract_paragraphs(pdf_path):
             # Join wrapped lines into one paragraph, fixing hyphenation
             joined = ""
             for line in lines_text:
-                if joined.endswith("-") and line and line[0].islower():
-                    joined = joined[:-1] + line  # de-hyphenate
+                if joined.endswith("-"):
+                    if line and line[0].islower():
+                        # true line-wrap hyphenation (e.g. "informa-" + "tion")
+                        joined = joined[:-1] + line
+                    else:
+                        # next word starts uppercase -> this is very likely a
+                        # genuine compound-word hyphen (e.g. "Retrieval-" +
+                        # "Augmented") that just happened to fall at a line
+                        # break. Keep the hyphen, don't insert a space, so we
+                        # don't produce a broken "Retrieval- Augmented" token.
+                        joined = joined + line
                 else:
                     joined = (joined + " " + line).strip() if joined else line
 

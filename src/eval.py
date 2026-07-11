@@ -1,5 +1,6 @@
 import sys
 import math
+import re
 from pydantic import BaseModel, Field
 
 from test import TestQuestion, load_tests
@@ -47,11 +48,35 @@ def _parse_json_response(raw: str) -> str:
     return cleaned.strip()
 
 
+_PUNCT_RE = re.compile(r"[^\w\s]")
+_WS_RE = re.compile(r"\s+")
+
+
+def _normalize_for_matching(text: str) -> str:
+    """Normalize text for keyword containment checks.
+
+    Strips punctuation (commas, hyphens, parens, colons, etc.) and collapses
+    whitespace so a keyword still matches when the source text has minor
+    formatting differences that don't change its meaning - e.g. the tuple
+    keyword "S, A, P, R" matching "(S, A, P, R)" in the source, or
+    "Retrieval-Augmented" matching text that got a stray hyphen/space at a
+    line-wrap. Content inside parentheses is KEPT (not deleted) since some
+    parentheticals carry the actual fact being asked about (e.g. "(157 from
+    databases, 8 from supplemental sources)"). This does NOT do fuzzy/
+    semantic matching - the keyword's words must still appear, in order, as
+    a contiguous (post-normalization) span.
+    """
+    text = _PUNCT_RE.sub(" ", text)
+    text = _WS_RE.sub(" ", text)
+    return text.strip().lower()
+
+
 def calculate_mrr(keyword: str, retrieved_docs: list[str]) -> float:
-    """Calculate reciprocal rank for a single keyword (case-insensitive)."""
-    keyword_lower = keyword.lower()
+    """Calculate reciprocal rank for a single keyword (case-insensitive,
+    tolerant of parentheticals/punctuation/whitespace differences)."""
+    keyword_norm = _normalize_for_matching(keyword)
     for rank, doc in enumerate(retrieved_docs, start=1):
-        if keyword_lower in doc.lower():
+        if keyword_norm in _normalize_for_matching(doc):
             return 1.0 / rank
     return 0.0
 
@@ -65,11 +90,13 @@ def calculate_dcg(relevances: list[int], k: int) -> float:
 
 
 def calculate_ndcg(keyword: str, retrieved_docs: list[str], k: int = 10) -> float:
-    """Calculate nDCG for a single keyword (binary relevance, case-insensitive)."""
-    keyword_lower = keyword.lower()
+    """Calculate nDCG for a single keyword (binary relevance, case-insensitive,
+    tolerant of parentheticals/punctuation/whitespace differences)."""
+    keyword_norm = _normalize_for_matching(keyword)
 
     relevances = [
-        1 if keyword_lower in doc.lower() else 0 for doc in retrieved_docs[:k]
+        1 if keyword_norm in _normalize_for_matching(doc) else 0
+        for doc in retrieved_docs[:k]
     ]
 
     dcg = calculate_dcg(relevances, k)

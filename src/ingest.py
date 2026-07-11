@@ -7,7 +7,9 @@ from embeddings import (
     BGEEmbedding,
     MiniLMEmbedding,
     MPNetEmbedding,
-    E5LargeEmbedding,
+    AzureAICohereEmbedding,
+    AzureOpenAIEmbedding,
+    AzureE5Embedding,
 )
 from vector_store import store
 
@@ -49,5 +51,5 @@ if __name__ == "__main__":
             chunk_size=500,
             chunk_overlap=100,
         ),
-        embedder=E5LargeEmbedding(),
+        embedder=AzureE5Embedding(),
     )

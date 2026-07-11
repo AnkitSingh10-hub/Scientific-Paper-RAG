@@ -1,3 +1,4 @@
+import os
 import re
 from collections import namedtuple
 
@@ -112,7 +113,7 @@ def make_character_chunker(chunk_size=500, chunk_overlap=100, separator="\n\n"):
 
 
 def make_recursive_character_chunker(
-    chunk_size=500, chunk_overlap=100, separators=None
+    chunk_size=500, chunk_overlap=250, separators=None
 ):
     """Wraps LangChain's RecursiveCharacterTextSplitter.
 
@@ -150,3 +151,40 @@ def make_token_chunker(chunk_size=300, chunk_overlap=50, encoding_name="cl100k_b
         return splitter.split_text(text)
 
     return Chunker(chunk=chunk, name="TokenChunker")
+
+
+# ---------------------------------------------------------------------------
+# Registry — lets you pick a chunker by string name (e.g. from .env)
+# instead of importing a specific make_*_chunker function.
+# ---------------------------------------------------------------------------
+
+CHUNKER_REGISTRY = {
+    "fixed": make_fixed_chunker,
+    "sentence": make_sentence_chunker,
+    "character": make_character_chunker,
+    "recursive": make_recursive_character_chunker,
+    "token": make_token_chunker,
+}
+
+
+def get_chunker(name=None, **kwargs):
+    """Look up and build a chunker by name.
+
+    name defaults to the CHUNKER env var, falling back to "recursive".
+    Any kwargs (e.g. chunk_size=500, chunk_overlap=100) are passed through
+    to the factory.
+
+        chunker = get_chunker()                 # uses .env / default
+        chunker = get_chunker("fixed", chunk_size=500, overlap=100)
+    """
+    name = name or os.getenv("CHUNKER", "recursive")
+
+    try:
+        factory = CHUNKER_REGISTRY[name]
+    except KeyError:
+        raise ValueError(
+            f"Unknown chunker '{name}'. Available options: "
+            f"{', '.join(CHUNKER_REGISTRY)}"
+        )
+
+    return factory(**kwargs)

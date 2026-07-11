@@ -197,3 +197,41 @@ def make_azure_e5_embedder(chunk_size=32):
         return all_embeddings
 
     return Embedder(embed=embed, model_name="e5-large-v2")
+
+
+# ---------------------------------------------------------------------------
+# Registry — lets you pick an embedder by string name (e.g. from .env)
+# instead of importing a specific make_*_embedder function.
+# ---------------------------------------------------------------------------
+
+EMBEDDER_REGISTRY = {
+    "bge": make_bge_embedder,
+    "minilm": make_minilm_embedder,
+    "mpnet": make_mpnet_embedder,
+    "e5": make_e5_embedder,
+    "azure-cohere": make_azure_cohere_embedder,
+    "azure-openai": make_azure_openai_embedder,
+    "azure-e5": make_azure_e5_embedder,
+}
+
+
+def get_embedder(name=None, **kwargs):
+    """Look up and build an embedder by name.
+
+    name defaults to the EMBEDDER env var, falling back to "azure-e5".
+    Any kwargs (e.g. chunk_size=64) are passed through to the factory.
+
+        embedder = get_embedder()              # uses .env / default
+        embedder = get_embedder("bge")          # explicit override
+    """
+    name = name or os.getenv("EMBEDDER", "azure-e5")
+
+    try:
+        factory = EMBEDDER_REGISTRY[name]
+    except KeyError:
+        raise ValueError(
+            f"Unknown embedder '{name}'. Available options: "
+            f"{', '.join(EMBEDDER_REGISTRY)}"
+        )
+
+    return factory(**kwargs)

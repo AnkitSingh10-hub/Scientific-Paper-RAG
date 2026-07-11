@@ -4,7 +4,7 @@ from vector_store import collection
 embedder = get_embedder()
 
 
-def retrieve(query, k=10):
+def retrieve(query, k=15):
     query_embedding = embedder.embed([query], is_query=True)[0]
     query_embedding = (
         query_embedding.tolist()

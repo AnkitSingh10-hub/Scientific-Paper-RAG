@@ -1,7 +1,13 @@
-from embeddings import E5Embedding, BGEEmbedding, MiniLMEmbedding, MPNetEmbedding
+from embeddings import (
+    E5Embedding,
+    BGEEmbedding,
+    MiniLMEmbedding,
+    MPNetEmbedding,
+    E5LargeEmbedding,
+)
 from vector_store import collection
 
-embedder = E5Embedding()
+embedder = E5LargeEmbedding()
 
 
 def retrieve(query, k=10):

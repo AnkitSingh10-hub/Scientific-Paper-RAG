@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from abc import ABC, abstractmethod
 import requests
+import torch
 
 load_dotenv()
 
@@ -50,6 +51,7 @@ class BGEEmbedding(Embedder):
 
         return self.model.encode(
             chunks,
+            batch_size=1,
             normalize_embeddings=True,
             show_progress_bar=True,
         )
@@ -67,6 +69,7 @@ class MiniLMEmbedding(Embedder):
         # MiniLM does not use prefixes, but we accept is_query to match the interface
         return self.model.encode(
             chunks,
+            batch_size=1,
             normalize_embeddings=True,
             show_progress_bar=True,
         )
@@ -84,6 +87,7 @@ class MPNetEmbedding(Embedder):
         # MPNet does not use prefixes, but we accept is_query to match the interface
         return self.model.encode(
             chunks,
+            batch_size=1,
             normalize_embeddings=True,
             show_progress_bar=True,
         )
@@ -106,5 +110,29 @@ class E5Embedding(Embedder):
         chunks = [f"{prefix}{c}" for c in chunks]
 
         return self.model.encode(
-            chunks, normalize_embeddings=True, show_progress_bar=True
+            chunks, batch_size=1, normalize_embeddings=True, show_progress_bar=True
+        )
+
+
+class E5LargeEmbedding(Embedder):
+    def __init__(self):
+        self.model = SentenceTransformer("intfloat/e5-large-v2")
+
+    @property
+    def model_name(self):
+        return "e5-large-v2"
+
+    def embed(self, chunks, is_query=False):
+        # Convert a single string to a list
+        if isinstance(chunks, str):
+            chunks = [chunks]
+
+        prefix = "query: " if is_query else "passage: "
+        chunks = [f"{prefix}{c}" for c in chunks]
+
+        return self.model.encode(
+            chunks,
+            batch_size=1,
+            normalize_embeddings=True,
+            show_progress_bar=True,
         )

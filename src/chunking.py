@@ -5,7 +5,7 @@ from langchain_text_splitters import (
     CharacterTextSplitter as _LCCharacterTextSplitter,
     RecursiveCharacterTextSplitter as _LCRecursiveCharacterTextSplitter,
     TokenTextSplitter as _LCTokenTextSplitter,
-    SemanticChunker as _LCSemanticChunker
+    
 )
 
 

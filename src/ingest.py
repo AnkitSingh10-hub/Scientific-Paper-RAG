@@ -8,7 +8,8 @@ from vector_store import store
 
 def ingest(pdf_path, chunker=None, embedder=None):
     if chunker is None:
-        chunker = get_chunker()
+        chunker = get_chunker("recursive", chunk_size=500, chunk_overlap=200)
+        print(chunker)
 
     if embedder is None:
         embedder = get_embedder()

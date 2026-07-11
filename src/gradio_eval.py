@@ -174,6 +174,11 @@ def run_full_eval(progress=gr.Progress()):
         progress(prog * 0.5, desc=f"Retrieval eval {i + 1}/{n}")
 
     retrieval_df = pd.DataFrame(retrieval_rows)
+    # "unanswerable" tests have no keywords by design (they test the refusal
+    # path, not retrieval), so they always score 0 on mrr/ndcg/coverage.
+    # Excluded from headline retrieval averages so they don't silently drag
+    # those numbers down - they still show up in the by-category chart below.
+    scoreable_retrieval_df = retrieval_df[retrieval_df["category"] != "unanswerable"]
 
     answer_rows = []
     for i, (test, result, prog) in enumerate(evaluate_all_answers(TESTS)):
@@ -195,15 +200,15 @@ def run_full_eval(progress=gr.Progress()):
         go.Bar(
             x=["MRR", "nDCG", "Coverage (÷100)"],
             y=[
-                retrieval_df.mrr.mean(),
-                retrieval_df.ndcg.mean(),
-                retrieval_df["coverage_%"].mean() / 100,
+                scoreable_retrieval_df.mrr.mean(),
+                scoreable_retrieval_df.ndcg.mean(),
+                scoreable_retrieval_df["coverage_%"].mean() / 100,
             ],
             marker_color="#6366f1",
         )
     )
     summary_fig.update_layout(
-        title="Average Retrieval Metrics",
+        title=f"Average Retrieval Metrics (n={len(scoreable_retrieval_df)}, excludes 'unanswerable')",
         template="plotly_white",
         height=350,
         yaxis=dict(range=[0, 1]),
@@ -271,17 +276,33 @@ def save_full_eval(retrieval_df, answer_df, note):
     detail_path = os.path.join(RESULTS_DIR, f"{run_id}.csv")
     merged.to_csv(detail_path, index=False)
 
+    # "unanswerable" tests have no keywords by design and always score 0 on
+    # retrieval metrics - exclude them from avg_mrr/avg_ndcg/avg_coverage_%
+    # so this row stays comparable to older runs_log.csv entries that didn't
+    # include this category at all.
+    scoreable_retrieval_df = retrieval_df[retrieval_df["category"] != "unanswerable"]
+    unanswerable_answer_df = answer_df[answer_df["category"] == "unanswerable"]
+
     summary_row = {
         "timestamp": timestamp,
         **meta,
         "note": note,
-        "avg_mrr": round(retrieval_df["mrr"].mean(), 4),
-        "avg_ndcg": round(retrieval_df["ndcg"].mean(), 4),
-        "avg_coverage_%": round(retrieval_df["coverage_%"].mean(), 2),
+        "avg_mrr": round(scoreable_retrieval_df["mrr"].mean(), 4),
+        "avg_ndcg": round(scoreable_retrieval_df["ndcg"].mean(), 4),
+        "avg_coverage_%": round(scoreable_retrieval_df["coverage_%"].mean(), 2),
         "avg_accuracy": round(answer_df["accuracy"].mean(), 3),
         "avg_completeness": round(answer_df["completeness"].mean(), 3),
         "avg_relevance": round(answer_df["relevance"].mean(), 3),
+        # Refusal-correctness signal: accuracy on "unanswerable" tests only.
+        # Low here means the model is hallucinating instead of declining.
+        # NaN (blank in the CSV) if this run's test set has no such tests.
+        "avg_unanswerable_accuracy": (
+            round(unanswerable_answer_df["accuracy"].mean(), 3)
+            if not unanswerable_answer_df.empty
+            else None
+        ),
         "n_tests": len(retrieval_df),
+        "n_retrieval_scoreable": len(scoreable_retrieval_df),
         "detail_file": f"{run_id}.csv",
     }
     log_row_df = pd.DataFrame([summary_row])
@@ -296,7 +317,18 @@ def save_full_eval(retrieval_df, answer_df, note):
     for attempt in range(5):
         try:
             if os.path.exists(RUNS_LOG_PATH):
-                log_row_df.to_csv(RUNS_LOG_PATH, mode="a", header=False, index=False)
+                # This run may have new columns (e.g. avg_unanswerable_accuracy,
+                # n_retrieval_scoreable) that older log rows don't have.
+                # Appending with header=False writes values positionally, so a
+                # column mismatch would silently corrupt the file - instead,
+                # union the schemas: pad missing columns on both sides with
+                # blanks, keep old rows first, then rewrite the whole file
+                # with a consistent header.
+                existing_df = pd.read_csv(RUNS_LOG_PATH)
+                combined_df = pd.concat(
+                    [existing_df, log_row_df], ignore_index=True, sort=False
+                )
+                combined_df.to_csv(RUNS_LOG_PATH, index=False)
             else:
                 log_row_df.to_csv(RUNS_LOG_PATH, index=False)
             log_write_error = None

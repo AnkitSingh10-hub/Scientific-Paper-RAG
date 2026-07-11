@@ -1,6 +1,7 @@
 import sys
 import math
 import re
+from collections import defaultdict
 from pydantic import BaseModel, Field
 
 from test import TestQuestion, load_tests
@@ -117,6 +118,11 @@ def evaluate_retrieval(test: TestQuestion, k: int = 10) -> RetrievalEval:
 
     Returns:
         RetrievalEval object with MRR, nDCG, and keyword coverage metrics
+
+    NOTE: For "unanswerable" category tests (no keywords by design), this
+    always returns mrr=0.0, ndcg=0.0, keyword_coverage=0.0. That's expected,
+    not a retrieval failure - see summarize_retrieval() and main() for how
+    these are excluded from the headline retrieval averages.
     """
     results = retrieve(test.question, k=k)
     retrieved_docs = results["documents"][0]
@@ -207,6 +213,78 @@ def evaluate_all_answers(tests: list[TestQuestion] = None):
         yield test, result, progress
 
 
+def _avg(results: list, attr: str) -> float:
+    values = [getattr(r, attr) for r in results]
+    return sum(values) / len(values) if values else 0.0
+
+
+def summarize_retrieval(results: list[tuple[TestQuestion, RetrievalEval]]) -> dict:
+    """Aggregate retrieval results, split by category.
+
+    "unanswerable" tests have no keywords by design and always score 0 on
+    retrieval metrics (see evaluate_retrieval docstring) - so they're
+    reported per-category but excluded from the "overall" scoreable average
+    to avoid silently deflating your headline MRR/nDCG/coverage numbers.
+    """
+    by_category = defaultdict(list)
+    for test, result in results:
+        by_category[test.category].append(result)
+
+    per_category = {
+        category: {
+            "n": len(res_list),
+            "mrr": _avg(res_list, "mrr"),
+            "ndcg": _avg(res_list, "ndcg"),
+            "coverage": _avg(res_list, "keyword_coverage"),
+        }
+        for category, res_list in by_category.items()
+    }
+
+    scoreable = [result for test, result in results if test.category != "unanswerable"]
+    overall = {
+        "n": len(scoreable),
+        "mrr": _avg(scoreable, "mrr"),
+        "ndcg": _avg(scoreable, "ndcg"),
+        "coverage": _avg(scoreable, "keyword_coverage"),
+    }
+
+    return {"overall": overall, "per_category": per_category}
+
+
+def summarize_answers(results: list[tuple[TestQuestion, AnswerEval]]) -> dict:
+    """Aggregate answer-quality results, split by category.
+
+    Unlike retrieval, LLM-as-judge answer eval is meaningful for
+    "unanswerable" tests too (a correct refusal should score well against
+    the reference "I don't have enough information..." answer), so the
+    overall average includes every test. The per-category breakdown lets
+    you check refusal accuracy specifically instead of it blending in.
+    """
+    by_category = defaultdict(list)
+    for test, result in results:
+        by_category[test.category].append(result)
+
+    per_category = {
+        category: {
+            "n": len(res_list),
+            "accuracy": _avg(res_list, "accuracy"),
+            "completeness": _avg(res_list, "completeness"),
+            "relevance": _avg(res_list, "relevance"),
+        }
+        for category, res_list in by_category.items()
+    }
+
+    all_results = [result for _test, result in results]
+    overall = {
+        "n": len(all_results),
+        "accuracy": _avg(all_results, "accuracy"),
+        "completeness": _avg(all_results, "completeness"),
+        "relevance": _avg(all_results, "relevance"),
+    }
+
+    return {"overall": overall, "per_category": per_category}
+
+
 def run_cli_evaluation(test_number: int):
     """Run both evaluations for a single test row and print a report."""
     tests = load_tests()
@@ -224,6 +302,13 @@ def run_cli_evaluation(test_number: int):
     print(f"Keywords: {test.keywords}")
     print(f"Category: {test.category}")
     print(f"Reference Answer: {test.reference_answer}")
+    if test.category == "unanswerable":
+        print(
+            "\nNOTE: this is an 'unanswerable' test (no keywords by design)."
+            " Expect retrieval MRR/nDCG/coverage to be ~0 below - that's"
+            " expected. What matters here is whether the generated answer"
+            " correctly declines instead of hallucinating."
+        )
 
     print(f"\n{'=' * 80}")
     print("Retrieval Evaluation")
@@ -266,27 +351,63 @@ def main():
 
     # No row number given -> run everything and print summary averages
     tests = load_tests()
-
-    print(f"Running retrieval evaluation over {len(tests)} tests...")
-    mrr_total = ndcg_total = coverage_total = 0.0
-    for test, result, progress in evaluate_all_retrieval(tests):
-        mrr_total += result.mrr
-        ndcg_total += result.ndcg
-        coverage_total += result.keyword_coverage
     n = len(tests)
-    print(f"  Avg MRR: {mrr_total / n:.4f}")
-    print(f"  Avg nDCG: {ndcg_total / n:.4f}")
-    print(f"  Avg Keyword Coverage: {coverage_total / n:.1f}%")
 
-    print(f"\nRunning answer evaluation over {len(tests)} tests...")
-    accuracy_total = completeness_total = relevance_total = 0.0
-    for test, result, progress in evaluate_all_answers(tests):
-        accuracy_total += result.accuracy
-        completeness_total += result.completeness
-        relevance_total += result.relevance
-    print(f"  Avg Accuracy: {accuracy_total / n:.2f}/5")
-    print(f"  Avg Completeness: {completeness_total / n:.2f}/5")
-    print(f"  Avg Relevance: {relevance_total / n:.2f}/5")
+    print(f"Running retrieval evaluation over {n} tests...")
+    retrieval_results = [
+        (test, result) for test, result, _progress in evaluate_all_retrieval(tests)
+    ]
+    retrieval_summary = summarize_retrieval(retrieval_results)
+
+    overall = retrieval_summary["overall"]
+    print(f"\n  Overall (excludes 'unanswerable' - see note below):")
+    print(f"    Avg MRR: {overall['mrr']:.4f}  (n={overall['n']})")
+    print(f"    Avg nDCG: {overall['ndcg']:.4f}")
+    print(f"    Avg Keyword Coverage: {overall['coverage']:.1f}%")
+
+    print(f"\n  By category:")
+    for category, stats in sorted(retrieval_summary["per_category"].items()):
+        print(
+            f"    {category:15s} n={stats['n']:>3}  "
+            f"MRR={stats['mrr']:.4f}  nDCG={stats['ndcg']:.4f}  "
+            f"Coverage={stats['coverage']:.1f}%"
+        )
+    if "unanswerable" in retrieval_summary["per_category"]:
+        print(
+            "\n  Note: 'unanswerable' tests have no keywords by design, so "
+            "they always score 0 on retrieval metrics. That's expected -"
+            " they test the refusal path (see answer eval below), not"
+            " retrieval, and are excluded from the 'Overall' average above."
+        )
+
+    print(f"\nRunning answer evaluation over {n} tests...")
+    answer_results = [
+        (test, result) for test, result, _progress in evaluate_all_answers(tests)
+    ]
+    answer_summary = summarize_answers(answer_results)
+
+    overall = answer_summary["overall"]
+    print(f"\n  Overall (all {overall['n']} tests):")
+    print(f"    Avg Accuracy: {overall['accuracy']:.2f}/5")
+    print(f"    Avg Completeness: {overall['completeness']:.2f}/5")
+    print(f"    Avg Relevance: {overall['relevance']:.2f}/5")
+
+    print(f"\n  By category:")
+    for category, stats in sorted(answer_summary["per_category"].items()):
+        print(
+            f"    {category:15s} n={stats['n']:>3}  "
+            f"Accuracy={stats['accuracy']:.2f}/5  "
+            f"Completeness={stats['completeness']:.2f}/5  "
+            f"Relevance={stats['relevance']:.2f}/5"
+        )
+    if "unanswerable" in answer_summary["per_category"]:
+        unanswerable_acc = answer_summary["per_category"]["unanswerable"]["accuracy"]
+        print(
+            f"\n  Note: 'unanswerable' Accuracy ({unanswerable_acc:.2f}/5) is"
+            " your refusal-correctness signal - low scores here mean the"
+            " model is hallucinating answers instead of saying it doesn't"
+            " have enough information."
+        )
 
 
 if __name__ == "__main__":

@@ -113,7 +113,7 @@ def make_character_chunker(chunk_size=500, chunk_overlap=100, separator="\n\n"):
 
 
 def make_recursive_character_chunker(
-    chunk_size=500, chunk_overlap=250, separators=None
+    chunk_size=500, chunk_overlap=100, separators=None
 ):
     """Wraps LangChain's RecursiveCharacterTextSplitter.
 

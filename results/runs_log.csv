@@ -63,3 +63,4 @@ timestamp,embedding_model,llm_model,chroma_collection,note,avg_mrr,avg_ndcg,avg_
             chunk_size=500,
             chunk_overlap=150,
         )",0.7228,0.7384,90.94,4.906,4.562,4.344,32,2026-07-11_17-41-12_e5-large-v2.csv
+2026-07-11_19-50-58,e5-large-v2,Mistral-Large-3,research_papers,"""recursive"", chunk_size=500, chunk_overlap=200",0.725,0.7485,91.2,4.906,4.562,4.438,32,2026-07-11_19-50-58_e5-large-v2.csv

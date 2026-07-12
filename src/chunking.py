@@ -6,8 +6,10 @@ from langchain_text_splitters import (
     CharacterTextSplitter as _LCCharacterTextSplitter,
     RecursiveCharacterTextSplitter as _LCRecursiveCharacterTextSplitter,
     TokenTextSplitter as _LCTokenTextSplitter,
+    MarkdownHeaderTextSplitter,
 )
-
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 # Every chunker factory below returns one of these. `chunk` is a plain
 # function you call directly, `name` is just a string for logging.
@@ -153,6 +155,90 @@ def make_token_chunker(chunk_size=300, chunk_overlap=50, encoding_name="cl100k_b
     return Chunker(chunk=chunk, name="TokenChunker")
 
 
+def make_markdown_semantic_chunker(
+    embedder,
+    chunk_size=800,
+    chunk_overlap=100,
+    similarity_threshold=0.85,
+):
+    """
+    1. Split by markdown headers.
+    2. Recursively split oversized sections.
+    3. Merge neighboring chunks if embeddings are highly similar.
+    """
+
+    headers = [
+        ("#", "h1"),
+        ("##", "h2"),
+        ("###", "h3"),
+    ]
+
+    md_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers)
+
+    recursive_splitter = _LCRecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+
+    def chunk(text):
+
+        docs = md_splitter.split_text(text)
+
+        chunks = []
+
+        for doc in docs:
+            pieces = recursive_splitter.split_text(doc.page_content)
+
+            for piece in pieces:
+                header = ""
+
+                if doc.metadata.get("h1"):
+                    header += f"# {doc.metadata['h1']}\n"
+
+                if doc.metadata.get("h2"):
+                    header += f"## {doc.metadata['h2']}\n"
+
+                if doc.metadata.get("h3"):
+                    header += f"### {doc.metadata['h3']}\n"
+
+                chunks.append(header + "\n" + piece)
+
+        if len(chunks) <= 1:
+            return chunks
+
+        embeddings = np.array(embedder.embed(chunks))
+
+        merged = []
+        current_text = chunks[0]
+        current_emb = embeddings[0]
+
+        for i in range(1, len(chunks)):
+            sim = cosine_similarity(
+                current_emb.reshape(1, -1),
+                embeddings[i].reshape(1, -1),
+            )[0][0]
+
+            if sim >= similarity_threshold:
+                current_text += "\n\n" + chunks[i]
+
+                current_emb = (current_emb + embeddings[i]) / 2
+
+            else:
+                merged.append(current_text)
+                current_text = chunks[i]
+                current_emb = embeddings[i]
+
+        merged.append(current_text)
+
+        return merged
+
+    return Chunker(
+        chunk=chunk,
+        name="MarkdownSemanticChunker",
+    )
+
+
 # ---------------------------------------------------------------------------
 # Registry — lets you pick a chunker by string name (e.g. from .env)
 # instead of importing a specific make_*_chunker function.
@@ -164,6 +250,7 @@ CHUNKER_REGISTRY = {
     "character": make_character_chunker,
     "recursive": make_recursive_character_chunker,
     "token": make_token_chunker,
+    "markdown_semantic": make_markdown_semantic_chunker,
 }
 
 
@@ -177,8 +264,9 @@ def get_chunker(name=None, **kwargs):
         chunker = get_chunker()                 # uses .env / default
         chunker = get_chunker("fixed", chunk_size=500, overlap=100)
     """
-    name = name or os.getenv("CHUNKER", "recursive")
-
+    name = name or os.getenv("CHUNKER", "markdown_semantic")
+    print(name)
+    print("This is the chunker used")
     try:
         factory = CHUNKER_REGISTRY[name]
     except KeyError:

@@ -9,7 +9,7 @@ AZURE_ENDPOINT = (
     "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
 )
 
-DEFAULT_MODEL = "Mistral-Large-3"
+DEFAULT_MODEL = "DeepSeek-V4-Pro"
 
 client = OpenAI(
     base_url=AZURE_ENDPOINT,

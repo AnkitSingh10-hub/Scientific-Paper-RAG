@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 MODEL = "gpt-4.1-nano"
 
 DB_NAME = str(Path(__file__).parent.parent / "vector_database")
-KNOWLEDGE_BASE = str(Path(__file__).parent.parent / "knowledge-base")
+KNOWLEDGE_BASE = str(Path(__file__).parent.parent / "knowledge_base")
 
 # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
@@ -52,11 +52,11 @@ def create_embeddings(chunks):
             persist_directory=DB_NAME, embedding_function=embeddings
         ).delete_collection()
 
-    vectorstore = Chroma.from_documents(
+    vector_database = Chroma.from_documents(
         documents=chunks, embedding=embeddings, persist_directory=DB_NAME
     )
 
-    collection = vectorstore._collection
+    collection = vector_database._collection
     count = collection.count()
 
     sample_embedding = collection.get(limit=1, include=["embeddings"])["embeddings"][0]
@@ -64,7 +64,7 @@ def create_embeddings(chunks):
     print(
         f"There are {count:,} vectors with {dimensions:,} dimensions in the vector store"
     )
-    return vectorstore
+    return vector_database
 
 
 if __name__ == "__main__":

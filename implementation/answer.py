@@ -37,7 +37,7 @@ vector_database = Chroma(
     embedding_function=embeddings,
 )
 
-retriever = vector_database.as_retriever(search_kwargs={"k": 5})
+retriever = vector_database.as_retriever(search_kwargs={"k": 10})
 
 llm = ChatOpenAI(
     base_url=AZURE_ENDPOINT,

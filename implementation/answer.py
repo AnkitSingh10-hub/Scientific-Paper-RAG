@@ -181,6 +181,7 @@ llm = ChatOpenAI(
     default_query={"api-version": "preview"},
 )
 
+
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", SYSTEM_PROMPT),

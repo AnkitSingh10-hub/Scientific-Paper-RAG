@@ -1,17 +1,26 @@
 import sys
 import math
 from pydantic import BaseModel, Field
-from litellm import completion
 from dotenv import load_dotenv
-
 from evaluation.test import TestQuestion, load_tests
 from implementation.answer import answer_question, fetch_context
-
+from openai import OpenAI
+import os
 
 load_dotenv(override=True)
 
-MODEL = "gpt-4.1-nano"
-db_name = "vector_db"
+AZURE_ENDPOINT = (
+    "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
+)
+
+MODEL = "Mistral-Large-3"
+db_name = "vector_database"
+
+open_ai = OpenAI(
+    base_url=AZURE_ENDPOINT,
+    api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
+    default_query={"api-version": "preview"},
+)
 
 
 class RetrievalEval(BaseModel):
@@ -159,14 +168,13 @@ Provide detailed feedback and scores from 1 (very poor) to 5 (ideal) for each di
         },
     ]
 
-    # Call LLM judge with structured outputs (async)
-    judge_response = completion(
-        model=MODEL, messages=judge_messages, response_format=AnswerEval
+    judge_response = open_ai.beta.chat.completions.parse(
+        model=MODEL,
+        messages=judge_messages,
+        response_format=AnswerEval,
     )
 
-    answer_eval = AnswerEval.model_validate_json(
-        judge_response.choices[0].message.content
-    )
+    answer_eval = judge_response.choices[0].message.parsed
 
     return answer_eval, generated_answer, retrieved_docs
 

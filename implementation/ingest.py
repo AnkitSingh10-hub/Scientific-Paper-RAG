@@ -95,7 +95,13 @@ import os
 import glob
 from pathlib import Path
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_text_splitters import (
+    RecursiveCharacterTextSplitter,
+    MarkdownHeaderTextSplitter,
+)
+
+from langchain_core.documents import Document
+import re
 from langchain_chroma import Chroma
 from langchain_core.embeddings import Embeddings
 from azure.ai.inference import EmbeddingsClient
@@ -169,9 +175,149 @@ def fetch_documents():
     return documents
 
 
+markdown_splitter = MarkdownHeaderTextSplitter(
+    headers_to_split_on=[
+        ("#", "h1"),
+        ("##", "h2"),
+        ("###", "h3"),
+    ]
+)
+
+recursive_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=700,
+    chunk_overlap=100,
+)
+
+
 def create_chunks(documents):
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=200)
-    return text_splitter.split_documents(documents)
+    """
+    Chunk strategy
+
+    Employees:
+        One employee file = one chunk
+
+    Contracts:
+        Markdown heading chunks
+
+    Products:
+        Markdown heading chunks
+
+    Company:
+        Markdown heading chunks
+
+    Large sections:
+        Recursive split
+    """
+
+    chunks = []
+
+    for doc in documents:
+        doc_type = doc.metadata["doc_type"].lower()
+
+        # ==================================================
+        # EMPLOYEES
+        # ==================================================
+
+        if doc_type == "employees":
+            titles = re.findall(
+                r"^#\s+(.+)$",
+                doc.page_content,
+                re.MULTILINE,
+            )
+
+            employee = (
+                titles[1] if len(titles) > 1 else titles[0] if titles else "Unknown"
+            )
+
+            metadata = dict(doc.metadata)
+            metadata["employee"] = employee
+
+            chunks.append(
+                Document(
+                    page_content=doc.page_content,
+                    metadata=metadata,
+                )
+            )
+
+            continue
+
+        # ==================================================
+        # CONTRACTS / PRODUCTS / COMPANY
+        # ==================================================
+
+        sections = markdown_splitter.split_text(doc.page_content)
+
+        for section in sections:
+            metadata = dict(doc.metadata)
+            metadata.update(section.metadata)
+
+            # --------------------------------------------
+            # Product metadata
+            # --------------------------------------------
+
+            if doc_type == "products":
+                titles = re.findall(
+                    r"^#\s+(.+)$",
+                    doc.page_content,
+                    re.MULTILINE,
+                )
+
+                if len(titles) > 1:
+                    metadata["product"] = titles[1]
+
+            # --------------------------------------------
+            # Contract metadata
+            # --------------------------------------------
+
+            elif doc_type == "contracts":
+                match = re.search(
+                    r"Contract with (.+?) for",
+                    doc.page_content,
+                    re.IGNORECASE,
+                )
+
+                if match:
+                    metadata["customer"] = match.group(1)
+
+            text = section.page_content.strip()
+
+            # --------------------------------------------
+            # Small section
+            # --------------------------------------------
+
+            if len(text.split()) <= 250:
+                chunks.append(
+                    Document(
+                        page_content=text,
+                        metadata=metadata,
+                    )
+                )
+
+            # --------------------------------------------
+            # Large section
+            # --------------------------------------------
+
+            else:
+                heading = (
+                    metadata.get("h3") or metadata.get("h2") or metadata.get("h1") or ""
+                )
+
+                sub_docs = recursive_splitter.create_documents(
+                    [text],
+                    metadatas=[metadata],
+                )
+
+                for sub_doc in sub_docs:
+                    chunks.append(
+                        Document(
+                            page_content=f"{heading}\n\n{sub_doc.page_content}",
+                            metadata=sub_doc.metadata,
+                        )
+                    )
+
+    print(f"Created {len(chunks)} chunks")
+
+    return chunks
 
 
 def create_embeddings(chunks):

@@ -184,39 +184,42 @@ markdown_splitter = MarkdownHeaderTextSplitter(
 )
 
 recursive_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=700,
+    chunk_size=500,
     chunk_overlap=100,
 )
 
 
 def create_chunks(documents):
     """
-    Chunk strategy
+    Chunking strategy
 
-    Employees:
-        One employee file = one chunk
+    Employees
+        • Entire employee profile = one chunk
 
-    Contracts:
-        Markdown heading chunks
+    Contracts
+        • Split by markdown headings
+        • Recursively split oversized sections
 
-    Products:
-        Markdown heading chunks
+    Products
+        • Split by markdown headings
+        • Recursively split oversized sections
 
-    Company:
-        Markdown heading chunks
-
-    Large sections:
-        Recursive split
+    Company
+        • about.md -> one chunk
+        • culture.md -> heading chunks
+        • overview.md -> heading chunks
+        • careers.md -> heading chunks
     """
 
     chunks = []
 
     for doc in documents:
         doc_type = doc.metadata["doc_type"].lower()
+        filename = Path(doc.metadata["source"]).stem.lower()
 
-        # ==================================================
+        # ======================================================
         # EMPLOYEES
-        # ==================================================
+        # ======================================================
 
         if doc_type == "employees":
             titles = re.findall(
@@ -241,9 +244,26 @@ def create_chunks(documents):
 
             continue
 
-        # ==================================================
+        # ======================================================
+        # COMPANY - about.md
+        # ======================================================
+
+        if doc_type == "company" and filename == "about":
+            metadata = dict(doc.metadata)
+            metadata["document"] = filename
+
+            chunks.append(
+                Document(
+                    page_content=doc.page_content,
+                    metadata=metadata,
+                )
+            )
+
+            continue
+
+        # ======================================================
         # CONTRACTS / PRODUCTS / COMPANY
-        # ==================================================
+        # ======================================================
 
         sections = markdown_splitter.split_text(doc.page_content)
 
@@ -251,9 +271,14 @@ def create_chunks(documents):
             metadata = dict(doc.metadata)
             metadata.update(section.metadata)
 
-            # --------------------------------------------
+            # Track company document name
+
+            if doc_type == "company":
+                metadata["document"] = filename
+
+            # --------------------------------------------------
             # Product metadata
-            # --------------------------------------------
+            # --------------------------------------------------
 
             if doc_type == "products":
                 titles = re.findall(
@@ -265,9 +290,9 @@ def create_chunks(documents):
                 if len(titles) > 1:
                     metadata["product"] = titles[1]
 
-            # --------------------------------------------
+            # --------------------------------------------------
             # Contract metadata
-            # --------------------------------------------
+            # --------------------------------------------------
 
             elif doc_type == "contracts":
                 match = re.search(
@@ -281,27 +306,29 @@ def create_chunks(documents):
 
             text = section.page_content.strip()
 
-            # --------------------------------------------
+            # Preserve heading for retrieval
+
+            heading = (
+                metadata.get("h3") or metadata.get("h2") or metadata.get("h1") or ""
+            )
+
+            # --------------------------------------------------
             # Small section
-            # --------------------------------------------
+            # --------------------------------------------------
 
             if len(text.split()) <= 250:
                 chunks.append(
                     Document(
-                        page_content=text,
+                        page_content=f"{heading}\n\n{text}",
                         metadata=metadata,
                     )
                 )
 
-            # --------------------------------------------
+            # --------------------------------------------------
             # Large section
-            # --------------------------------------------
+            # --------------------------------------------------
 
             else:
-                heading = (
-                    metadata.get("h3") or metadata.get("h2") or metadata.get("h1") or ""
-                )
-
                 sub_docs = recursive_splitter.create_documents(
                     [text],
                     metadatas=[metadata],

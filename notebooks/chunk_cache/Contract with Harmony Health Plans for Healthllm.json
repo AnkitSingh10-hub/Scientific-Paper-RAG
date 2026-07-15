@@ -1,0 +1,74 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Effective Date",
+      "summary": "The contract between Insurellm (Healthllm) and Harmony Health Plans is effective from January 25, 2025, with a 24-month term ending January 24, 2027. It outlines subscription details, member coverage, and payment terms.",
+      "original_text": "# Contract with Harmony Health Plans for Healthllm\n\n---\n\n## Terms\n\n1. **Agreement Effective Date**: This contract is effective as of January 25, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on January 24, 2027.\n3. **Subscription Type**: Harmony Health Plans agrees to subscribe to the **Professional Tier** of Healthllm, at a cost of $15,000/month, totaling $360,000 for the duration of this contract.\n4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Harmony currently covers 38,000 members across 3 states."
+    },
+    {
+      "headline": "Payment Terms and User Licenses",
+      "summary": "The contract specifies payment terms, including due dates, late penalties, and user license details. Payments are due on the 5th of each month via wire transfer, with a 2% late penalty. The contract includes 60 named user licenses, with additional licenses available at $150/month per user.",
+      "original_text": "4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Harmony currently covers 38,000 members across 3 states.\n5. **Payment Terms**: Payments are due on the 5th of each month via wire transfer. Late payments incur a 2% monthly penalty.\n6. **User Licenses**: Contract includes 60 named user licenses. Additional licenses available at $150/month per user.\n7. **Termination Clause**: Either party may terminate with 90 days' written notice. Early termination after month 12 has no penalty; before month 12 requires 25% of remaining contract value."
+    },
+    {
+      "headline": "Termination Clause and Renewal Terms",
+      "summary": "The termination clause allows either party to terminate with 90 days' notice. Early termination after 12 months has no penalty, but before 12 months requires 25% of the remaining contract value. The contract includes automatic renewal and price protection terms.",
+      "original_text": "7. **Termination Clause**: Either party may terminate with 90 days' written notice. Early termination after month 12 has no penalty; before month 12 requires 25% of remaining contract value.\n\n---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 24-month term unless either party provides written notice of non-renewal at least 90 days before expiration.\n2. **Price Protection**: Pricing increases capped at 6% annually for first two renewal periods."
+    },
+    {
+      "headline": "Renewal Volume Discounts and Features Introduction",
+      "summary": "The contract includes volume discounts for member counts exceeding 75,000 at renewal, granting a 10% discount on incremental costs. It also introduces the features available under the Professional Tier subscription.",
+      "original_text": "2. **Price Protection**: Pricing increases capped at 6% annually for first two renewal periods.\n3. **Volume Discounts**: If member count exceeds 75,000 at renewal, Harmony receives 10% discount on incremental cost.\n\n---\n\n## Features\n\n1. **Access to Professional Tier Features**: Harmony Health Plans will have comprehensive access to:\n   - Intelligent Plan Design with AI-powered optimization\n   - Real-Time Eligibility Verification with provider network integration\n   - AI-Driven Claims Adjudication with automated processing"
+    },
+    {
+      "headline": "Professional Tier Features Overview",
+      "summary": "The Professional Tier includes a range of features such as Predictive Healthcare Analytics, Advanced Medication Management, and Enhanced Analytics with predictive modeling. These are designed to support Harmony Health Plans' operations.",
+      "original_text": "1. **Access to Professional Tier Features**: Harmony Health Plans will have comprehensive access to:\n   - Intelligent Plan Design with AI-powered optimization\n   - Real-Time Eligibility Verification with provider network integration\n   - AI-Driven Claims Adjudication with automated processing\n   - **Predictive Healthcare Analytics** for population health management\n   - Provider Network Management with contract optimization\n   - Member Engagement Platform with mobile-first design\n   - **Advanced Medication Management** with PBM integration\n   - Regulatory Compliance Engine with ACA and state mandate tracking\n   - **Enhanced Analytics** with predictive modeling"
+    },
+    {
+      "headline": "Predictive Healthcare Analytics Details",
+      "summary": "Predictive Healthcare Analytics includes high-risk member identification, disease progression modeling, hospital readmission prediction, and more. It supports population health management and quality measures like HEDIS.",
+      "original_text": "2. **Predictive Healthcare Analytics:**\n   - High-risk member identification for care management\n   - Disease progression modeling (diabetes, hypertension, CHF)\n   - Hospital readmission prediction\n   - Emergency department overutilization alerts\n   - Care gap identification for quality measures (HEDIS)\n   - Preventive care intervention recommendations\n   - Cost trend forecasting and budget planning"
+    },
+    {
+      "headline": "Advanced Medication Management Features",
+      "summary": "Advanced Medication Management offers formulary management, prior authorization automation, step therapy enforcement, and medication adherence scoring. It also includes drug interaction checking and generic substitution recommendations.",
+      "original_text": "3. **Advanced Medication Management:**\n   - Complete formulary management and tier optimization\n   - Prior authorization automation with clinical criteria\n   - Step therapy enforcement\n   - Medication adherence scoring and intervention triggers\n   - Drug interaction checking with severity classification\n   - Generic substitution recommendations with savings calculations\n   - Specialty pharmacy management\n   - Medication therapy management (MTM) program support"
+    },
+    {
+      "headline": "Value-Based Care and Care Management Tools",
+      "summary": "The contract includes Value-Based Care Tools for ACO performance tracking, shared savings calculation, and quality measure monitoring. The Care Management Platform supports case management workflows, disease management, and care coordinator tools.",
+      "original_text": "4. **Value-Based Care Tools:**\n   - ACO (Accountable Care Organization) performance tracking\n   - Shared savings calculation\n   - Quality measure monitoring (HEDIS, STAR ratings)\n   - Provider pay-for-performance scorecards\n   - Risk adjustment and HCC coding support\n\n5. **Care Management Platform:**\n   - Case management workflows for high-cost members\n   - Disease management program support\n   - Care coordinator tools and dashboards\n   - Member outreach campaign management\n   - Social determinants of health (SDOH) screening"
+    },
+    {
+      "headline": "Technical Support and Training Overview",
+      "summary": "Harmony Health Plans will receive priority technical support, including 24/7 availability for critical issues, a dedicated support team, and a named technical support engineer. The training program includes a 6-week implementation with a dedicated project manager.",
+      "original_text": "---\n\n## Support\n\n1. **Technical Support**: Harmony Health Plans will receive priority support:\n   - Dedicated support team available 24/7 for critical issues\n   - Standard support Monday-Saturday 6 AM - 9 PM EST\n   - Response time: 4 hours for critical, 8 hours for high priority, 24 hours for standard\n   - Named technical support engineer familiar with Harmony's environment\n   - Private support portal with ticket tracking\n\n2. **Training**: Comprehensive training program:\n   - 6-week implementation with dedicated project manager"
+    },
+    {
+      "headline": "Training Program Details",
+      "summary": "The training program includes role-specific tracks for claims processors, case managers, provider relations, IT, and executives. It also offers quarterly advanced training webinars, annual refresher certification, and unlimited access to an online learning platform.",
+      "original_text": "2. **Training**: Comprehensive training program:\n   - 6-week implementation with dedicated project manager\n   - Training for up to 40 staff members (60 hours total training)\n   - Role-specific tracks: claims processors, case managers, provider relations, IT, executives\n   - Quarterly advanced training webinars\n   - Annual refresher certification program\n   - Unlimited access to online learning platform with 75+ courses\n   - Custom training materials for Harmony's specific workflows"
+    },
+    {
+      "headline": "Updates, Maintenance, and Account Management",
+      "summary": "The contract includes monthly platform updates, bi-weekly security patches, and regulatory updates. Maintenance windows are scheduled for Saturday 10 PM to Sunday 3 AM EST. Account management includes a named Senior Customer Success Manager with bi-weekly check-ins.",
+      "original_text": "3. **Updates and Maintenance**:\n   - Monthly platform updates with new features and enhancements\n   - Bi-weekly security patches and bug fixes\n   - Regulatory updates as healthcare laws change (ACA, state mandates)\n   - Maintenance windows: Saturday 10 PM - Sunday 3 AM EST\n   - 96-hour advance notice for major updates\n   - Staging environment for testing updates before production\n\n4. **Account Management**:\n   - Named Senior Customer Success Manager with bi-weekly check-ins\n   - Quarterly executive business reviews with ROI analysis"
+    },
+    {
+      "headline": "Account Management and Integration Support",
+      "summary": "Account management includes quarterly executive business reviews, annual strategic planning sessions, and direct escalation paths. Integration support covers Harmony's core systems, including HealthRules, Express Scripts PBM, and Salesforce CRM.",
+      "original_text": "4. **Account Management**:\n   - Named Senior Customer Success Manager with bi-weekly check-ins\n   - Quarterly executive business reviews with ROI analysis\n   - Annual strategic planning session with product roadmap preview\n   - Direct escalation path to VP of Customer Success\n   - Industry benchmarking reports comparing Harmony to similar plans\n\n5. **Integration Support**: Comprehensive integration assistance:\n   - Integration with Harmony's core systems:\n     - HealthRules policy administration system\n     - Provider credentialing platform\n     - Express Scripts PBM"
+    },
+    {
+      "headline": "Integration Support and Analytics Reporting",
+      "summary": "Integration support includes a dedicated integration specialist, quarterly health checks, and API monitoring. Analytics and reporting features include custom dashboard development, automated reporting suites, and ad-hoc analytics requests.",
+      "original_text": "5. **Integration Support**: Comprehensive integration assistance:\n   - Integration with Harmony's core systems:\n     - HealthRules policy administration system\n     - Provider credentialing platform\n     - Express Scripts PBM\n     - Availity clearinghouse for claims\n     - Member portal and mobile app\n     - Salesforce CRM\n   - Dedicated integration specialist (30% FTE allocation)\n   - Quarterly integration health checks and optimization\n   - API monitoring and performance tuning\n\n6. **Analytics and Reporting:**\n   - Custom dashboard development (up to 10 dashboards)\n   - Automated reporting suite (daily, weekly, monthly, quarterly)\n   - Ad-hoc analytics requests (up to 15 per month)"
+    },
+    {
+      "headline": "Compliance, Signatures, and Strategic Partnership",
+      "summary": "The contract includes compliance and regulatory support, such as quarterly compliance reviews, annual HIPAA assessments, and ACA reporting assistance. The document concludes with signatures from Sarah Chen (Insurellm) and Dr. Karen Phillips (Harmony Health Plans), establishing a strategic partnership.",
+      "original_text": "7. **Compliance and Regulatory Support:**\n   - Quarterly compliance reviews\n   - Annual HIPAA security risk assessment\n   - ACA reporting assistance (1094/1095 forms, MLR reporting)\n   - State filing support for form and rate approvals\n   - Quality measure calculation support (HEDIS, STAR)\n   - Audit preparation and documentation assistance\n\n---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: January 25, 2025\n\n_________________________________\n**Dr. Karen Phillips**\n**Title**: President & Chief Executive Officer\n**Harmony Health Plans**\n**Date**: January 25, 2025\n\n---\n\n*This contract establishes Harmony Health Plans as a strategic partner leveraging Healthllm's advanced AI and predictive analytics to improve member outcomes while managing costs effectively.*"
+    }
+  ]
+}

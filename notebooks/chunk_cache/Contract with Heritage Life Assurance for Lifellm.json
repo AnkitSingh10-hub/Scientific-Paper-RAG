@@ -1,0 +1,44 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview with Heritage Life Assurance",
+      "summary": "This document outlines the contract between Insurellm, Inc. and Heritage Life Assurance for the Lifellm Growth Tier service, including contract date, number, and parties involved.",
+      "original_text": "# Contract with Heritage Life Assurance for Lifellm\n\n**Contract Date:** February 12, 2025\n**Contract Number:** LF-2025-0045\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and Heritage Life Assurance (\"Client\").\n\n2. **Scope of Services**: Provider agrees to deliver Lifellm Growth Tier, including AI-powered underwriting, predictive risk modeling, digital health integration, and policy management capabilities."
+    },
+    {
+      "headline": "Payment Terms and Policy Volume",
+      "summary": "Details the payment terms, total contract value, and policy volume supported under the Growth Tier for Heritage Life Assurance.",
+      "original_text": "2. **Scope of Services**: Provider agrees to deliver Lifellm Growth Tier, including AI-powered underwriting, predictive risk modeling, digital health integration, and policy management capabilities.\n\n3. **Payment Terms**: Client shall pay $7,500 per month for 18 months. Total contract value: $135,000. Payments due on the 1st via ACH.\n\n4. **Policy Volume**: Growth Tier supports up to 10,000 active policies. Heritage currently administers 6,200 policies.\n\n5. **Contract Duration**: 18 months commencing February 12, 2025 and ending August 11, 2026."
+    },
+    {
+      "headline": "Contract Duration and Renewal Terms",
+      "summary": "Specifies the contract duration and automatic renewal terms, including notice period and pricing adjustments for Heritage Life Assurance.",
+      "original_text": "5. **Contract Duration**: 18 months commencing February 12, 2025 and ending August 11, 2026.\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement automatically renews for 12-month terms unless either party provides 45-day written notice of non-renewal.\n\n2. **Renewal Pricing**: Pricing adjustments communicated 75 days prior to renewal, capped at 8% annual increase."
+    },
+    {
+      "headline": "AI-Powered Underwriting and Predictive Risk Modeling Features",
+      "summary": "Describes the AI-powered underwriting and predictive risk modeling features provided to Heritage Life Assurance under the Lifellm Growth Tier.",
+      "original_text": "## Features\n\n1. **AI-Powered Underwriting**: Heritage Life Assurance will benefit from:\n   - Accelerated underwriting with 65% instant decisions\n   - Medical record analysis and risk scoring\n   - Mortality prediction models\n   - Automated decisioning for face amounts up to $750,000\n\n2. **Predictive Risk Modeling**: Advanced analytics considering:\n   - Comprehensive medical histories\n   - Prescription drug databases\n   - Lifestyle and occupation factors\n   - Family history and genetic markers\n   - Predictive health trajectories"
+    },
+    {
+      "headline": "Digital Health Integration and Automated Policy Management",
+      "summary": "Outlines the digital health integration and automated policy management features available to Heritage Life Assurance.",
+      "original_text": "2. **Predictive Risk Modeling**: Advanced analytics considering:\n   - Comprehensive medical histories\n   - Prescription drug databases\n   - Lifestyle and occupation factors\n   - Family history and genetic markers\n   - Predictive health trajectories\n\n3. **Digital Health Integration**:\n   - Wearable device connections (Fitbit, Apple Watch)\n   - Health app integrations\n   - Wellness program platform\n   - Premium discount automation\n   - Activity tracking and rewards\n\n4. **Automated Policy Management**:\n   - Digital policy issuance\n   - Beneficiary updates and management\n   - Premium billing integration\n   - Policy conversion processing\n   - Lapse and reinstatement automation"
+    },
+    {
+      "headline": "Customer Portal and Advanced Reporting Features",
+      "summary": "Details the customer portal and advanced reporting features provided to Heritage Life Assurance as part of the Lifellm Growth Tier.",
+      "original_text": "4. **Automated Policy Management**:\n   - Digital policy issuance\n   - Beneficiary updates and management\n   - Premium billing integration\n   - Policy conversion processing\n   - Lapse and reinstatement automation\n\n5. **Customer Portal**: Policyholder self-service including:\n   - 24/7 policy access\n   - Digital insurance cards\n   - Claims submission\n   - Premium payment processing\n   - Coverage updates\n\n6. **Advanced Reporting**:\n   - Application conversion analytics\n   - Underwriting productivity metrics\n   - Policy persistency reporting\n   - Agent performance dashboards"
+    },
+    {
+      "headline": "Support, Training, and Account Management",
+      "summary": "Describes the technical support, training program, updates, and account management services provided to Heritage Life Assurance.",
+      "original_text": "## Support\n\n1. **Technical Support**: Heritage will receive priority support:\n   - Monday-Friday 7 AM - 7 PM EST\n   - Email, phone, and chat support\n   - 8-hour response time for critical issues\n   - Online knowledge base\n\n2. **Training**: Training program includes:\n   - 3-week implementation\n   - Training for up to 15 staff members (25 hours)\n   - Quarterly webinars on platform updates\n   - Online training library access\n\n3. **Updates**: Monthly platform enhancements and security patches. Maintenance windows: Sunday 1 AM - 5 AM EST.\n\n4. **Account Management**: Named customer success manager with quarterly business reviews."
+    },
+    {
+      "headline": "Contract Signatures and Conclusion",
+      "summary": "Includes the signatures of the representatives from Insurellm, Inc. and Heritage Life Assurance, along with a concluding statement about the contract's purpose.",
+      "original_text": "---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nMichael Torres, Chief Revenue Officer\nDate: February 12, 2025\n\n**Heritage Life Assurance**\nMelissa Zhang, VP of Operations\nDate: February 12, 2025\n\n---\n\nThis contract enables Heritage Life Assurance to leverage Lifellm's AI technology for modernized life insurance underwriting and administration."
+    }
+  ]
+}

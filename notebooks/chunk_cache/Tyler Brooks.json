@@ -1,0 +1,24 @@
+{
+  "chunks": [
+    {
+      "headline": "Tyler Brooks HR Record Overview",
+      "summary": "This chunk introduces Tyler Brooks, a Junior Backend Developer at Insurellm, providing his basic personal and professional details including date of birth, job title, location, and current salary.",
+      "original_text": "# HR Record\n\n# Tyler Brooks\n\n## Summary\n- **Date of Birth:** September 9, 1998\n- **Job Title:** Junior Backend Developer\n- **Location:** Austin, Texas\n- **Current Salary:** $75,000\n\n## Insurellm Career Progression\n- **August 2022 - Present:** Junior Backend Developer"
+    },
+    {
+      "headline": "Tyler Brooks Career Progression and Early Role",
+      "summary": "Details Tyler Brooks' role as a Junior Backend Developer at Insurellm, including his responsibilities, technologies used, and achievements. Also covers his internship period and contributions.",
+      "original_text": "- **August 2022 - Present:** Junior Backend Developer\n  - Develops backend services for Carllm auto insurance portal\n  - Works with Python, Django, and PostgreSQL\n  - Participates in code reviews and learns from senior engineers\n  - Fixed 45+ bugs and implemented 12 minor features\n\n- **June 2021 - July 2022:** Software Engineering Intern\n  - Completed 14-month internship program at Insurellm\n  - Worked on various backend tasks and learned company tech stack\n  - Contributed to internal tools development\n\n## Annual Performance History"
+    },
+    {
+      "headline": "Tyler Brooks Performance and Compensation History",
+      "summary": "Covers Tyler Brooks' annual performance ratings and feedback from 2022 and 2023, as well as his compensation history including base salary and bonuses.",
+      "original_text": "- **2023:** Rating: 3.2/5\n  *Meets basic expectations. Shows potential but needs to improve code quality and take more initiative. Sometimes requires excessive guidance on tasks.*\n\n- **2022:** Rating: 3.5/5\n  *Adequate performance for a junior developer. Good learning attitude but needs to develop stronger problem-solving skills.*\n\n## Compensation History\n- **2023:** Base Salary: $75,000 + Bonus: $2,000\n- **2022:** Base Salary: $72,000 + Bonus: $1,500\n- **2021:** Intern Stipend: $30/hour\n\n## Other HR Notes"
+    },
+    {
+      "headline": "Tyler Brooks Education, Skills, and Development",
+      "summary": "Provides details on Tyler Brooks' educational background, technical skills, areas for development, training, feedback, and career goals at Insurellm.",
+      "original_text": "- **Education:** BS in Computer Science from University of Texas at Austin (graduated 2021)\n- **Skills:** Proficient in Python and SQL. Learning system design and API development best practices.\n- **Development Areas:** Needs to improve debugging skills, code documentation, and independent problem-solving. Working with mentor on technical growth.\n- **Training:** Enrolled in advanced Python course and backend architecture fundamentals program\n- **Feedback:** Eager to learn but sometimes lacks confidence. Needs encouragement to ask questions earlier rather than struggling alone. Shows promise with continued mentorship and experience.\n- **Career Goals:** Aspires to become a mid-level backend engineer within 2 years"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Kevin Zhang HR Record Overview",
+      "summary": "This chunk introduces Kevin Zhang's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Kevin Zhang\n\n## Summary\n- **Date of Birth:** March 27, 1990\n- **Job Title:** Mobile Developer\n- **Location:** San Francisco, California\n- **Current Salary:** $128,000"
+    },
+    {
+      "headline": "Kevin Zhang Career Progression at Insurellm",
+      "summary": "Details Kevin Zhang's career progression at Insurellm, including his role as Mobile Developer since May 2020, key achievements, and prior roles at AppWorks Studio and StartupTech.",
+      "original_text": "## Insurellm Career Progression\n- **May 2020 - Present:** Mobile Developer\n  - Leads iOS development for Marketllm consumer mobile app\n  - Built Android version achieving 4.6 star rating on Play Store\n  - Implemented push notification system increasing user engagement by 42%\n  - Manages mobile release cycles and app store submissions\n\n- **February 2018 - April 2020:** iOS Developer at AppWorks Studio\n  - Developed consumer mobile applications for various clients\n  - Specialized in Swift and iOS frameworks"
+    },
+    {
+      "headline": "Kevin Zhang Early Career and Performance History",
+      "summary": "Covers Kevin Zhang's early career as a Junior Mobile Developer at StartupTech and the beginning of his performance history at Insurellm, including ratings and feedback from 2020 to 2021.",
+      "original_text": "- **July 2015 - January 2018:** Junior Mobile Developer at StartupTech\n  - Built mobile features for social networking app\n  - Learned iOS and Android development fundamentals\n\n## Annual Performance History\n- **2023:** Rating: 4.6/5\n  *Excellent performance. Successfully launched Android app on time and under budget. Strong technical leadership.*\n\n- **2022:** Rating: 4.4/5\n  *Exceeded expectations with major iOS app redesign. Improved app performance and user retention significantly.*\n\n- **2021:** Rating: 4.2/5\n  *Strong performance. Delivered all planned features and maintained high app quality standards.*\n\n- **2020:** Rating: 4.0/5\n  *Good first year at Insurellm. Quick to learn insurance domain and contribute meaningfully to mobile strategy.*"
+    },
+    {
+      "headline": "Kevin Zhang Compensation and Education",
+      "summary": "Provides details on Kevin Zhang's compensation history from 2020 to 2023, as well as his educational background and technical skills.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $128,000 + Bonus: $16,000\n- **2022:** Base Salary: $120,000 + Bonus: $14,000\n- **2021:** Base Salary: $112,000 + Bonus: $12,000\n- **2020:** Base Salary: $105,000 + Bonus: $8,000\n\n## Other HR Notes\n- **Education:** BS in Computer Science from UC Berkeley\n- **Skills:** Expert in Swift, Kotlin, React Native, mobile UI/UX patterns, App Store optimization"
+    },
+    {
+      "headline": "Kevin Zhang Recognition and Feedback",
+      "summary": "Highlights Kevin Zhang's professional recognition, open-source contributions, speaking engagements, and feedback from HR, emphasizing his leadership and technical expertise.",
+      "original_text": "- **Recognition:** Mobile Innovation Award 2023 for Android app launch\n- **Open Source:** Active contributor to mobile development open-source projects\n- **Speaking:** Presented at Mobile DevCon 2023 on cross-platform development strategies\n- **Feedback:** Highly skilled mobile developer with excellent product sense. Takes ownership of mobile platform and drives continuous improvement. Strong mentor to other developers."
+    }
+  ]
+}

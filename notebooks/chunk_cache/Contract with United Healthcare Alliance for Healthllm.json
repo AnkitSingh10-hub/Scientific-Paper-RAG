@@ -1,0 +1,204 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties",
+      "summary": "This chunk introduces the contract between Insurellm, Inc. and United Healthcare Alliance, LLC, including the contract date, number, and the involved parties.",
+      "original_text": "# Contract with United Healthcare Alliance for Healthllm\n\n**Contract Date:** May 15, 2025\n**Contract Number:** HL-2025-E-0156\n**Parties:**\n- Insurellm, Inc.\n- United Healthcare Alliance, LLC\n\n---\n\n## Terms"
+    },
+    {
+      "headline": "Contract Terms: Coverage and Duration",
+      "summary": "This chunk details the coverage provided by Insurellm to United Healthcare Alliance, including platform access, customization, and support, as well as the 48-month duration of the agreement.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide United Healthcare Alliance with enterprise access to the Healthllm platform, including extensive customization, multi-state support, dedicated infrastructure, and premium support services for their nationwide health insurance operations covering 250,000+ members across 12 states.\n\n2. **Duration:** This agreement is effective for a period of 48 months from the contract date, representing Insurellm's most strategic long-term healthcare partnership."
+    },
+    {
+      "headline": "Contract Terms: Payment Structure",
+      "summary": "This chunk outlines the payment terms, including the tiered monthly pricing over the 48-month contract term, totaling $2,784,000.",
+      "original_text": "2. **Duration:** This agreement is effective for a period of 48 months from the contract date, representing Insurellm's most strategic long-term healthcare partnership.\n\n3. **Payment:** United Healthcare Alliance shall pay custom Enterprise Tier pricing of $52,000 per month for months 1-12, $56,000 per month for months 13-24, $60,000 per month for months 25-36, and $64,000 per month for months 37-48, totaling $2,784,000 over the contract term."
+    },
+    {
+      "headline": "Contract Terms: SLA and Confidentiality",
+      "summary": "This chunk covers the Service Level Agreement (SLA) with uptime guarantees and financial credits, as well as confidentiality obligations for both parties.",
+      "original_text": "3. **Payment:** United Healthcare Alliance shall pay custom Enterprise Tier pricing of $52,000 per month for months 1-12, $56,000 per month for months 13-24, $60,000 per month for months 25-36, and $64,000 per month for months 37-48, totaling $2,784,000 over the contract term.\n\n4. **Service Level Agreement:** Insurellm guarantees 99.95% uptime measured monthly, with financial credits: 7% monthly credit for each hour of unplanned downtime exceeding the SLA, maximum 50% monthly credit.\n\n5. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding AI algorithms, predictive models, member PHI, provider contracts, and strategic initiatives."
+    },
+    {
+      "headline": "Contract Terms: Security, Compliance, and Business Continuity",
+      "summary": "This chunk details the security and compliance commitments, including HIPAA, HITRUST, SOC 2 Type II, and business continuity guarantees like RTO and RPO.",
+      "original_text": "5. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding AI algorithms, predictive models, member PHI, provider contracts, and strategic initiatives.\n\n6. **Security and Compliance:** Insurellm commits to maintaining HIPAA compliance, HITRUST certification, SOC 2 Type II, and annual third-party security audits with penetration testing.\n\n7. **Business Continuity:** Guaranteed 2-hour recovery time objective (RTO) and 15-minute recovery point objective (RPO) with active-active data center configuration."
+    },
+    {
+      "headline": "Renewal Terms",
+      "summary": "This chunk describes the renewal conditions, including the 120-day notice period, most-favored-customer pricing, and options for contract extension.",
+      "original_text": "---\n\n## Renewal\n\nThis agreement includes a mutual 120-day renewal notice period. United Healthcare Alliance receives most-favored-customer pricing guarantees and priority access to all new features. Contract may be extended in 12 or 24-month increments with mutual written agreement and will include joint planning for next-generation healthcare technology initiatives."
+    },
+    {
+      "headline": "Features: Unlimited Member Administration and Multi-State Operations",
+      "summary": "This chunk introduces the Healthllm Enterprise suite features, starting with unlimited member administration and multi-state operations support.",
+      "original_text": "---\n\n## Features\n\nUnited Healthcare Alliance will receive the complete Healthllm Enterprise suite with custom enhancements:\n\n1. **Unlimited Member Administration:** No capacity restrictions, supporting United's 250,000+ members with scalability to 1 million+ members as business expands.\n\n2. **Multi-State Operations:** Complete support for health insurance administration across all 12 states where United operates:\n   - State-specific plan designs and benefit variations\n   - 50-state regulatory compliance monitoring\n   - Multi-state network adequacy reporting"
+    },
+    {
+      "headline": "Features: Multi-State Operations Details",
+      "summary": "This chunk provides additional details on multi-state operations, including form filing, rate approvals, and competitive intelligence.",
+      "original_text": "2. **Multi-State Operations:** Complete support for health insurance administration across all 12 states where United operates:\n   - State-specific plan designs and benefit variations\n   - 50-state regulatory compliance monitoring\n   - Multi-state network adequacy reporting\n   - State-specific form filing and rate approvals\n   - Local market competitive intelligence\n\n3. **White-Label Platform:** Complete branding customization:"
+    },
+    {
+      "headline": "Features: White-Label Platform",
+      "summary": "This chunk describes the white-label platform features, including custom domains, branded mobile apps, and co-branded portals.",
+      "original_text": "2. **Multi-State Operations:** Complete support for health insurance administration across all 12 states where United operates:\n   - State-specific plan designs and benefit variations\n   - 50-state regulatory compliance monitoring\n   - Multi-state network adequacy reporting\n   - State-specific form filing and rate approvals\n   - Local market competitive intelligence\n\n3. **White-Label Platform:** Complete branding customization:\n   - Custom domains (members.unitedhealthcarealliance.com, providers.unitedhealthcarealliance.com)\n   - Branded mobile apps for iOS and Android with full UI/UX customization\n   - Customized member communications and marketing materials\n   - Co-branded provider portals and broker platforms"
+    },
+    {
+      "headline": "Features: Advanced AI Claims Adjudication",
+      "summary": "This chunk outlines the advanced AI claims adjudication features, including auto-adjudication, fraud detection, and predictive analytics.",
+      "original_text": "3. **White-Label Platform:** Complete branding customization:\n   - Custom domains (members.unitedhealthcarealliance.com, providers.unitedhealthcarealliance.com)\n   - Branded mobile apps for iOS and Android with full UI/UX customization\n   - Customized member communications and marketing materials\n   - Co-branded provider portals and broker platforms\n\n4. **Advanced AI Claims Adjudication:** Enterprise-grade claims processing:\n   - Auto-adjudication rate of 85%+ for clean claims\n   - Real-time fraud detection with 92%+ accuracy\n   - Predictive payment integrity scoring\n   - Provider billing pattern analysis"
+    },
+    {
+      "headline": "Features: Advanced AI Claims Adjudication Continued",
+      "summary": "This chunk continues the description of advanced AI claims adjudication, including upcoding detection, COB automation, and subrogation identification.",
+      "original_text": "4. **Advanced AI Claims Adjudication:** Enterprise-grade claims processing:\n   - Auto-adjudication rate of 85%+ for clean claims\n   - Real-time fraud detection with 92%+ accuracy\n   - Predictive payment integrity scoring\n   - Provider billing pattern analysis\n   - Upcoding and unbundling detection\n   - Coordination of benefits (COB) automation\n   - Subrogation opportunity identification"
+    },
+    {
+      "headline": "Features: Population Health Management",
+      "summary": "This chunk details the population health management features, including risk stratification, chronic disease modeling, and predictive analytics.",
+      "original_text": "4. **Advanced AI Claims Adjudication:** Enterprise-grade claims processing:\n   - Auto-adjudication rate of 85%+ for clean claims\n   - Real-time fraud detection with 92%+ accuracy\n   - Predictive payment integrity scoring\n   - Provider billing pattern analysis\n   - Upcoding and unbundling detection\n   - Coordination of benefits (COB) automation\n   - Subrogation opportunity identification\n\n5. **Population Health Management:** Comprehensive analytics for value-based care:\n   - Real-time risk stratification across entire member population\n   - Chronic disease identification and progression modeling\n   - Predictive analytics for 30+ conditions"
+    },
+    {
+      "headline": "Features: Population Health Management Continued",
+      "summary": "This chunk continues the population health management features, including hospital readmission prevention, care gap analysis, and SDOH integration.",
+      "original_text": "5. **Population Health Management:** Comprehensive analytics for value-based care:\n   - Real-time risk stratification across entire member population\n   - Chronic disease identification and progression modeling\n   - Predictive analytics for 30+ conditions\n   - Hospital readmission prevention protocols\n   - Care gap analysis for HEDIS and STAR measures\n   - Social determinants of health (SDOH) integration\n   - Health equity analytics and disparity identification"
+    },
+    {
+      "headline": "Features: Complete API Access",
+      "summary": "This chunk describes the complete API access features, including real-time integration, EDI transactions, and third-party vendor integrations.",
+      "original_text": "5. **Population Health Management:** Comprehensive analytics for value-based care:\n   - Real-time risk stratification across entire member population\n   - Chronic disease identification and progression modeling\n   - Predictive analytics for 30+ conditions\n   - Hospital readmission prevention protocols\n   - Care gap analysis for HEDIS and STAR measures\n   - Social determinants of health (SDOH) integration\n   - Health equity analytics and disparity identification\n\n6. **Complete API Access:** Unlimited API calls supporting:\n   - Real-time integration with United's core systems\n   - Provider portal and directory synchronization\n   - Claims clearinghouse EDI transactions (837, 835, 834, 270/271)\n   - Pharmacy benefit manager (PBM) integration"
+    },
+    {
+      "headline": "Features: Complete API Access Continued",
+      "summary": "This chunk continues the API access features, including HIE connectivity, data warehouse sync, and third-party integrations.",
+      "original_text": "6. **Complete API Access:** Unlimited API calls supporting:\n   - Real-time integration with United's core systems\n   - Provider portal and directory synchronization\n   - Claims clearinghouse EDI transactions (837, 835, 834, 270/271)\n   - Pharmacy benefit manager (PBM) integration\n   - Health Information Exchange (HIE) connectivity\n   - Data warehouse bidirectional sync\n   - Third-party vendor integrations (lab systems, imaging centers, etc.)"
+    },
+    {
+      "headline": "Features: Advanced Provider Network Management",
+      "summary": "This chunk details the advanced provider network management features, including credentialing, contract management, and performance analytics.",
+      "original_text": "6. **Complete API Access:** Unlimited API calls supporting:\n   - Real-time integration with United's core systems\n   - Provider portal and directory synchronization\n   - Claims clearinghouse EDI transactions (837, 835, 834, 270/271)\n   - Pharmacy benefit manager (PBM) integration\n   - Health Information Exchange (HIE) connectivity\n   - Data warehouse bidirectional sync\n   - Third-party vendor integrations (lab systems, imaging centers, etc.)\n\n7. **Advanced Provider Network Management:**\n   - Credentialing and re-credentialing for 15,000+ providers\n   - Contract management with version control and approval workflows\n   - Provider performance scorecards and tiering"
+    },
+    {
+      "headline": "Features: Advanced Provider Network Management Continued",
+      "summary": "This chunk continues the provider network management features, including network adequacy modeling, cost analytics, and COE program management.",
+      "original_text": "7. **Advanced Provider Network Management:**\n   - Credentialing and re-credentialing for 15,000+ providers\n   - Contract management with version control and approval workflows\n   - Provider performance scorecards and tiering\n   - Network adequacy modeling and gap analysis\n   - Cost and quality analytics by provider\n   - Center of Excellence (COE) program management\n   - Value-based payment arrangement tracking"
+    },
+    {
+      "headline": "Features: Comprehensive Medication Management",
+      "summary": "This chunk outlines the comprehensive medication management features, including formulary management, prior authorization, and specialty pharmacy programs.",
+      "original_text": "7. **Advanced Provider Network Management:**\n   - Credentialing and re-credentialing for 15,000+ providers\n   - Contract management with version control and approval workflows\n   - Provider performance scorecards and tiering\n   - Network adequacy modeling and gap analysis\n   - Cost and quality analytics by provider\n   - Center of Excellence (COE) program management\n   - Value-based payment arrangement tracking\n\n8. **Comprehensive Medication Management:**\n   - Multi-tier formulary management (national and state-specific)\n   - Prior authorization with clinical decision support\n   - Step therapy and quantity limit enforcement"
+    },
+    {
+      "headline": "Features: Comprehensive Medication Management Continued",
+      "summary": "This chunk continues the medication management features, including biosimilar optimization, adherence prediction, and rebate tracking.",
+      "original_text": "8. **Comprehensive Medication Management:**\n   - Multi-tier formulary management (national and state-specific)\n   - Prior authorization with clinical decision support\n   - Step therapy and quantity limit enforcement\n   - Specialty pharmacy program management\n   - Biosimilar and generic substitution optimization\n   - Medication adherence prediction and intervention\n   - Drug spend forecasting and budgeting\n   - Manufacturer rebate tracking and optimization"
+    },
+    {
+      "headline": "Features: Member Engagement Suite",
+      "summary": "This chunk describes the member engagement suite, including omnichannel communication, personalized portals, and telehealth integration.",
+      "original_text": "8. **Comprehensive Medication Management:**\n   - Multi-tier formulary management (national and state-specific)\n   - Prior authorization with clinical decision support\n   - Step therapy and quantity limit enforcement\n   - Specialty pharmacy program management\n   - Biosimilar and generic substitution optimization\n   - Medication adherence prediction and intervention\n   - Drug spend forecasting and budgeting\n   - Manufacturer rebate tracking and optimization\n\n9. **Member Engagement Suite:**\n   - Omnichannel communication platform (SMS, email, push, voice)\n   - Personalized member portal with AI-powered chatbot\n   - Telehealth platform integration (video visits, e-consults)"
+    },
+    {
+      "headline": "Features: Member Engagement Suite Continued",
+      "summary": "This chunk continues the member engagement suite features, including wellness programs, satisfaction surveys, and health literacy tools.",
+      "original_text": "9. **Member Engagement Suite:**\n   - Omnichannel communication platform (SMS, email, push, voice)\n   - Personalized member portal with AI-powered chatbot\n   - Telehealth platform integration (video visits, e-consults)\n   - Preventive care reminder campaigns\n   - Wellness program platform with incentives and gamification\n   - Member satisfaction surveying and feedback analysis\n   - Health literacy tools and educational content"
+    },
+    {
+      "headline": "Features: Quality and Performance Management",
+      "summary": "This chunk details the quality and performance management features, including HEDIS reporting, STAR ratings optimization, and pay-for-performance administration.",
+      "original_text": "9. **Member Engagement Suite:**\n   - Omnichannel communication platform (SMS, email, push, voice)\n   - Personalized member portal with AI-powered chatbot\n   - Telehealth platform integration (video visits, e-consults)\n   - Preventive care reminder campaigns\n   - Wellness program platform with incentives and gamification\n   - Member satisfaction surveying and feedback analysis\n   - Health literacy tools and educational content\n\n10. **Quality and Performance Management:**\n    - HEDIS measure calculation and reporting\n    - STAR ratings optimization for Medicare Advantage\n    - CAHPS survey administration and analysis"
+    },
+    {
+      "headline": "Features: Quality and Performance Management Continued",
+      "summary": "This chunk continues the quality and performance management features, including quality improvement tracking, shared savings calculation, and risk adjustment.",
+      "original_text": "10. **Quality and Performance Management:**\n    - HEDIS measure calculation and reporting\n    - STAR ratings optimization for Medicare Advantage\n    - CAHPS survey administration and analysis\n    - Quality improvement initiative tracking\n    - Provider pay-for-performance administration\n    - Shared savings calculation for ACO programs\n    - Risk adjustment and HCC coding validation"
+    },
+    {
+      "headline": "Features: Advanced Analytics and Business Intelligence",
+      "summary": "This chunk describes the advanced analytics and business intelligence features, including real-time dashboards, predictive modeling, and financial forecasting.",
+      "original_text": "10. **Quality and Performance Management:**\n    - HEDIS measure calculation and reporting\n    - STAR ratings optimization for Medicare Advantage\n    - CAHPS survey administration and analysis\n    - Quality improvement initiative tracking\n    - Provider pay-for-performance administration\n    - Shared savings calculation for ACO programs\n    - Risk adjustment and HCC coding validation\n\n11. **Advanced Analytics and Business Intelligence:**\n    - Real-time operational dashboards for all user roles\n    - Executive dashboards with KPIs and trend analysis\n    - Predictive modeling for medical cost trends"
+    },
+    {
+      "headline": "Features: Advanced Analytics and Business Intelligence Continued",
+      "summary": "This chunk continues the advanced analytics features, including member churn analysis, market share reports, and custom analytics support.",
+      "original_text": "11. **Advanced Analytics and Business Intelligence:**\n    - Real-time operational dashboards for all user roles\n    - Executive dashboards with KPIs and trend analysis\n    - Predictive modeling for medical cost trends\n    - Member churn and retention analysis\n    - Market share and competitive positioning reports\n    - Financial forecasting and budget variance analysis\n    - Custom analytics with embedded data science team support"
+    },
+    {
+      "headline": "Features: Regulatory Compliance and Reporting",
+      "summary": "This chunk outlines the regulatory compliance and reporting features, including ACA compliance, CMS reporting, and fraud detection.",
+      "original_text": "11. **Advanced Analytics and Business Intelligence:**\n    - Real-time operational dashboards for all user roles\n    - Executive dashboards with KPIs and trend analysis\n    - Predictive modeling for medical cost trends\n    - Member churn and retention analysis\n    - Market share and competitive positioning reports\n    - Financial forecasting and budget variance analysis\n    - Custom analytics with embedded data science team support\n\n12. **Regulatory Compliance and Reporting:**\n    - ACA compliance monitoring (MLR, essential health benefits, preventive services)\n    - Multi-state regulatory filing management\n    - CMS reporting for Medicare Advantage products"
+    },
+    {
+      "headline": "Features: Regulatory Compliance and Reporting Continued",
+      "summary": "This chunk continues the regulatory compliance features, including state insurance department support, HIPAA compliance, and FWA detection.",
+      "original_text": "12. **Regulatory Compliance and Reporting:**\n    - ACA compliance monitoring (MLR, essential health benefits, preventive services)\n    - Multi-state regulatory filing management\n    - CMS reporting for Medicare Advantage products\n    - State insurance department examinations support\n    - HIPAA privacy and security compliance with audit trails\n    - Fraud, waste, and abuse (FWA) detection and reporting\n    - Annual compliance certification and attestation"
+    },
+    {
+      "headline": "Support: Dedicated Success Team and Premium Support",
+      "summary": "This chunk introduces the support section, detailing the dedicated success team and 24/7 premium support commitments.",
+      "original_text": "---\n\n## Support\n\nInsurellm commits to comprehensive Enterprise-level support for United Healthcare Alliance:\n\n1. **Dedicated Success Team:**\n   - Executive sponsor (CEO-level) with monthly strategic reviews\n   - Dedicated Vice President of Customer Success with weekly engagement\n   - Senior Technical Account Manager for system optimization\n   - Solutions Architect team for ongoing innovation (2 FTE)\n   - Data Science team for advanced analytics projects (1.5 FTE)\n   - Quarterly executive business reviews with C-suite from both companies\n\n2. **24/7/365 Premium Support:**\n   - Guaranteed 10-minute response for P1 critical issues\n   - 30-minute response for P2 high-priority issues\n   - 2-hour response for P3 standard issues"
+    },
+    {
+      "headline": "Support: Premium Support and Implementation",
+      "summary": "This chunk continues the premium support details and introduces the comprehensive implementation program.",
+      "original_text": "2. **24/7/365 Premium Support:**\n   - Guaranteed 10-minute response for P1 critical issues\n   - 30-minute response for P2 high-priority issues\n   - 2-hour response for P3 standard issues\n   - Dedicated support team of 8+ specialists familiar with United's environment\n   - Private war room for incident management\n   - Dedicated Slack and Microsoft Teams channels with engineering access\n   - Quarterly on-site support visits (minimum 8 per year)\n\n3. **Comprehensive Implementation:**\n   - 18-month phased implementation program with 4 major go-live events"
+    },
+    {
+      "headline": "Support: Implementation and Training",
+      "summary": "This chunk details the implementation program and introduces the training and enablement features.",
+      "original_text": "3. **Comprehensive Implementation:**\n   - 18-month phased implementation program with 4 major go-live events\n   - Dedicated program management office (PMO) with weekly steering committee\n   - Migration of 250,000+ member records from legacy systems\n   - Integration with 15,000+ provider records and credentialing data\n   - Training for 300+ United staff across all departments\n   - Training for 100+ key provider practices and health systems\n   - Parallel processing with legacy system for 120 days\n   - Go-live support with 12-week on-site Insurellm team presence (6-10 people)\n\n4. **Training and Enablement:**\n   - Comprehensive role-based training programs for all staff"
+    },
+    {
+      "headline": "Support: Training and Enablement Continued",
+      "summary": "This chunk continues the training and enablement features, including executive training, train-the-trainer programs, and custom content development.",
+      "original_text": "4. **Training and Enablement:**\n   - Comprehensive role-based training programs for all staff\n   - Executive leadership training on healthcare AI and analytics\n   - Train-the-trainer certification for United's L&D team\n   - Annual user conference attendance (10 attendees, all expenses paid)\n   - Monthly advanced training sessions on new features\n   - Unlimited online learning platform access with 200+ courses\n   - Custom training content development for United-specific processes\n   - Clinical training for care management and utilization review staff"
+    },
+    {
+      "headline": "Support: Custom Development and Integration Services",
+      "summary": "This chunk describes the custom development and integration services, including dedicated development teams, priority feature requests, and enterprise integrations.",
+      "original_text": "4. **Training and Enablement:**\n   - Comprehensive role-based training programs for all staff\n   - Executive leadership training on healthcare AI and analytics\n   - Train-the-trainer certification for United's L&D team\n   - Annual user conference attendance (10 attendees, all expenses paid)\n   - Monthly advanced training sessions on new features\n   - Unlimited online learning platform access with 200+ courses\n   - Custom training content development for United-specific processes\n   - Clinical training for care management and utilization review staff\n\n5. **Custom Development:**\n   - 3,000 hours annually of custom development included\n   - Dedicated development team (4 developers, 1 PM, 1 QA) for United-specific features\n   - Priority feature requests with guaranteed product roadmap inclusion\n   - Beta access to all new features 120 days before general release\n\n6. **Integration Services:**\n   - Enterprise integration with United's complex system landscape:"
+    },
+    {
+      "headline": "Support: Integration Services Continued",
+      "summary": "This chunk continues the integration services details, including specific systems like HealthEdge, Epic, Salesforce, and more.",
+      "original_text": "6. **Integration Services:**\n   - Enterprise integration with United's complex system landscape:\n     - HealthEdge iBridge policy administration\n     - Epic care management system integration\n     - Salesforce Health Cloud CRM\n     - Multiple PBMs (CVS Caremark, Express Scripts)\n     - Availity and Change Healthcare clearinghouses\n     - Truven Health Analytics\n     - Provider credentialing systems (CAQH ProView)\n     - NCQA HEDIS reporting systems\n     - Financial systems (Oracle ERP, Workday)\n     - Data lake on Snowflake and AWS\n   - Dedicated integration team (2 FTE integration engineers)\n   - Monthly integration health assessments with optimization\n   - Performance tuning and load testing before peak periods (open enrollment)"
+    },
+    {
+      "headline": "Support: Analytics, Compliance, and Continuous Improvement",
+      "summary": "This chunk introduces the analytics and reporting, compliance and regulatory support, and continuous improvement features.",
+      "original_text": "6. **Integration Services:**\n   - Enterprise integration with United's complex system landscape:\n     - HealthEdge iBridge policy administration\n     - Epic care management system integration\n     - Salesforce Health Cloud CRM\n     - Multiple PBMs (CVS Caremark, Express Scripts)\n     - Availity and Change Healthcare clearinghouses\n     - Truven Health Analytics\n     - Provider credentialing systems (CAQH ProView)\n     - NCQA HEDIS reporting systems\n     - Financial systems (Oracle ERP, Workday)\n     - Data lake on Snowflake and AWS\n   - Dedicated integration team (2 FTE integration engineers)\n   - Monthly integration health assessments with optimization\n   - Performance tuning and load testing before peak periods (open enrollment)\n\n7. **Analytics and Reporting:**\n   - Custom dashboard development (unlimited)\n   - Real-time operational dashboards for claims, enrollment, utilization"
+    },
+    {
+      "headline": "Support: Analytics and Reporting Continued",
+      "summary": "This chunk continues the analytics and reporting features, including executive dashboards, automated reporting, and predictive modeling consultation.",
+      "original_text": "7. **Analytics and Reporting:**\n   - Custom dashboard development (unlimited)\n   - Real-time operational dashboards for claims, enrollment, utilization\n   - Executive dashboards with drill-down capabilities\n   - Automated reporting suite (daily, weekly, monthly, quarterly, annual)\n   - Ad-hoc analytics support (unlimited requests with 48-hour SLA)\n   - Industry benchmarking against top 100 health plans\n   - Predictive modeling consultation (bi-weekly sessions)\n   - Embedded data science team for advanced projects\n   - Access to Insurellm's proprietary healthcare benchmarking database"
+    },
+    {
+      "headline": "Support: Compliance and Regulatory Support",
+      "summary": "This chunk details the compliance and regulatory support features, including monthly reviews, HIPAA assessments, and ACA reporting.",
+      "original_text": "7. **Analytics and Reporting:**\n   - Custom dashboard development (unlimited)\n   - Real-time operational dashboards for claims, enrollment, utilization\n   - Executive dashboards with drill-down capabilities\n   - Automated reporting suite (daily, weekly, monthly, quarterly, annual)\n   - Ad-hoc analytics support (unlimited requests with 48-hour SLA)\n   - Industry benchmarking against top 100 health plans\n   - Predictive modeling consultation (bi-weekly sessions)\n   - Embedded data science team for advanced projects\n   - Access to Insurellm's proprietary healthcare benchmarking database\n\n8. **Compliance and Regulatory Support:**\n   - Monthly compliance reviews with detailed documentation\n   - Annual HIPAA security risk assessment with remediation planning\n   - Annual HITRUST assessment support"
+    },
+    {
+      "headline": "Support: Compliance and Regulatory Support Continued",
+      "summary": "This chunk continues the compliance support features, including ACA reporting, Medicare Advantage support, and external audit support.",
+      "original_text": "8. **Compliance and Regulatory Support:**\n   - Monthly compliance reviews with detailed documentation\n   - Annual HIPAA security risk assessment with remediation planning\n   - Annual HITRUST assessment support\n   - ACA reporting (1094/1095 forms, MLR calculations, essential health benefits)\n   - Medicare Advantage CMS reporting support\n   - Multi-state regulatory filing coordination\n   - Quality measure calculation (HEDIS, STAR, CAHPS)\n   - External audit support (state exams, CMS audits, accreditation)\n   - Fraud, waste, and abuse program support"
+    },
+    {
+      "headline": "Support: Continuous Improvement",
+      "summary": "This chunk describes the continuous improvement features, including process optimization workshops, efficiency audits, and innovation lab partnerships.",
+      "original_text": "8. **Compliance and Regulatory Support:**\n   - Monthly compliance reviews with detailed documentation\n   - Annual HIPAA security risk assessment with remediation planning\n   - Annual HITRUST assessment support\n   - ACA reporting (1094/1095 forms, MLR calculations, essential health benefits)\n   - Medicare Advantage CMS reporting support\n   - Multi-state regulatory filing coordination\n   - Quality measure calculation (HEDIS, STAR, CAHPS)\n   - External audit support (state exams, CMS audits, accreditation)\n   - Fraud, waste, and abuse program support\n\n9. **Continuous Improvement:**\n   - Bi-weekly process optimization workshops\n   - Quarterly efficiency audits with detailed ROI analysis\n   - Best practice sharing from across Insurellm's customer base"
+    },
+    {
+      "headline": "Support: Continuous Improvement Continued",
+      "summary": "This chunk continues the continuous improvement features, including innovation lab partnerships, joint whitepapers, and industry conference opportunities.",
+      "original_text": "9. **Continuous Improvement:**\n   - Bi-weekly process optimization workshops\n   - Quarterly efficiency audits with detailed ROI analysis\n   - Best practice sharing from across Insurellm's customer base\n   - Innovation lab partnership for emerging technologies:\n     - AI and machine learning advancements\n     - Blockchain for claims and credentialing\n     - Natural language processing for clinical documentation\n     - Predictive analytics for population health\n   - Joint whitepapers and case studies for industry publication\n   - Speaking opportunities at major industry conferences (AHIP, HIMSS)\n   - Collaboration on thought leadership and regulatory advocacy"
+    },
+    {
+      "headline": "Contract Signatures and Conclusion",
+      "summary": "This chunk includes the signatures of the parties involved and the concluding remarks about the partnership's significance.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Jennifer Rodriguez**\n**Title**: Chief Executive Officer\n**Insurellm, Inc.**\n**Date**: May 15, 2025\n\n_________________________________\n**James Patterson**\n**Title**: Chairman & Chief Executive Officer\n**United Healthcare Alliance, LLC**\n**Date**: May 15, 2025\n\n---\n\nThis agreement establishes United Healthcare Alliance as Insurellm's flagship enterprise health insurance partner, representing the most comprehensive strategic partnership in Insurellm's history. This partnership will drive innovation in healthcare technology and set new standards for AI-powered health insurance operations. This contract supersedes all prior agreements and communications."
+    }
+  ]
+}

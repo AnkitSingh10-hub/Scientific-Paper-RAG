@@ -1,0 +1,69 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties",
+      "summary": "This chunk introduces the contract between Insurellm and Continental Commercial Group, including the contract date, number, and the involved parties.",
+      "original_text": "# Contract with Continental Commercial Group for Bizllm\n\n**Contract Date:** April 12, 2025\n**Contract Number:** BZ-2025-E-0147\n**Parties:**\n- Insurellm, Inc.\n- Continental Commercial Group, Inc.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide Continental Commercial Group with comprehensive access to the Bizllm Enterprise platform, including white-label capabilities, dedicated infrastructure, and full API access for commercial insurance operations across all 50 US states."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "This chunk details the initial terms of the contract, including coverage scope, duration, and payment structure for the first 12 months.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide Continental Commercial Group with comprehensive access to the Bizllm Enterprise platform, including white-label capabilities, dedicated infrastructure, and full API access for commercial insurance operations across all 50 US states.\n\n2. **Duration:** This agreement is effective for a period of 36 months from the contract date, with provisions for early renewal discussions at the 24-month mark.\n\n3. **Payment:** Continental Commercial Group shall pay custom Enterprise pricing of $42,000 per month for the first 12 months, with pricing review and adjustment for years 2-3 based on usage metrics and expanded feature adoption."
+    },
+    {
+      "headline": "Contract Terms: Confidentiality, Liability, and SLA",
+      "summary": "This chunk covers the confidentiality, liability, and service level agreement (SLA) terms of the contract.",
+      "original_text": "3. **Payment:** Continental Commercial Group shall pay custom Enterprise pricing of $42,000 per month for the first 12 months, with pricing review and adjustment for years 2-3 based on usage metrics and expanded feature adoption.\n\n4. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding proprietary algorithms, trade secrets, customer data, and business strategies disclosed during this partnership.\n\n5. **Liability:** Insurellm's liability is limited to direct damages not exceeding the annual contract value. Continental Commercial Group maintains $25 million in cybersecurity insurance covering data breaches.\n\n6. **Service Level Agreement (SLA):** Insurellm guarantees 99.9% platform uptime, measured monthly. For each 0.1% below target, Continental receives a 5% monthly fee credit, up to a maximum of 25% monthly credit."
+    },
+    {
+      "headline": "Contract Terms: Exclusivity and Renewal",
+      "summary": "This chunk outlines the exclusivity clause and renewal terms of the contract, including notice periods and right of first refusal.",
+      "original_text": "6. **Service Level Agreement (SLA):** Insurellm guarantees 99.9% platform uptime, measured monthly. For each 0.1% below target, Continental receives a 5% monthly fee credit, up to a maximum of 25% monthly credit.\n\n7. **Exclusivity:** Continental Commercial Group receives exclusive use of Bizllm in the specialty construction insurance vertical for the contract duration within North America.\n\n---\n\n## Renewal\n\nThis agreement includes a mutual 90-day renewal notice period. Continental Commercial Group receives right of first refusal on any new Bizllm features or modules developed for the commercial insurance sector. Renewal terms will be negotiated based on platform evolution, competitive landscape, and business performance metrics."
+    },
+    {
+      "headline": "Bizllm Enterprise Suite: White-Label and Infrastructure",
+      "summary": "This chunk describes the first two features of the Bizllm Enterprise suite: white-label customization and dedicated cloud infrastructure.",
+      "original_text": "---\n\n## Features\n\nContinental Commercial Group will receive the complete Bizllm Enterprise suite:\n\n1. **White-Label Customization:** Full platform branding with Continental's logos, color schemes, and custom domain names for client-facing portals.\n\n2. **Dedicated Cloud Infrastructure:** Private cloud deployment with dedicated servers, ensuring data isolation and optimized performance for Continental's 200+ concurrent users."
+    },
+    {
+      "headline": "Bizllm Enterprise Suite: API Access and Cyber Risk Module",
+      "summary": "This chunk details the unlimited API access and advanced cyber risk module features of the Bizllm Enterprise suite.",
+      "original_text": "2. **Dedicated Cloud Infrastructure:** Private cloud deployment with dedicated servers, ensuring data isolation and optimized performance for Continental's 200+ concurrent users.\n\n3. **Unlimited API Access:** Full API integration capabilities with no call volume limits, enabling seamless connection to Continental's existing tech stack including:\n   - Duck Creek policy administration system\n   - Guidewire ClaimCenter\n   - Custom data warehouse and business intelligence platforms\n   - Third-party data providers (Verisk, ISO, Dun & Bradstreet)\n\n4. **Advanced Cyber Risk Module:** Comprehensive cyber insurance underwriting tools including:\n   - Automated security posture assessment\n   - Breach history analysis and dark web monitoring\n   - IT infrastructure vulnerability scanning\n   - Ransomware risk scoring"
+    },
+    {
+      "headline": "Bizllm Enterprise Suite: Custom Product Configuration and Predictive Analytics",
+      "summary": "This chunk covers the custom product configuration and predictive analytics engine features of the Bizllm Enterprise suite.",
+      "original_text": "4. **Advanced Cyber Risk Module:** Comprehensive cyber insurance underwriting tools including:\n   - Automated security posture assessment\n   - Breach history analysis and dark web monitoring\n   - IT infrastructure vulnerability scanning\n   - Ransomware risk scoring\n\n5. **Custom Product Configuration:** Ability to configure and deploy unlimited custom commercial insurance products, including specialty lines such as:\n   - Construction surety and wrap-up programs\n   - Environmental liability\n   - Directors and officers (D&O) coverage\n   - Employment practices liability (EPLI)\n\n6. **Predictive Analytics Engine:** Machine learning models for:\n   - Loss forecasting and reserve adequacy\n   - Optimal pricing recommendations\n   - Renewal probability scoring\n   - Cross-sell and upsell opportunity identification"
+    },
+    {
+      "headline": "Bizllm Enterprise Suite: Agent Network and Compliance",
+      "summary": "This chunk describes the agent network management and regulatory compliance suite features of the Bizllm Enterprise suite.",
+      "original_text": "6. **Predictive Analytics Engine:** Machine learning models for:\n   - Loss forecasting and reserve adequacy\n   - Optimal pricing recommendations\n   - Renewal probability scoring\n   - Cross-sell and upsell opportunity identification\n\n7. **Agent Network Management:** Enterprise-grade agent portal supporting Continental's 3,500+ independent agents with hierarchical permissions, customizable commission structures, and real-time policy binding.\n\n8. **Regulatory Compliance Suite:** Automated compliance monitoring for all 50 states including form filing, rate approval tracking, and surplus lines requirements."
+    },
+    {
+      "headline": "Enterprise-Level Support: Dedicated Success Team",
+      "summary": "This chunk outlines the dedicated success team and their roles as part of Insurellm's Enterprise-level support commitment.",
+      "original_text": "---\n\n## Support\n\nInsurellm commits to comprehensive Enterprise-level support:\n\n1. **Dedicated Success Team:**\n   - Named Chief Customer Officer oversight\n   - Dedicated Technical Account Manager (TAM)\n   - Solutions architect for ongoing optimization\n   - Quarterly executive business reviews with C-suite participation"
+    },
+    {
+      "headline": "Enterprise-Level Support: 24/7 Support and Implementation",
+      "summary": "This chunk details the 24/7 support and implementation/onboarding services provided by Insurellm.",
+      "original_text": "1. **Dedicated Success Team:**\n   - Named Chief Customer Officer oversight\n   - Dedicated Technical Account Manager (TAM)\n   - Solutions architect for ongoing optimization\n   - Quarterly executive business reviews with C-suite participation\n\n2. **24/7/365 Support:**\n   - Guaranteed 15-minute response time for critical issues\n   - 1-hour response for high-priority issues\n   - Dedicated Slack channel for real-time communication\n   - Monthly system health reports and optimization recommendations\n\n3. **Implementation and Onboarding:**\n   - 6-month implementation program with dedicated project manager\n   - Comprehensive training for up to 150 Continental staff members\n   - Custom training materials and certification program\n   - On-site support during first 90 days of production operation"
+    },
+    {
+      "headline": "Enterprise-Level Support: Development and Data Services",
+      "summary": "This chunk covers the development/customization and data services provided as part of Insurellm's support commitment.",
+      "original_text": "3. **Implementation and Onboarding:**\n   - 6-month implementation program with dedicated project manager\n   - Comprehensive training for up to 150 Continental staff members\n   - Custom training materials and certification program\n   - On-site support during first 90 days of production operation\n\n4. **Development and Customization:**\n   - 500 hours annually of custom development included\n   - Priority feature requests with guaranteed evaluation\n   - Beta access to all new features 60 days before general release\n   - Input into product roadmap and strategic direction\n\n5. **Data Services:**\n   - Quarterly data quality audits\n   - Annual data migration support for system upgrades\n   - Dedicated data warehouse with 7-year retention\n   - Custom reporting and analytics dashboard development"
+    },
+    {
+      "headline": "Enterprise-Level Support: Performance Optimization",
+      "summary": "This chunk details the performance optimization services included in Insurellm's support commitment.",
+      "original_text": "5. **Data Services:**\n   - Quarterly data quality audits\n   - Annual data migration support for system upgrades\n   - Dedicated data warehouse with 7-year retention\n   - Custom reporting and analytics dashboard development\n\n6. **Performance Optimization:**\n   - Monthly platform performance reviews\n   - Proactive capacity planning and scaling recommendations\n   - Load testing before major product launches\n   - Dedicated infrastructure monitoring with real-time alerts"
+    },
+    {
+      "headline": "Contract Signatures and Strategic Partnership",
+      "summary": "This chunk includes the signatures of the parties involved and a statement about the strategic partnership between Insurellm and Continental Commercial Group.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Jennifer Rodriguez**\n**Title**: Chief Executive Officer\n**Insurellm, Inc.**\n**Date**: April 12, 2025\n\n_________________________________\n**Thomas Wellington**\n**Title**: President & Chief Operating Officer\n**Continental Commercial Group, Inc.**\n**Date**: April 12, 2025\n\n---\n\nThis agreement represents a strategic partnership between Insurellm and Continental Commercial Group to transform commercial insurance operations through cutting-edge technology and innovation. This contract supersedes all prior agreements and represents the complete understanding between both parties."
+    }
+  ]
+}

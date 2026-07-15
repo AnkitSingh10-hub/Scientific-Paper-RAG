@@ -1,0 +1,49 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "The contract between Insurellm and Advantage Medical Coverage, dated April 18, 2025, outlines the agreement for using the Healthllm Professional Tier platform. It identifies the parties involved: Insurellm as the Provider and Advantage Medical Coverage as the Client.",
+      "original_text": "# Contract with Advantage Medical Coverage for Healthllm\n\n**Contract Date:** April 18, 2025\n**Contract Number:** HL-2025-0124\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and Advantage Medical Coverage (\"Client\").\n\n2. **License Grant**: Insurellm grants Advantage Medical Coverage a non-exclusive, non-transferable license to use the Healthllm Professional Tier platform."
+    },
+    {
+      "headline": "Payment Terms and Member Coverage",
+      "summary": "The contract specifies payment terms of $15,000 monthly for 18 months, totaling $270,000, due on the 10th of each month via wire transfer. It also details member coverage, supporting up to 50,000 members, with Advantage currently covering 32,000 members in 2 states.",
+      "original_text": "2. **License Grant**: Insurellm grants Advantage Medical Coverage a non-exclusive, non-transferable license to use the Healthllm Professional Tier platform.\n\n3. **Payment Terms**: Advantage Medical Coverage agrees to make monthly payments of $15,000 for the duration of this 18-month contract, totaling $270,000. Payments due on the 10th of each month via wire transfer.\n\n4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Advantage currently covers 32,000 members in 2 states.\n\n5. **Confidentiality**: Both parties shall maintain confidentiality regarding proprietary information, member PHI, and business strategies throughout the contract duration and for 7 years post-termination, in compliance with HIPAA retention requirements."
+    },
+    {
+      "headline": "Confidentiality and Renewal Terms",
+      "summary": "The contract includes a confidentiality clause requiring both parties to protect proprietary information and PHI for 7 years post-termination. It also outlines automatic renewal for 18-month terms unless either party provides 60 days' written notice of non-renewal.",
+      "original_text": "5. **Confidentiality**: Both parties shall maintain confidentiality regarding proprietary information, member PHI, and business strategies throughout the contract duration and for 7 years post-termination, in compliance with HIPAA retention requirements.\n\n## Renewal\n\n1. **Automatic Renewal**: This contract automatically renews for successive 18-month terms unless either party provides written notice of non-renewal at least 60 days prior to expiration.\n\n2. **Pricing Review**: Renewal pricing will be discussed 75 days prior to term end and mutually agreed upon in writing. Price increases limited to 7% annually."
+    },
+    {
+      "headline": "Renewal Pricing and Healthllm Professional Tier Features",
+      "summary": "Renewal pricing is reviewed 75 days before term end, with price increases capped at 7% annually. The contract lists included features of the Healthllm Professional Tier, such as Intelligent Plan Design, Real-Time Eligibility Verification, and AI-Driven Claims Adjudication.",
+      "original_text": "2. **Pricing Review**: Renewal pricing will be discussed 75 days prior to term end and mutually agreed upon in writing. Price increases limited to 7% annually.\n\n## Features\n\n1. **Included Features**: Advantage Medical Coverage will have access to Healthllm Professional Tier features:\n   - Intelligent Plan Design with competitive benchmarking\n   - Real-Time Eligibility Verification with provider integration\n   - AI-Driven Claims Adjudication with auto-processing\n   - Predictive Healthcare Analytics for population health\n   - Provider Network Management with 8,000+ providers"
+    },
+    {
+      "headline": "Additional Professional Tier Features",
+      "summary": "The Healthllm Professional Tier includes features like Member Engagement Platform, Advanced Medication Management, Regulatory Compliance Engine, Enhanced Analytics, and Care Management Tools.",
+      "original_text": "   - Member Engagement Platform with mobile app\n   - Advanced Medication Management with PBM integration\n   - Regulatory Compliance Engine (ACA, state mandates, HIPAA)\n   - Enhanced Analytics and predictive modeling\n   - Care management tools and workflows\n\n2. **Value-Based Care Support:**\n   - ACO performance tracking and shared savings calculation\n   - HEDIS measure calculation for quality reporting\n   - Provider pay-for-performance scorecards\n   - Risk adjustment and HCC coding support\n   - Medicare STAR ratings optimization"
+    },
+    {
+      "headline": "Value-Based Care and Telehealth Integration",
+      "summary": "The contract includes Value-Based Care Support features like ACO performance tracking, HEDIS measure calculation, and Medicare STAR ratings optimization. It also details Telehealth Integration, supporting video visits, e-consults, and behavioral health virtual visits.",
+      "original_text": "2. **Value-Based Care Support:**\n   - ACO performance tracking and shared savings calculation\n   - HEDIS measure calculation for quality reporting\n   - Provider pay-for-performance scorecards\n   - Risk adjustment and HCC coding support\n   - Medicare STAR ratings optimization\n\n3. **Telehealth Integration**: Built-in telehealth platform supporting:\n   - Video visits with in-network providers\n   - E-consults and asynchronous care\n   - Behavioral health virtual visits\n   - Member scheduling and appointment management"
+    },
+    {
+      "headline": "Customer Support and Training",
+      "summary": "Insurellm provides priority support with a dedicated team, emergency support, and defined response times. The training program includes a 5-week implementation, role-specific training for up to 30 staff, and quarterly webinars.",
+      "original_text": "## Support\n\n1. **Customer Support**: Insurellm will provide priority support to Advantage Medical Coverage:\n   - Dedicated support team Monday-Friday 6 AM - 9 PM EST\n   - Emergency support 24/7 for critical system issues\n   - Response time: 6 hours for critical, 12 hours for high priority, 24 hours for standard\n   - Private support portal with ticket tracking\n\n2. **Training**: Comprehensive training program:\n   - 5-week implementation with project manager\n   - Training for up to 30 staff members (45 hours total)\n   - Role-specific training tracks\n   - Quarterly webinars on new features\n   - Online training library with 75+ courses"
+    },
+    {
+      "headline": "System Updates, Account Management, and Integration Support",
+      "summary": "The contract includes monthly platform enhancements, bi-weekly security patches, and maintenance windows with 72-hour notice. It also provides a named senior customer success manager, quarterly business reviews, and technical integration support for systems like Advantage's HealthRules and Optum PBM.",
+      "original_text": "3. **System Updates**: Monthly platform enhancements and bi-weekly security patches. Maintenance windows on Saturday 11 PM - Sunday 2 AM EST with 72-hour advance notice.\n\n4. **Account Management**: Named senior customer success manager with quarterly business reviews and annual strategic planning session.\n\n5. **Integration Support**: Technical assistance for integrating with:\n   - Advantage's HealthRules policy admin system\n   - Optum PBM\n   - Availity clearinghouse\n   - Provider credentialing platforms\n   - Member portal and mobile apps"
+    },
+    {
+      "headline": "Signatures and Contract Conclusion",
+      "summary": "The contract is signed by Sarah Chen, VP of Sales at Insurellm, and Dr. Michael Ramirez, Chief Medical Officer at Advantage Medical Coverage, both on April 18, 2025. The document concludes by emphasizing the contract's purpose to enable Advantage Medical Coverage to leverage AI and predictive analytics for improved health outcomes and operational efficiency.",
+      "original_text": "---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nSarah Chen, VP of Sales\nDate: April 18, 2025\n\n**Advantage Medical Coverage**\nDr. Michael Ramirez, Chief Medical Officer\nDate: April 18, 2025\n\n---\n\nThis contract enables Advantage Medical Coverage to leverage advanced AI and predictive analytics for improved member health outcomes and operational efficiency."
+    }
+  ]
+}

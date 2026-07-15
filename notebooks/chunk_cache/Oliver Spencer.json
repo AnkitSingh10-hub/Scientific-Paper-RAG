@@ -1,0 +1,34 @@
+{
+  "chunks": [
+    {
+      "headline": "Oliver Spencer HR Record Overview",
+      "summary": "This chunk introduces Oliver Spencer, a Backend Software Engineer at Insurellm, including his date of birth, job title, location, and current salary.",
+      "original_text": "# HR Record\n\n# Oliver Spencer\n\n## Summary\n- **Date of Birth**: May 14, 1990\n- **Job Title**: Backend Software Engineer\n- **Location**: Austin, Texas\n- **Current Salary**: $125,000"
+    },
+    {
+      "headline": "Oliver Spencer Career Progression at Insurellm",
+      "summary": "Details Oliver Spencer's career progression at Insurellm, from joining as a Backend Developer I in 2018 to leading the 'Innovate' initiative and taking on a mentorship role by 2023.",
+      "original_text": "## Insurellm Career Progression\n- **March 2018**: Joined Insurellm as a Backend Developer I, focusing on API development for customer management systems.\n- **July 2019**: Promoted to Backend Developer II after successfully leading a team project to revamp the claims processing system, reducing response time by 30%.\n- **June 2021**: Transitioned to Backend Software Engineer with a broader role in architecture and system design, collaborating closely with the DevOps team.\n- **September 2022**: Assigned as the lead engineer for the new \"Innovate\" initiative, aimed at integrating AI-driven solutions into existing products.\n- **January 2023**: Awarded a mentorship role to guide new hires in backend technology and best practices within Insurellm."
+    },
+    {
+      "headline": "Oliver Spencer Performance History 2018-2020",
+      "summary": "Covers Oliver Spencer's annual performance ratings from 2018 to 2020, highlighting his adaptability, problem-solving skills, and struggles with time management.",
+      "original_text": "## Annual Performance History\n- **2018**: **3/5** - Adaptable team player but still learning to take initiative.\n- **2019**: **4/5** - Demonstrated strong problem-solving skills, outstanding contribution on the claims project.\n- **2020**: **2/5** - Struggled with time management; fell behind on deadlines during a high-traffic release period.\n- **2021**: **4/5** - Made a significant turnaround with organized work habits and successful project management."
+    },
+    {
+      "headline": "Oliver Spencer Performance History 2021-2023",
+      "summary": "Details Oliver Spencer's performance ratings from 2021 to 2023, showing his turnaround, exceptional performance in the 'Innovate' initiative, and steady work in 2023.",
+      "original_text": "- **2021**: **4/5** - Made a significant turnaround with organized work habits and successful project management.\n- **2022**: **5/5** - Exceptional performance during the \"Innovate\" initiative, showcasing leadership and creativity.\n- **2023**: **3/5** - Maintaining steady work; expectations for innovation not fully met, leading to discussions about goals.\n\n## Compensation History"
+    },
+    {
+      "headline": "Oliver Spencer Compensation History",
+      "summary": "Outlines Oliver Spencer's salary progression at Insurellm, from his initial salary in 2018 to his current salary in 2023, reflecting promotions and increased responsibilities.",
+      "original_text": "## Compensation History\n- **March 2018**: Initial salary of $80,000.\n- **July 2019**: Salary increased to $90,000 post-promotion.\n- **June 2021**: Salary raised to $105,000 after role transition.\n- **September 2022**: Salary adjustment to $120,000 due to increased responsibilities and performance.\n- **January 2023**: Revised salary of $125,000 in recognition of mentorship role.\n\n## Other HR Notes"
+    },
+    {
+      "headline": "Oliver Spencer Additional HR Notes",
+      "summary": "Provides additional HR notes about Oliver Spencer, including his team rapport, hackathon participation, certification pursuit, and future career interests.",
+      "original_text": "## Other HR Notes\n- Oliver enjoys a strong rapport with team members and is known for organizing regular team-building activities.\n- Participated in Insurellm’s Hackathon in 2022, where he led a project that won “Best Overall Solution.” \n- Pursuing AWS Certified Solutions Architect certification to enhance cloud skillset.\n- Has expressed interest in further leadership opportunities within Insurellm and may consider project management roles in the future."
+    }
+  ]
+}

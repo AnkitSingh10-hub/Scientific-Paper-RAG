@@ -1,0 +1,64 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "This contract is between Insurellm, Inc. (Provider) and ConnectInsure Agency (Client), signed on February 28, 2025, with contract number MK-2025-0056. Services commence on March 1, 2025.",
+      "original_text": "# Contract with ConnectInsure Agency for Markellm\n\n**Contract Date:** February 28, 2025\n**Contract Number:** MK-2025-0056\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and ConnectInsure Agency (\"Client\").\n\n2. **Service Commencement**: Services will commence on March 1, 2025.\n\n3. **Contract Duration**: This Agreement shall remain in effect for 18 months from the commencement date, ending August 31, 2026."
+    },
+    {
+      "headline": "Contract Duration and Fee Structure",
+      "summary": "The contract lasts 18 months, ending August 31, 2026. ConnectInsure agrees to a hybrid pricing model with a basic listing fee, performance-based pricing, and an optional premium analytics package.",
+      "original_text": "3. **Contract Duration**: This Agreement shall remain in effect for 18 months from the commencement date, ending August 31, 2026.\n\n4. **Fee Structure**: ConnectInsure Agency agrees to a hybrid pricing model:\n   - Basic Listing Fee: $199/month for featured placement on the Markellm platform\n   - Performance-Based Pricing: $25 per qualified lead generated through Markellm\n   - Premium Analytics Package (optional): $99/month for enhanced data insights and reporting\n\n5. **Lead Volume Expectations**: Based on ConnectInsure's profile, Markellm projects 80-120 qualified leads per month, resulting in estimated monthly costs of $2,199-$3,199."
+    },
+    {
+      "headline": "Payment Terms and Lead Quality Standards",
+      "summary": "Payment terms include monthly listing fees due on the 1st, performance-based fees invoiced on the 5th, and payment due within 15 days. Qualified leads must meet specific criteria like valid contact info and active shopping intent.",
+      "original_text": "5. **Lead Volume Expectations**: Based on ConnectInsure's profile, Markellm projects 80-120 qualified leads per month, resulting in estimated monthly costs of $2,199-$3,199.\n\n6. **Payment Terms**:\n   - Monthly listing fee due on the 1st of each month\n   - Performance-based fees invoiced monthly on the 5th for prior month activity\n   - Payment due within 15 days of invoice via ACH or credit card\n\n7. **Lead Quality Standards**: Qualified leads meet the following criteria:\n   - Valid contact information (verified phone and email)\n   - Active insurance shopping intent (quote request within 7 days)\n   - Geographic coverage within ConnectInsure's operating territories\n   - Products matching ConnectInsure's offerings"
+    },
+    {
+      "headline": "Dispute Resolution and Renewal Terms",
+      "summary": "Lead quality disputes must be submitted within 5 business days with documentation. The contract automatically renews for 6-month terms unless either party provides written notice of non-renewal 30 days before expiration.",
+      "original_text": "7. **Lead Quality Standards**: Qualified leads meet the following criteria:\n   - Valid contact information (verified phone and email)\n   - Active insurance shopping intent (quote request within 7 days)\n   - Geographic coverage within ConnectInsure's operating territories\n   - Products matching ConnectInsure's offerings\n\n8. **Dispute Resolution**: Lead quality disputes must be submitted within 5 business days with documentation. Insurellm will credit for validated low-quality leads.\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement automatically renews for successive 6-month terms unless either party provides written notice of non-renewal at least 30 days before expiration."
+    },
+    {
+      "headline": "Renewal Fee Adjustments and AI-Powered Matching",
+      "summary": "Listing and performance fees may be adjusted annually with 60 days' notice, historically averaging 5-8%. ConnectInsure benefits from Markellm's AI-powered matching, including consumer needs analysis and product-to-need alignment.",
+      "original_text": "1. **Automatic Renewal**: This agreement automatically renews for successive 6-month terms unless either party provides written notice of non-renewal at least 30 days before expiration.\n\n2. **Fee Adjustments**: Listing fees and performance fees may be adjusted annually with 60 days' written notice. Historical average: 5-8% annual adjustment.\n\n## Features\n\n1. **AI-Powered Matching**: ConnectInsure Agency will benefit from Markellm's sophisticated matching:\n   - Consumer needs analysis with ML algorithms\n   - Product-to-need matching across auto, home, life, health insurance\n   - Geographic and specialty matching\n   - Price range and coverage preference alignment\n   - Consumer demographic matching to ConnectInsure's sweet spot"
+    },
+    {
+      "headline": "Featured Listing and Real-Time Quote Integration",
+      "summary": "ConnectInsure receives a premium marketplace placement with enhanced profiles, badges, and priority positioning. Real-time quote integration includes API connectivity, rate display, and competitive insights.",
+      "original_text": "1. **AI-Powered Matching**: ConnectInsure Agency will benefit from Markellm's sophisticated matching:\n   - Consumer needs analysis with ML algorithms\n   - Product-to-need matching across auto, home, life, health insurance\n   - Geographic and specialty matching\n   - Price range and coverage preference alignment\n   - Consumer demographic matching to ConnectInsure's sweet spot\n\n2. **Featured Listing**: Premium marketplace placement including:\n   - Enhanced agency profile with logo, photos, testimonials\n   - Badges for specializations (e.g., \"High-Risk Auto Specialist\", \"Multi-Policy Expert\")\n   - Priority positioning in search results\n   - Featured placement in relevant consumer matches\n   - Up to 10 agent profiles within agency listing\n\n3. **Real-Time Quote Integration**: Technology enabling:\n   - API integration with ConnectInsure's quoting systems\n   - Real-time rate display to consumers\n   - Competitive positioning insights\n   - Quote abandonment recovery campaigns"
+    },
+    {
+      "headline": "Lead Management Portal and Data Insights",
+      "summary": "The lead management portal offers real-time notifications, routing, CRM integration, and status tracking. The analytics dashboard provides lead volume trends, conversion rates, and competitive benchmarking.",
+      "original_text": "3. **Real-Time Quote Integration**: Technology enabling:\n   - API integration with ConnectInsure's quoting systems\n   - Real-time rate display to consumers\n   - Competitive positioning insights\n   - Quote abandonment recovery campaigns\n\n4. **Lead Management Portal**: Comprehensive tools for:\n   - Real-time lead notifications (SMS, email, push)\n   - Lead routing to specific agents based on specialty\n   - Follow-up task management and CRM integration\n   - Lead status tracking (contacted, quoted, sold, declined)\n   - Performance analytics by agent and product line\n\n5. **Data Insights**: Analytics dashboard providing:\n   - Lead volume trends and forecasting\n   - Conversion rate analysis\n   - Cost per acquisition metrics\n   - Competitive benchmarking (anonymized)\n   - Consumer behavior insights\n   - Product mix recommendations"
+    },
+    {
+      "headline": "Consumer Reviews and Marketing Support",
+      "summary": "Reputation management includes rating collection, response management, and review showcasing. Marketing support includes co-branded materials, email campaigns, and referral program integration.",
+      "original_text": "5. **Data Insights**: Analytics dashboard providing:\n   - Lead volume trends and forecasting\n   - Conversion rate analysis\n   - Cost per acquisition metrics\n   - Competitive benchmarking (anonymized)\n   - Consumer behavior insights\n   - Product mix recommendations\n\n6. **Consumer Reviews**: Reputation management:\n   - Consumer rating and review collection\n   - Response management for reviews\n   - Review showcase on agency profile\n   - Negative review mediation support\n\n7. **Marketing Support**: Platform-provided marketing:\n   - Co-branded marketing materials\n   - Email drip campaigns to warm leads\n   - Social media content suggestions\n   - Seasonal campaign participation\n   - Referral program integration"
+    },
+    {
+      "headline": "Technical Support and Onboarding",
+      "summary": "Technical support includes email, phone, and online help with a 24-hour response time. Onboarding involves a 2-week process, platform training, and integration assistance.",
+      "original_text": "## Support\n\n1. **Technical Support**: ConnectInsure Agency will receive:\n   - Email and phone support Monday-Friday 8 AM - 6 PM EST\n   - Response time: 24 hours for standard inquiries\n   - Online help center and FAQ\n   - Video tutorials for platform features\n\n2. **Onboarding**: Implementation includes:\n   - 2-week onboarding process\n   - Platform training for up to 5 agency staff (3 hours total)\n   - Profile optimization consultation\n   - Quote integration setup (if applicable)\n   - CRM integration assistance"
+    },
+    {
+      "headline": "Account Management and Platform Updates",
+      "summary": "Account management includes a named account manager, monthly check-ins, and quarterly reviews. Platform updates feature regular enhancements, mobile app updates, and advance notice of major changes.",
+      "original_text": "2. **Onboarding**: Implementation includes:\n   - 2-week onboarding process\n   - Platform training for up to 5 agency staff (3 hours total)\n   - Profile optimization consultation\n   - Quote integration setup (if applicable)\n   - CRM integration assistance\n\n3. **Account Management**:\n   - Named account manager with monthly check-ins\n   - Quarterly performance reviews\n   - Lead quality monitoring and optimization\n   - Competitive positioning recommendations\n   - Best practices sharing from top-performing agencies\n\n4. **Platform Updates**:\n   - Regular feature enhancements\n   - Mobile app updates\n   - Consumer experience improvements\n   - New product line additions\n   - Advance notice of major changes (minimum 14 days)"
+    },
+    {
+      "headline": "Marketing Assistance and Signatures",
+      "summary": "Marketing assistance includes quarterly consultations, campaign analysis, and trend reports. The contract is signed by Michael Torres (Insurellm) and Brian Foster (ConnectInsure) on February 28, 2025.",
+      "original_text": "4. **Platform Updates**:\n   - Regular feature enhancements\n   - Mobile app updates\n   - Consumer experience improvements\n   - New product line additions\n   - Advance notice of major changes (minimum 14 days)\n\n5. **Marketing Assistance**:\n   - Quarterly marketing strategy consultations\n   - Campaign performance analysis\n   - Consumer trend reports\n   - Co-marketing opportunity identification\n\n---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nMichael Torres, Chief Revenue Officer\nDate: February 28, 2025\n\n**ConnectInsure Agency**\nBrian Foster, Agency Principal\nDate: February 28, 2025"
+    },
+    {
+      "headline": "Contract Purpose and Conclusion",
+      "summary": "The contract enables ConnectInsure Agency to leverage Markellm's AI-powered marketplace to connect with qualified insurance shoppers and grow their business through data-driven lead generation.",
+      "original_text": "5. **Marketing Assistance**:\n   - Quarterly marketing strategy consultations\n   - Campaign performance analysis\n   - Consumer trend reports\n   - Co-marketing opportunity identification\n\n---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nMichael Torres, Chief Revenue Officer\nDate: February 28, 2025\n\n**ConnectInsure Agency**\nBrian Foster, Agency Principal\nDate: February 28, 2025\n\n---\n\nThis contract enables ConnectInsure Agency to leverage Markellm's AI-powered marketplace to connect with qualified insurance shoppers and grow their business through data-driven lead generation."
+    }
+  ]
+}

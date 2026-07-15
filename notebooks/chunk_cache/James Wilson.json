@@ -1,0 +1,49 @@
+{
+  "chunks": [
+    {
+      "headline": "James Wilson HR Record Overview",
+      "summary": "This chunk introduces James Wilson's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# James Wilson\n\n## Summary\n- **Date of Birth:** April 5, 1978\n- **Job Title:** Chief Technology Officer (CTO)\n- **Location:** San Francisco, California\n- **Current Salary:** $285,000"
+    },
+    {
+      "headline": "James Wilson Career Start and Early Roles",
+      "summary": "This chunk covers the beginning of James Wilson's career, including his roles as Software Architect at Enterprise Systems Inc. and Senior Engineering Manager at CloudSoft Corp.",
+      "original_text": "## Insurellm Career Progression\n- **January 2017 - Present:** Chief Technology Officer\n  - Reports directly to CEO, member of executive leadership team\n  - Oversees all technology strategy and engineering operations\n  - Manages 85-person engineering, product, and data organization\n\n- **March 2012 - December 2016:** VP of Engineering at TechScale Inc.\n  - Built and scaled engineering organization from 15 to 60 engineers\n  - Led product development for B2B SaaS platform\n  - Drove technical strategy and architecture decisions\n\n- **June 2008 - February 2012:** Senior Engineering Manager at CloudSoft Corp.\n  - Managed multiple engineering teams\n  - Delivered major platform features and infrastructure improvements\n\n- **August 2003 - May 2008:** Software Architect at Enterprise Systems Inc."
+    },
+    {
+      "headline": "James Wilson Early Career and CTO Role",
+      "summary": "This chunk overlaps with the previous one and details James Wilson's early career as a Software Architect and his transition to CTO at Insurellm, including key responsibilities.",
+      "original_text": "- **August 2003 - May 2008:** Software Architect at Enterprise Systems Inc.\n  - Designed large-scale distributed systems\n  - Led technical architecture for critical business applications\n\n- **January 2017 - Present:** Chief Technology Officer\n  - Reports directly to CEO, member of executive leadership team\n  - Oversees all technology strategy and engineering operations\n  - Manages 85-person engineering, product, and data organization\n  - Led company through major platform modernization and cloud migration\n  - Drove adoption of AI/ML capabilities across product suite"
+    },
+    {
+      "headline": "James Wilson Performance History 2017-2020",
+      "summary": "This chunk covers James Wilson's annual performance ratings from 2017 to 2020, highlighting his achievements and leadership during these years.",
+      "original_text": "## Annual Performance History\n- **2023:** Rating: 4.9/5\n  *Outstanding performance. Successfully led AI transformation initiative. Exceptional strategic leadership and team building. Key driver of company growth.*\n\n- **2022:** Rating: 4.7/5\n  *Exceeded expectations. Strong execution on platform modernization. Improved engineering productivity and velocity significantly.*\n\n- **2021:** Rating: 4.6/5\n  *Excellent performance navigating remote transition. Built strong engineering culture and maintained high delivery standards.*\n\n- **2020:** Rating: 4.4/5\n  *Strong performance during challenging year. Successfully pivoted technology strategy for remote-first world.*"
+    },
+    {
+      "headline": "James Wilson Performance History 2017-2023",
+      "summary": "This chunk overlaps with the previous one and includes James Wilson's performance ratings from 2017 to 2023, emphasizing his consistent high performance.",
+      "original_text": "- **2020:** Rating: 4.4/5\n  *Strong performance during challenging year. Successfully pivoted technology strategy for remote-first world.*\n\n- **2019:** Rating: 4.8/5\n  *Exceptional leadership. Scaled engineering organization effectively while maintaining quality and culture.*\n\n- **2018:** Rating: 4.5/5\n  *Excellent year with successful cloud migration. Strong technical vision and execution.*\n\n- **2017:** Rating: 4.3/5\n  *Strong start as CTO. Quickly assessed technical landscape and began strategic improvements.*\n\n- **2023:** Rating: 4.9/5\n  *Outstanding performance. Successfully led AI transformation initiative. Exceptional strategic leadership and team building. Key driver of company growth.*"
+    },
+    {
+      "headline": "James Wilson Compensation History 2017-2020",
+      "summary": "This chunk details James Wilson's compensation history from 2017 to 2020, including base salary, bonuses, and equity grants.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $285,000 + Bonus: $125,000 + Equity refresh\n- **2022:** Base Salary: $270,000 + Bonus: $110,000 + Equity refresh\n- **2021:** Base Salary: $255,000 + Bonus: $100,000\n- **2020:** Base Salary: $240,000 + Bonus: $85,000"
+    },
+    {
+      "headline": "James Wilson Compensation History 2017-2023",
+      "summary": "This chunk overlaps with the previous one and covers James Wilson's full compensation history from 2017 to 2023, including all bonuses and equity details.",
+      "original_text": "- **2020:** Base Salary: $240,000 + Bonus: $85,000\n- **2019:** Base Salary: $225,000 + Bonus: $95,000\n- **2018:** Base Salary: $210,000 + Bonus: $80,000\n- **2017:** Base Salary: $195,000 + Bonus: $70,000 + Significant equity grant\n\n- **2023:** Base Salary: $285,000 + Bonus: $125,000 + Equity refresh\n- **2022:** Base Salary: $270,000 + Bonus: $110,000 + Equity refresh\n- **2021:** Base Salary: $255,000 + Bonus: $100,000"
+    },
+    {
+      "headline": "James Wilson Education and Industry Recognition",
+      "summary": "This chunk covers James Wilson's educational background, board participation, industry recognition, and patents.",
+      "original_text": "## Other HR Notes\n- **Education:** MS in Computer Science from MIT, BS in Computer Engineering from Stanford University\n- **Board Participation:** Serves on technical advisory board for two InsurTech startups\n- **Industry Recognition:** Named to InsureTech 100 list (2021, 2022, 2023), speaker at major technology conferences\n- **Patents:** 5 patents in distributed systems and insurance technology"
+    },
+    {
+      "headline": "James Wilson Leadership and Strategic Impact",
+      "summary": "This chunk details James Wilson's leadership qualities, strategic impact at Insurellm, and feedback from colleagues and superiors.",
+      "original_text": "- **Leadership:** Known for building high-performing teams and fostering innovation culture. Strong mentor to technical leaders.\n- **Strategic Impact:** Transformed Insurellm's technology from legacy systems to modern cloud-native architecture. Key architect of AI strategy.\n- **Feedback:** Visionary technology leader with exceptional strategic thinking and execution capabilities. Trusted partner to CEO and board. Critical to company's technical success and future growth."
+    }
+  ]
+}

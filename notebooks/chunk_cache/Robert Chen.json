@@ -1,0 +1,44 @@
+{
+  "chunks": [
+    {
+      "headline": "Robert Chen HR Record Overview",
+      "summary": "This chunk introduces Robert Chen's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Robert Chen\n\n## Summary\n- **Date of Birth:** February 28, 1983\n- **Job Title:** Senior Full Stack Engineer\n- **Location:** San Francisco, California\n- **Current Salary:** $152,000"
+    },
+    {
+      "headline": "Robert Chen Career Progression at Insurellm",
+      "summary": "Details Robert Chen's career progression, starting with his current role as Senior Full Stack Engineer at Insurellm, including his responsibilities and achievements.",
+      "original_text": "## Insurellm Career Progression\n- **January 2016 - Present:** Senior Full Stack Engineer\n  - Technical lead for Homellm home insurance portal\n  - Architects full-stack solutions using React, Node.js, and PostgreSQL\n  - Mentors team of 6 engineers\n  - Led 3 major platform releases\n\n- **June 2012 - December 2015:** Full Stack Developer at WebSolutions Inc."
+    },
+    {
+      "headline": "Robert Chen Early Career History",
+      "summary": "Covers Robert Chen's roles before joining Insurellm, including his time at WebSolutions Inc. and TechStartup, highlighting his experience in web development and SaaS platforms.",
+      "original_text": "- **June 2012 - December 2015:** Full Stack Developer at WebSolutions Inc.\n  - Built web applications for enterprise clients\n  - Worked with various JavaScript frameworks and backend technologies\n\n- **August 2008 - May 2012:** Software Engineer at TechStartup\n  - Developed features for SaaS platform\n  - Gained experience across full technology stack"
+    },
+    {
+      "headline": "Robert Chen Performance History 2023-2021",
+      "summary": "Summarizes Robert Chen's annual performance ratings from 2023 to 2021, highlighting his exceptional performance, leadership, and technical contributions.",
+      "original_text": "## Annual Performance History\n- **2023:** Rating: 4.8/5\n  *Exceptional performance. Led critical platform modernization project. Outstanding technical leadership and mentorship.*\n\n- **2022:** Rating: 4.6/5\n  *Exceeded expectations. Delivered major features ahead of schedule with high quality. Strong team collaboration.*\n\n- **2021:** Rating: 4.4/5\n  *Strong performance with successful migration to microservices architecture. Effective technical decision-making.*"
+    },
+    {
+      "headline": "Robert Chen Performance History 2020-2016",
+      "summary": "Details Robert Chen's performance ratings from 2020 to 2016, showing consistent growth and contributions, including his transition to remote work and early achievements at Insurellm.",
+      "original_text": "- **2020:** Rating: 4.2/5\n  *Good performance maintaining productivity during remote transition. Supported team well through change.*\n\n- **2019:** Rating: 4.5/5\n  *Excellent year with successful Homellm rewrite. Strong architectural contributions.*\n\n- **2018:** Rating: 4.3/5\n  *Solid performance with consistent high-quality delivery. Growing into technical leadership role.*\n\n- **2017:** Rating: 4.1/5\n  *Good performance. Expanding expertise across full stack and taking on more complex features.*\n\n- **2016:** Rating: 4.0/5\n  *Strong start at Insurellm. Quick to learn domain and contribute effectively.*"
+    },
+    {
+      "headline": "Robert Chen Compensation History 2023-2020",
+      "summary": "Lists Robert Chen's compensation history from 2023 to 2020, including base salary and bonuses, showing his salary growth over time.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $152,000 + Bonus: $28,000\n- **2022:** Base Salary: $145,000 + Bonus: $25,000\n- **2021:** Base Salary: $138,000 + Bonus: $22,000\n- **2020:** Base Salary: $132,000 + Bonus: $20,000"
+    },
+    {
+      "headline": "Robert Chen Compensation History 2019-2016 and HR Notes",
+      "summary": "Covers Robert Chen's compensation from 2019 to 2016 and introduces his HR notes, including education, technical expertise, and recognition.",
+      "original_text": "- **2019:** Base Salary: $125,000 + Bonus: $18,000\n- **2018:** Base Salary: $118,000 + Bonus: $15,000\n- **2017:** Base Salary: $112,000 + Bonus: $12,000\n- **2016:** Base Salary: $105,000 + Bonus: $10,000\n\n## Other HR Notes\n- **Education:** MS in Computer Science from Stanford University, BS in Computer Engineering from MIT"
+    },
+    {
+      "headline": "Robert Chen Technical Expertise and Recognition",
+      "summary": "Highlights Robert Chen's technical expertise, recognition, mentorship, patents, and feedback, emphasizing his contributions to Insurellm's success.",
+      "original_text": "- **Technical Expertise:** Expert in React, Node.js, TypeScript, PostgreSQL, AWS, microservices architecture\n- **Recognition:** Engineering Excellence Award 2023, Technical Leadership Award 2021\n- **Mentorship:** Mentored 12 engineers during tenure. Known for developing junior talent into strong contributors.\n- **Patents:** Co-inventor on 1 patent for insurance processing optimization\n- **Feedback:** World-class engineer with exceptional technical and leadership skills. Trusted advisor to engineering leadership. Critical to company's technical success."
+    }
+  ]
+}

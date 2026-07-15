@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Maya Thompson HR Record Overview",
+      "summary": "This chunk introduces Maya Thompson's HR record, including her date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Maya Thompson\n\n## Summary\n- **Date of Birth:** June 14, 1993\n- **Job Title:** Data Engineer\n- **Location:** New York, New York\n- **Current Salary:** $110,000\n\n## Insurellm Career Progression\n- **March 2021 - Present:** Data Engineer"
+    },
+    {
+      "headline": "Maya Thompson Career Progression at Insurellm",
+      "summary": "Details Maya Thompson's role as a Data Engineer at Insurellm, including her responsibilities, achievements, and prior experience at DataFlow Systems and Analytics Corp.",
+      "original_text": "## Insurellm Career Progression\n- **March 2021 - Present:** Data Engineer\n  - Builds and maintains data pipelines for all Insurellm products\n  - Manages data warehouse infrastructure on Snowflake\n  - Optimized ETL processes reducing processing time by 45%\n  - Collaborates with data science and analytics teams\n\n- **July 2019 - February 2021:** Junior Data Engineer at DataFlow Systems\n  - Developed ETL pipelines for enterprise data integration\n  - Worked with Airflow, Python, and SQL\n\n- **June 2017 - June 2019:** Data Analyst at Analytics Corp.\n  - Analyzed business data and created reports\n  - Transitioned from analysis to engineering role"
+    },
+    {
+      "headline": "Maya Thompson Annual Performance History",
+      "summary": "Covers Maya Thompson's annual performance ratings from 2021 to 2023, highlighting her achievements and feedback at Insurellm.",
+      "original_text": "- **June 2017 - June 2019:** Data Analyst at Analytics Corp.\n  - Analyzed business data and created reports\n  - Transitioned from analysis to engineering role\n\n## Annual Performance History\n- **2023:** Rating: 4.3/5\n  *Strong performance. Delivered critical data infrastructure improvements. Good collaboration with stakeholders.*\n\n- **2022:** Rating: 4.5/5\n  *Excellent performance. Led successful migration to Snowflake. Strong technical expertise and project management.*\n\n- **2021:** Rating: 4.0/5\n  *Good first year at Insurellm. Quickly ramped up on data infrastructure and delivered reliable pipelines.*"
+    },
+    {
+      "headline": "Maya Thompson Compensation History",
+      "summary": "Provides details of Maya Thompson's compensation history from 2021 to 2023, including base salary and bonuses.",
+      "original_text": "## Annual Performance History\n- **2023:** Rating: 4.3/5\n  *Strong performance. Delivered critical data infrastructure improvements. Good collaboration with stakeholders.*\n\n- **2022:** Rating: 4.5/5\n  *Excellent performance. Led successful migration to Snowflake. Strong technical expertise and project management.*\n\n- **2021:** Rating: 4.0/5\n  *Good first year at Insurellm. Quickly ramped up on data infrastructure and delivered reliable pipelines.*\n\n## Compensation History\n- **2023:** Base Salary: $110,000 + Bonus: $12,000\n- **2022:** Base Salary: $102,000 + Bonus: $14,000\n- **2021:** Base Salary: $95,000 + Bonus: $8,000"
+    },
+    {
+      "headline": "Maya Thompson Education, Skills, and HR Notes",
+      "summary": "Includes Maya Thompson's educational background, skills, certifications, professional development, and additional HR feedback.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $110,000 + Bonus: $12,000\n- **2022:** Base Salary: $102,000 + Bonus: $14,000\n- **2021:** Base Salary: $95,000 + Bonus: $8,000\n\n## Other HR Notes\n- **Education:** MS in Data Science from Columbia University, BS in Mathematics from University of Michigan\n- **Skills:** Expert in Python, SQL, Airflow, dbt, Snowflake, AWS data services\n- **Certifications:** AWS Certified Data Analytics, Snowflake SnowPro Core\n- **Professional Development:** Regularly attends data engineering conferences and contributes to tech blog\n- **Feedback:** Strong technical contributor with excellent data architecture skills. Reliable and detail-oriented. Good communicator who translates technical concepts for non-technical stakeholders."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Marcus Johnson HR Record Overview",
+      "summary": "This chunk introduces Marcus Johnson's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Marcus Johnson\n\n## Summary\n- **Date of Birth:** February 17, 1988\n- **Job Title:** Customer Success Manager\n- **Location:** New York, New York\n- **Current Salary:** $98,000"
+    },
+    {
+      "headline": "Marcus Johnson Career Progression at Insurellm",
+      "summary": "Details Marcus Johnson's career progression at Insurellm, starting from his role as Customer Success Associate in 2018 to his current position as Customer Success Manager since 2020.",
+      "original_text": "## Insurellm Career Progression\n- **April 2020 - Present:** Customer Success Manager\n  - Manages portfolio of 25 enterprise clients generating $5M in annual revenue\n  - Achieved 95% client retention rate over past three years\n  - Leads quarterly business reviews and strategic planning sessions with clients\n\n- **September 2018 - March 2020:** Customer Success Associate\n  - Supported senior CSMs with client onboarding and training\n  - Managed day-to-day communication with mid-market clients\n  - Created customer success playbooks and best practices documentation"
+    },
+    {
+      "headline": "Marcus Johnson Early Career and Performance History",
+      "summary": "Covers Marcus Johnson's early career at SaaS Solutions Inc. and his annual performance ratings from 2020 to 2023, highlighting his achievements and challenges.",
+      "original_text": "- **January 2016 - August 2018:** Account Manager at SaaS Solutions Inc.\n  - Managed B2B client relationships in software sector\n  - Focused on upselling and customer retention\n\n## Annual Performance History\n- **2023:** Rating: 4.7/5\n  *Exceptional performance with highest client satisfaction scores in the team. Successfully expanded three key accounts.*\n\n- **2022:** Rating: 4.3/5\n  *Strong performance with good retention numbers. Faced challenges with one difficult client but resolved successfully.*"
+    },
+    {
+      "headline": "Marcus Johnson Performance and Compensation History",
+      "summary": "Includes Marcus Johnson's performance ratings for 2021 and 2020, along with his compensation history from 2018 to 2023, detailing base salary and bonuses.",
+      "original_text": "- **2021:** Rating: 3.8/5\n  *Solid year but missed expansion revenue targets in Q2 and Q3. Improved significantly in Q4.*\n\n- **2020:** Rating: 4.0/5\n  *Good transition to CSM role. Quickly built rapport with enterprise clients and demonstrated strategic thinking.*\n\n## Compensation History\n- **2023:** Base Salary: $98,000 + Bonus: $15,000\n- **2022:** Base Salary: $92,000 + Bonus: $12,000\n- **2021:** Base Salary: $85,000 + Bonus: $8,000\n- **2020:** Base Salary: $78,000 + Bonus: $10,000\n- **2019:** Base Salary: $68,000 + Bonus: $5,000\n- **2018:** Base Salary: $65,000"
+    },
+    {
+      "headline": "Marcus Johnson Education, Certifications, and HR Notes",
+      "summary": "Provides additional HR notes about Marcus Johnson, including his education, certifications, recognition, mentorship activities, and feedback from colleagues.",
+      "original_text": "## Other HR Notes\n- **Education:** BA in Business Administration from NYU Stern School of Business\n- **Certifications:** Certified Customer Success Manager (CCSM), Salesforce Administrator\n- **Recognition:** Customer Champion Award 2023 for highest NPS scores\n- **Mentorship:** Actively mentors new Customer Success Associates\n- **Feedback:** Excellent relationship builder with deep product knowledge. Strong strategic advisor to clients. Known for going above and beyond to ensure client success."
+    }
+  ]
+}

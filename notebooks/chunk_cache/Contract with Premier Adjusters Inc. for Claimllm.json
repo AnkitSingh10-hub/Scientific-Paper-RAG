@@ -1,0 +1,64 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Effective Date with Premier Adjusters Inc.",
+      "summary": "The contract between Insurellm and Premier Adjusters Inc. for Claimllm is effective from February 15, 2025. It outlines the agreement's start date and the parties involved.",
+      "original_text": "# Contract with Premier Adjusters Inc. for Claimllm\n\n---\n\n## Terms\n\n1. **Agreement Effective Date**: This contract is effective as of February 15, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on February 14, 2027."
+    },
+    {
+      "headline": "Contract Duration and Subscription Details",
+      "summary": "The contract lasts 24 months, ending February 14, 2027. Premier Adjusters Inc. subscribes to the Advanced Tier of Claimllm at $9,500/month, totaling $228,000 for the term.",
+      "original_text": "1. **Agreement Effective Date**: This contract is effective as of February 15, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on February 14, 2027.\n3. **Subscription Type**: Premier Adjusters Inc. agrees to subscribe to the **Advanced Tier** of Claimllm, at a cost of $9,500/month, totaling $228,000 for the duration of this contract.\n4. **Claims Volume**: Advanced Tier supports up to 25,000 claims annually. Current baseline estimate: 18,000 claims/year."
+    },
+    {
+      "headline": "Payment Terms and Performance Guarantees",
+      "summary": "Payments are due on the 5th of each month via wire transfer, with a 1.8% late penalty. Insurellm guarantees FNOL-to-assignment time under 2 hours and fraud detection accuracy of 85%+.",
+      "original_text": "4. **Claims Volume**: Advanced Tier supports up to 25,000 claims annually. Current baseline estimate: 18,000 claims/year.\n5. **Payment Terms**: Payments are due on the 5th of each month via wire transfer. Late payments will incur a penalty of 1.8% per month.\n6. **Performance Guarantees**: Insurellm guarantees average FNOL-to-assignment time of less than 2 hours, and fraud detection accuracy of 85%+ on confirmed fraud cases.\n7. **Termination Clause**: Either party may terminate this agreement with 60 days' written notice. No early termination fees after 12 months."
+    },
+    {
+      "headline": "Termination Clause and Renewal Terms",
+      "summary": "Either party can terminate with 60 days' notice, with no early termination fees after 12 months. The contract auto-renews for 24 months unless notice is given 60 days before expiration.",
+      "original_text": "7. **Termination Clause**: Either party may terminate this agreement with 60 days' written notice. No early termination fees after 12 months.\n\n---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 24-month term unless either party provides written notice of non-renewal at least 60 days before expiration.\n2. **Pricing Adjustments**: Renewal pricing subject to annual CPI adjustment, maximum 7% increase."
+    },
+    {
+      "headline": "Renewal Pricing and Tier Flexibility",
+      "summary": "Renewal pricing is subject to annual CPI adjustments, capped at 7%. Premier Adjusters can move to the Enterprise tier at renewal or annually with 45 days' notice.",
+      "original_text": "2. **Pricing Adjustments**: Renewal pricing subject to annual CPI adjustment, maximum 7% increase.\n3. **Tier Flexibility**: Premier may move to Enterprise tier at renewal or annually with 45 days' notice and prorated adjustment.\n\n---\n\n## Features\n\n1. **Access to Advanced Tier Features**: Premier Adjusters Inc. will have access to comprehensive claims automation:"
+    },
+    {
+      "headline": "Advanced Tier Features Overview",
+      "summary": "Premier Adjusters gains access to comprehensive claims automation, including intelligent FNOL processing, automated triage, computer vision damage assessment, and predictive fraud detection.",
+      "original_text": "1. **Access to Advanced Tier Features**: Premier Adjusters Inc. will have access to comprehensive claims automation:\n   - Intelligent FNOL Processing across all communication channels\n   - Automated Triage and Routing with ML-based severity assessment\n   - **Computer Vision Damage Assessment** with photo/video analysis and automated repair cost estimation\n   - **Predictive Fraud Detection** with network analysis and anomaly detection\n   - Smart Document Processing with OCR, NLP, and auto-extraction from medical records, police reports, and estimates\n   - Dynamic Reserve Setting with AI-powered predictive modeling\n   - Vendor Management Platform with automated assignment and performance tracking\n   - Payment Automation for approved claims with multi-party splitting\n   - Claimant Communication Hub with omnichannel messaging\n   - **Advanced Analytics** with predictive cycle time modeling and settlement optimization"
+    },
+    {
+      "headline": "Computer Vision and Fraud Analytics Capabilities",
+      "summary": "The Advanced Tier includes computer vision for damage assessment (vehicles, property) and fraud analytics with social network analysis, geospatial anomaly detection, and predictive scoring.",
+      "original_text": "2. **Computer Vision Capabilities:**\n   - Automated vehicle damage assessment from photos (dents, scratches, structural damage)\n   - Property damage evaluation (roof, siding, interior damage)\n   - Severity scoring and repair cost estimation\n   - Parts identification and replacement recommendations\n   - Integration with estimating systems (CCC, Mitchell, Audatex)\n\n3. **Fraud Analytics:**\n   - Social network analysis to identify claim rings\n   - Geospatial anomaly detection\n   - Behavioral pattern matching against known fraud indicators\n   - Third-party data enrichment (public records, social media)\n   - Predictive fraud scoring with explanation rationale"
+    },
+    {
+      "headline": "Vendor Network and Support Overview",
+      "summary": "The contract includes a vendor network of 200+ preferred providers, automated work assignment, and real-time scheduling. Technical support is priority-based with a dedicated team and 24/7 emergency hotline.",
+      "original_text": "4. **Vendor Network:**\n   - Support for 200+ preferred vendors (repair shops, medical providers, attorneys)\n   - Automated work assignment based on location, capacity, and quality scores\n   - Real-time vendor availability and scheduling\n   - Vendor performance dashboards and scorecards\n\n---\n\n## Support\n\n1. **Technical Support**: Premier Adjusters Inc. will receive priority advanced support:\n   - Dedicated technical support team\n   - 24/7 emergency hotline for critical system issues\n   - Response time: 2 hours critical, 6 hours high priority, 12 hours standard\n   - Dedicated Slack channel for real-time communication"
+    },
+    {
+      "headline": "Training and Implementation Program",
+      "summary": "The training program includes a 4-week implementation with on-site support, role-specific training for up to 40 staff, monthly webinars, and an annual certification program.",
+      "original_text": "2. **Training**: Comprehensive training program:\n   - 4-week implementation with on-site support (first 2 weeks)\n   - Training for up to 40 staff members (adjusters, supervisors, IT)\n   - Role-specific training tracks (FNOL specialists, senior adjusters, fraud investigators)\n   - Monthly advanced training webinars on new features\n   - Annual adjuster certification program\n   - Access to online training portal with 50+ courses"
+    },
+    {
+      "headline": "Updates, Maintenance, and Account Management",
+      "summary": "Monthly platform updates, bi-weekly security patches, and maintenance windows are scheduled. A named Customer Success Manager provides weekly check-ins initially, then bi-weekly, with quarterly business reviews.",
+      "original_text": "3. **Updates and Maintenance**:\n   - Monthly platform updates with new features\n   - Bi-weekly security patches and improvements\n   - Maintenance windows: Saturday 11 PM - Sunday 4 AM EST\n   - 72-hour advance notice for major updates\n   - Option to delay non-critical updates by up to 30 days\n\n4. **Account Management**:\n   - Named Customer Success Manager with weekly check-ins (first 90 days), then bi-weekly\n   - Quarterly executive business reviews with metrics analysis\n   - Annual strategic planning session\n   - Direct escalation path to VP of Customer Success"
+    },
+    {
+      "headline": "Integration Services and Data Analytics",
+      "summary": "Integration with Premier's core systems (Guidewire, Salesforce, DocuSign) includes up to 100 hours of custom API development. Data services include custom dashboards, monthly exports, and benchmark comparisons.",
+      "original_text": "5. **Integration Services**:\n   - Integration with Premier's core systems:\n     - Guidewire ClaimCenter\n     - Salesforce CRM\n     - DocuSign for settlement documents\n     - Payment processing systems (CheckFree, AvidXchange)\n   - Custom API development (up to 100 hours included)\n   - Ongoing integration support and optimization\n\n6. **Data and Analytics:**\n   - Custom dashboard development (up to 5 dashboards)\n   - Monthly data exports in preferred format\n   - Benchmark comparisons against industry standards\n   - Predictive analytics consultation sessions"
+    },
+    {
+      "headline": "Contract Signatures and Strategic Partnership",
+      "summary": "The contract is signed by Sarah Chen (VP of Sales, Insurellm) and David Kowalski (President & CEO, Premier Adjusters Inc.) on February 15, 2025. It establishes a strategic partnership for AI-powered claims technology.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: February 15, 2025\n\n_________________________________\n**David Kowalski**\n**Title**: President & CEO\n**Premier Adjusters Inc.**\n**Date**: February 15, 2025\n\n---\n\n*This contract establishes Premier Adjusters Inc. as a strategic partner of Insurellm, leveraging advanced AI-powered claims technology to deliver superior service to their clients while optimizing operational efficiency.*"
+    }
+  ]
+}

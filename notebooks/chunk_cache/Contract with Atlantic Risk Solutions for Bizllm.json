@@ -1,0 +1,59 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Effective Date",
+      "summary": "The contract between Insurellm and Atlantic Risk Solutions for Bizllm is effective from January 15, 2025. It outlines the agreement's start date and the parties involved.",
+      "original_text": "# Contract with Atlantic Risk Solutions for Bizllm\n\n---\n\n## Terms\n\n1. **Agreement Effective Date**: This contract is effective as of January 15, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 12 months, concluding on January 14, 2026."
+    },
+    {
+      "headline": "Contract Duration and Subscription Details",
+      "summary": "The contract lasts 12 months, ending January 14, 2026. Atlantic Risk Solutions subscribes to Bizllm's Professional Tier at $12,000/month, totaling $144,000 for the term.",
+      "original_text": "1. **Agreement Effective Date**: This contract is effective as of January 15, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 12 months, concluding on January 14, 2026.\n3. **Subscription Type**: Atlantic Risk Solutions agrees to subscribe to the **Professional Tier** of Bizllm, at a cost of $12,000/month, totaling $144,000 for the duration of this contract.\n4. **Payment Terms**: Payments are due on the 10th of each month via ACH transfer."
+    },
+    {
+      "headline": "Payment Terms and User Licenses",
+      "summary": "Payments are due on the 10th of each month via ACH transfer, with a 1.5% late penalty and potential service suspension after 15 days. The contract includes 35 named user licenses, with additional users at $180/month each.",
+      "original_text": "3. **Subscription Type**: Atlantic Risk Solutions agrees to subscribe to the **Professional Tier** of Bizllm, at a cost of $12,000/month, totaling $144,000 for the duration of this contract.\n4. **Payment Terms**: Payments are due on the 10th of each month via ACH transfer. Late payments will incur a penalty of 1.5% per month and may result in service suspension after 15 days delinquency.\n5. **User Licenses**: Contract includes 35 named user licenses. Additional users may be added at $180/month per license.\n6. **Termination Clause**: Either party may terminate this agreement with 45 days' written notice."
+    },
+    {
+      "headline": "Termination Clause and Renewal Terms",
+      "summary": "Either party can terminate the contract with 45 days' written notice, with early termination requiring 50% of the remaining contract value. The agreement automatically renews for 12 months unless notice is given 45 days before expiration.",
+      "original_text": "5. **User Licenses**: Contract includes 35 named user licenses. Additional users may be added at $180/month per license.\n6. **Termination Clause**: Either party may terminate this agreement with 45 days' written notice. Early termination requires payment of 50% of remaining contract value.\n\n---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 12-month term unless either party provides written notice of non-renewal at least 45 days before the expiration date."
+    },
+    {
+      "headline": "Renewal Pricing and Discounts",
+      "summary": "Pricing increases are capped at 8% annually for the first two renewal periods. If Atlantic Risk Solutions upgrades to the Enterprise tier during renewal, they receive a 15% discount on the difference for the first renewal year.",
+      "original_text": "## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 12-month term unless either party provides written notice of non-renewal at least 45 days before the expiration date.\n2. **Price Protection**: Pricing increases capped at 8% annually for the first two renewal periods, providing Atlantic Risk Solutions with budget predictability.\n3. **Volume Discounts**: If Atlantic Risk Solutions expands to Enterprise tier during renewal, they receive a 15% discount on the difference for the first renewal year."
+    },
+    {
+      "headline": "Professional Tier Features Overview",
+      "summary": "Atlantic Risk Solutions gains access to all Professional Tier features, including multi-line underwriting, business intelligence integration, cyber risk assessment, and more.",
+      "original_text": "## Features\n\n1. **Access to Professional Tier Features**: Atlantic Risk Solutions will have access to all Professional Tier features, including:\n   - Multi-Line Underwriting Engine supporting general liability, professional liability, property, workers' compensation, and cyber insurance\n   - Business Intelligence Integration with automated data gathering from 50+ data sources\n   - Cyber Risk Assessment module with security posture evaluation\n   - Workers' Compensation Optimization with payroll integration and class code analysis"
+    },
+    {
+      "headline": "Professional Tier Features Continued",
+      "summary": "Additional Professional Tier features include commercial property evaluation, professional liability specialization, portfolio management, agent portal, and claims management integration.",
+      "original_text": "   - Multi-Line Underwriting Engine supporting general liability, professional liability, property, workers' compensation, and cyber insurance\n   - Business Intelligence Integration with automated data gathering from 50+ data sources\n   - Cyber Risk Assessment module with security posture evaluation\n   - Workers' Compensation Optimization with payroll integration and class code analysis\n   - Commercial Property Evaluation with catastrophe modeling\n   - Professional Liability Specialization for E&O coverage\n   - Portfolio Management Dashboard with loss ratio tracking and geographic analysis\n   - Agent and Broker Portal supporting up to 500 distribution partners\n   - Claims Management Integration with reserve recommendation engine"
+    },
+    {
+      "headline": "Industry-Specific Templates and Advanced Reporting",
+      "summary": "The contract includes pre-configured underwriting templates for industries like technology, healthcare, and construction. Monthly automated reports cover new business pipeline, renewal retention, loss ratios, and agent performance.",
+      "original_text": "2. **Industry-Specific Templates**: Pre-configured underwriting templates for:\n   - Technology companies and software-as-a-service (SaaS) businesses\n   - Professional services firms (consulting, accounting, legal)\n   - Healthcare providers and medical practices\n   - Contractors and construction trades\n   - Restaurants and hospitality businesses\n\n3. **Advanced Reporting**: Monthly automated reports including:\n   - New business pipeline and conversion rates\n   - Renewal retention analysis\n   - Loss ratio trending by line of business"
+    },
+    {
+      "headline": "Support: Technical and Training",
+      "summary": "Atlantic Risk Solutions receives priority technical support with a 4-hour response time for critical issues and 12-hour for standard requests. Training includes initial onboarding for 15 staff, bi-monthly webinars, and access to an on-demand video library.",
+      "original_text": "## Support\n\n1. **Technical Support**: Atlantic Risk Solutions will receive priority technical support from Insurellm for any issues arising from the Bizllm product:\n   - Dedicated support phone line and email\n   - Response time: 4 hours for critical issues, 12 hours for standard requests\n   - Access to technical support Monday-Friday 7 AM - 8 PM EST\n\n2. **Training**: Insurellm will provide comprehensive training program:\n   - Initial onboarding for up to 15 staff members (20 hours total training)\n   - Bi-monthly webinars on platform updates and best practices\n   - Access to on-demand video library and knowledge base"
+    },
+    {
+      "headline": "Support: Updates, Account Management, and Integration",
+      "summary": "The contract includes quarterly platform updates, monthly bug fixes, and maintenance windows with 48-hour notice. Account management features an assigned manager, quarterly reviews, and priority beta access. Integration support covers systems like Applied Epic and third-party data providers.",
+      "original_text": "3. **Updates and Maintenance**:\n   - Quarterly platform updates with new features and security enhancements\n   - Monthly minor updates and bug fixes\n   - Maintenance windows: Sunday 1 AM - 5 AM EST\n   - 48-hour advance notice for all scheduled maintenance\n\n4. **Account Management**:\n   - Assigned account manager with quarterly business review meetings\n   - Annual strategic planning session to align platform usage with business goals\n   - Priority access to new beta features\n\n5. **Integration Support**: Technical assistance for integrating Bizllm with:\n   - Atlantic's existing agency management system (Applied Epic)\n   - Commercial lines rating platforms\n   - Third-party data providers (Dun & Bradstreet, Experian, Verisk)"
+    },
+    {
+      "headline": "Signatures and Contract Conclusion",
+      "summary": "The contract is signed by Michael Torres (CRO, Insurellm) and Diana Marquez (SVP, Atlantic Risk Solutions) on January 15, 2025. It establishes a partnership for leveraging AI technology in commercial insurance underwriting.",
+      "original_text": "4. **Account Management**:\n   - Assigned account manager with quarterly business review meetings\n   - Annual strategic planning session to align platform usage with business goals\n   - Priority access to new beta features\n\n5. **Integration Support**: Technical assistance for integrating Bizllm with:\n   - Atlantic's existing agency management system (Applied Epic)\n   - Commercial lines rating platforms\n   - Third-party data providers (Dun & Bradstreet, Experian, Verisk)\n   - Email marketing platforms for agent communications\n\n---\n\n**Signatures:**\n\n_________________________________\n**Michael Torres**\n**Title**: Chief Revenue Officer\n**Insurellm, Inc.**\n**Date**: January 15, 2025\n\n_________________________________\n**Diana Marquez**\n**Title**: Senior Vice President, Commercial Lines\n**Atlantic Risk Solutions**\n**Date**: January 15, 2025\n\n---\n\n*This contract establishes a professional partnership between Insurellm and Atlantic Risk Solutions, enabling Atlantic to leverage cutting-edge AI technology for commercial insurance underwriting and administration.*"
+    }
+  ]
+}

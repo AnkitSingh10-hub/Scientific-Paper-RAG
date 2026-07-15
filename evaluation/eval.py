@@ -14,7 +14,7 @@ AZURE_ENDPOINT = (
     "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
 )
 
-MODEL = "DeepSeek-V4-Pro"
+MODEL = "mistral-medium-3-5"
 db_name = "vector_database"
 
 

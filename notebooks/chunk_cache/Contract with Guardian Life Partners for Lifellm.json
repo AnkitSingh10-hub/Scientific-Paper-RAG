@@ -1,0 +1,59 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Effective Date",
+      "summary": "The contract between Insurellm (Lifellm) and Guardian Life Partners is effective from March 1, 2025, and outlines the terms of their agreement for the Growth Tier subscription.",
+      "original_text": "# Contract with Guardian Life Partners for Lifellm\n\n---\n\n## Terms\n\n1. **Agreement Effective Date**: This contract is effective as of March 1, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on February 28, 2027.\n3. **Subscription Type**: Guardian Life Partners agrees to subscribe to the **Growth Tier** of Lifellm, at a cost of $7,500/month, totaling $180,000 for the duration of this contract."
+    },
+    {
+      "headline": "Subscription Details and Payment Terms",
+      "summary": "The Growth Tier subscription costs $7,500/month, supports up to 10,000 active policies, and includes payment terms with a 1.5% late penalty. User licenses and termination clauses are also defined.",
+      "original_text": "3. **Subscription Type**: Guardian Life Partners agrees to subscribe to the **Growth Tier** of Lifellm, at a cost of $7,500/month, totaling $180,000 for the duration of this contract.\n4. **Policy Capacity**: Growth Tier supports up to 10,000 active policies with underwriting for 3,000 new applications annually.\n5. **Payment Terms**: Payments are due on the 1st of each month via ACH transfer. Late payments incur a 1.5% monthly penalty.\n6. **User Licenses**: Contract includes 25 named user licenses (underwriters, administrators, agents). Additional licenses: $120/month per user.\n7. **Termination Clause**: Either party may terminate with 60 days' written notice. Early termination before month 12 requires payment of 30% of remaining contract value."
+    },
+    {
+      "headline": "Termination and Renewal Terms",
+      "summary": "The contract allows termination with 60 days' notice and includes automatic renewal for 24 months unless either party opts out. Price protection and upgrade incentives are outlined.",
+      "original_text": "7. **Termination Clause**: Either party may terminate with 60 days' written notice. Early termination before month 12 requires payment of 30% of remaining contract value.\n\n---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 24-month term unless either party provides written notice of non-renewal at least 60 days before expiration.\n2. **Price Protection**: Pricing increases capped at 7% annually for first two renewals.\n3. **Enterprise Upgrade**: If Guardian upgrades to Enterprise tier at renewal, receives 12% discount on incremental cost for first renewal period."
+    },
+    {
+      "headline": "Growth Tier Features Overview",
+      "summary": "Guardian Life Partners gains access to comprehensive Growth Tier features, including AI-powered underwriting, predictive risk modeling, digital health integration, and compliance automation.",
+      "original_text": "## Features\n\n1. **Access to Growth Tier Features**: Guardian Life Partners will have comprehensive access to:\n   - AI-Powered Underwriting with accelerated decision-making (60% of applications instant decision)\n   - Predictive Risk Modeling with machine learning mortality analysis\n   - **Digital Health Integration** with wearables and health tracking apps (Fitbit, Apple Health, Garmin)\n   - Automated Policy Management with full policy lifecycle support\n   - Smart Document Processing with medical record analysis\n   - Customer Portal with policyholder self-service\n   - Compliance Automation across all 50 states\n   - **Advanced Reporting** with predictive analytics"
+    },
+    {
+      "headline": "Digital Health and Advanced Underwriting Features",
+      "summary": "The Growth Tier includes digital health features like wearable integration, wellness programs, and advanced underwriting capabilities such as automated underwriting for up to $500,000 face amounts.",
+      "original_text": "2. **Digital Health Features:**\n   - Wearable device integration for wellness programs\n   - Activity tracking and health score calculation\n   - Premium discount automation based on health behaviors\n   - Wellness challenge campaigns\n   - Health goal tracking and rewards management\n\n3. **Advanced Underwriting:**\n   - Automated underwriting for face amounts up to $500,000\n   - Accelerated underwriting (no medical exam) for qualified applicants\n   - Predictive models trained on 10M+ life insurance applications\n   - Risk stratification and pricing optimization\n   - Decline rescue recommendations"
+    },
+    {
+      "headline": "Agent Portal and Support Introduction",
+      "summary": "The contract includes an Agent Portal with tools for 200+ independent agents and introduces the support section, which covers technical support, training, and updates.",
+      "original_text": "4. **Agent Portal:**\n   - Agent-facing tools for 200+ independent agents\n   - Real-time application status tracking\n   - Commission calculation and reporting\n   - E-application with digital signature\n   - Marketing materials and quote tools\n\n---\n\n## Support\n\n1. **Technical Support**: Guardian Life Partners will receive enhanced support:"
+    },
+    {
+      "headline": "Technical Support and Training Details",
+      "summary": "Guardian Life Partners receives priority technical support, a dedicated engineer, and a comprehensive training program including onboarding, role-specific training, and quarterly webinars.",
+      "original_text": "1. **Technical Support**: Guardian Life Partners will receive enhanced support:\n   - Priority support line Monday-Friday 7 AM - 8 PM EST\n   - Email and chat support with 6-hour response time for critical issues\n   - Dedicated support engineer for complex integrations\n   - 24/7 emergency hotline for system outages\n\n2. **Training**: Comprehensive training program:\n   - Initial onboarding (4 weeks) for up to 20 staff members (40 hours total)\n   - Role-specific training: underwriters, administrators, IT, agents\n   - Quarterly product update webinars\n   - Annual certification program for underwriters"
+    },
+    {
+      "headline": "Updates, Maintenance, and Account Management",
+      "summary": "The contract includes monthly platform updates, bi-weekly security enhancements, and dedicated account management with a named Customer Success Manager and quarterly business reviews.",
+      "original_text": "3. **Updates and Maintenance**:\n   - Monthly platform updates with new features\n   - Bi-weekly security enhancements\n   - Maintenance windows: Saturday 11 PM - Sunday 3 AM EST\n   - 72-hour advance notice for major updates\n   - Dedicated staging environment for testing updates\n\n4. **Account Management**:\n   - Named Customer Success Manager with bi-weekly check-ins\n   - Quarterly business reviews with metrics analysis\n   - Annual strategic planning session"
+    },
+    {
+      "headline": "Integration and Wellness Program Support",
+      "summary": "Technical assistance is provided for integrating Lifellm with Guardian's systems, including policy administration, agent management, and medical data providers. Wellness program support is also included.",
+      "original_text": "5. **Integration Support**: Technical assistance for integrating Lifellm with:\n   - Guardian's policy administration system (iPipeline, VPAS, or custom)\n   - Agent management system (Salesforce, Applied Systems)\n   - Medical data providers (MIB, Milliman IntelliScript, ExamOne)\n   - Payment processing and billing systems\n   - CRM and marketing automation platforms\n\n6. **Wellness Program Support:**\n   - Assistance designing wellness initiatives\n   - Health program configuration and gamification\n   - Marketing templates for wellness campaigns\n   - Best practices from other carriers' successful programs"
+    },
+    {
+      "headline": "Contract Signatures and Strategic Partnership",
+      "summary": "The contract is signed by Michael Torres (CRO, Insurellm) and Jonathan Park (President & CEO, Guardian Life Partners) on March 1, 2025, establishing a strategic partnership.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Michael Torres**\n**Title**: Chief Revenue Officer\n**Insurellm, Inc.**\n**Date**: March 1, 2025\n\n_________________________________\n**Jonathan Park**\n**Title**: President & CEO\n**Guardian Life Partners**\n**Date**: March 1, 2025\n\n---\n\n*This contract establishes Guardian Life Partners as a strategic partner leveraging Lifellm's advanced AI underwriting and digital health integration to modernize life insurance operations.*"
+    },
+    {
+      "headline": "Account Management and Strategic Planning",
+      "summary": "The account management section includes a named Customer Success Manager, quarterly business reviews, annual strategic planning, and direct escalation paths to ensure smooth collaboration.",
+      "original_text": "4. **Account Management**:\n   - Named Customer Success Manager with bi-weekly check-ins\n   - Quarterly business reviews with metrics analysis\n   - Annual strategic planning session\n   - Direct escalation path to Director of Customer Success\n   - Industry benchmarking reports\n\n5. **Integration Support**: Technical assistance for integrating Lifellm with:"
+    }
+  ]
+}

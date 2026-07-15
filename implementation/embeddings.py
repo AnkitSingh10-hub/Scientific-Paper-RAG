@@ -49,6 +49,57 @@ class AzureE5Embeddings(Embeddings):
         return response.data[0].embedding
 
 
+class AzureQwen3Embeddings(Embeddings):
+    """LangChain-compatible wrapper around Azure AI Foundry's Qwen3-Embedding-8B.
+
+    IMPORTANT — different convention from e5:
+      * Documents/passages are embedded AS-IS, no "passage: " prefix.
+      * Queries get an instruction-style prefix:
+            "Instruct: {task description}\\nQuery: {text}"
+        This is how Qwen3-Embedding was trained/recommended to be used;
+        applying the e5 scheme here would silently hurt retrieval quality.
+
+    Must be used identically at ingest time and query time (same model,
+    same prefixing scheme) or retrieval quality silently degrades.
+    """
+
+    DEFAULT_INSTRUCTION = (
+        "Given a search query, retrieve relevant passages that answer the query"
+    )
+
+    def __init__(
+        self,
+        endpoint: str,
+        api_key: str,
+        model: str = "qwen--qwen3-embedding-8b",
+        batch_size: int = 32,
+        instruction: str = DEFAULT_INSTRUCTION,
+        verbose: bool = False,
+    ):
+        self.client = EmbeddingsClient(
+            endpoint=endpoint, credential=AzureKeyCredential(api_key)
+        )
+        self.model = model
+        self.batch_size = batch_size
+        self.instruction = instruction
+        self.verbose = verbose
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        all_embeddings = []
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            response = self.client.embed(model=self.model, input=batch)
+            all_embeddings.extend(item.embedding for item in response.data)
+            if self.verbose:
+                print(f"  embedded {min(i + self.batch_size, len(texts))}/{len(texts)}")
+        return all_embeddings
+
+    def embed_query(self, text: str) -> list[float]:
+        prefixed = f"Instruct: {self.instruction}\nQuery: {text}"
+        response = self.client.embed(model=self.model, input=[prefixed])
+        return response.data[0].embedding
+
+
 # ----------------------------------------------------------------------
 # Strategy 1: Azure AI Foundry e5-large-v2
 # ----------------------------------------------------------------------
@@ -60,6 +111,28 @@ def get_e5_embeddings(verbose: bool = False) -> AzureE5Embeddings:
         endpoint=AZURE_EMBEDDING_ENDPOINT,
         api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
         model="intfloat--e5-large-v2",
+        batch_size=32,
+        verbose=verbose,
+    )
+
+
+# ----------------------------------------------------------------------
+# Strategy 2: Azure AI Foundry Qwen3-Embedding-8B
+# ----------------------------------------------------------------------
+
+
+def get_qwen3_embeddings(verbose: bool = False) -> AzureQwen3Embeddings:
+    """Azure AI Foundry Qwen3-Embedding-8B, batch size 32.
+
+    Note: batch_size 32 is inherited from the e5 default. Qwen3-Embedding-8B
+    is a much larger model (8B params, 4096-dim output) than e5-large-v2, so
+    if you hit request-size/timeout limits on the Azure endpoint, try
+    lowering batch_size (e.g. 8-16).
+    """
+    return AzureQwen3Embeddings(
+        endpoint=AZURE_EMBEDDING_ENDPOINT,
+        api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
+        model="qwen--qwen3-embedding-8b",
         batch_size=32,
         verbose=verbose,
     )
@@ -90,6 +163,7 @@ def get_e5_embeddings(verbose: bool = False) -> AzureE5Embeddings:
 
 EMBEDDERS = {
     "e5": get_e5_embeddings,
+    "qwen3": get_qwen3_embeddings,
 }
 
 
@@ -97,7 +171,7 @@ def get_embedder(strategy: str = "e5"):
     """Return the embedding factory function for the given strategy name.
 
     Usage:
-        embeddings = get_embedder("e5")(verbose=True)
+        embeddings = get_embedder("qwen3")(verbose=True)
 
     IMPORTANT: ingest.py and answer.py must use the SAME strategy — the
     vectors in Chroma were produced with whichever embedder ran at

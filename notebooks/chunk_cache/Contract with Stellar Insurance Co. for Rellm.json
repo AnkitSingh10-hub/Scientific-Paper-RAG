@@ -1,0 +1,39 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "This chunk introduces the contract between Insurellm and Stellar Insurance Co., including their locations and the effective date of the agreement.",
+      "original_text": "# Contract with Stellar Insurance Co. for Rellm\n\n## Terms\nThis contract is made between **Insurellm**, located at 123 Innovation Lane, San Francisco, CA, and **Stellar Insurance Co.**, located at 456 Galaxy Road, Chicago, IL. The effective date of this agreement is **January 1, 2024**."
+    },
+    {
+      "headline": "Contract Duration and Initial Terms",
+      "summary": "This chunk details the initial term of the agreement, its duration, and the conditions for automatic renewal, including the notice period for non-renewal.",
+      "original_text": "## Terms\nThis contract is made between **Insurellm**, located at 123 Innovation Lane, San Francisco, CA, and **Stellar Insurance Co.**, located at 456 Galaxy Road, Chicago, IL. The effective date of this agreement is **January 1, 2024**. \n\n### Duration\nThe initial term of this agreement shall be for **12 months**, commencing from the effective date. The contract will automatically renew for successive **12-month periods** unless either party provides written notice of non-renewal at least **30 days** prior to the expiration of the current term."
+    },
+    {
+      "headline": "Payment Terms and Termination Clauses",
+      "summary": "This chunk covers the payment terms, including the monthly subscription fee and due date, as well as the termination conditions for both parties.",
+      "original_text": "### Duration\nThe initial term of this agreement shall be for **12 months**, commencing from the effective date. The contract will automatically renew for successive **12-month periods** unless either party provides written notice of non-renewal at least **30 days** prior to the expiration of the current term.\n\n### Payment Terms\nStellar Insurance Co. agrees to pay Insurellm a monthly subscription fee of **$10,000** for the **Professional Plan** of the Rellm product. Payments are due on the **1st of each month**.\n\n### Termination\nEither party may terminate this agreement with a **30-day written notice**. In the event of a material breach, the non-breaching party may terminate immediately, provided a written notice is given."
+    },
+    {
+      "headline": "Contract Renewal and Pricing Adjustments",
+      "summary": "This chunk explains the automatic renewal process for the contract and the conditions under which pricing may be adjusted upon renewal.",
+      "original_text": "### Termination\nEither party may terminate this agreement with a **30-day written notice**. In the event of a material breach, the non-breaching party may terminate immediately, provided a written notice is given.\n\n## Renewal\nThis contract will renew automatically for additional 12-month terms unless written notice is provided by either party 30 days prior to the renewal date. Upon renewal, pricing may be adjusted based on agreed-upon inflation adjustments or additional services requested by Stellar Insurance Co."
+    },
+    {
+      "headline": "Rellm Product Features for Stellar Insurance Co.",
+      "summary": "This chunk lists the features of the Rellm product that Stellar Insurance Co. will have access to, including AI-driven analytics, integrations, and compliance tools.",
+      "original_text": "## Renewal\nThis contract will renew automatically for additional 12-month terms unless written notice is provided by either party 30 days prior to the renewal date. Upon renewal, pricing may be adjusted based on agreed-upon inflation adjustments or additional services requested by Stellar Insurance Co.\n\n## Features\nStellar Insurance Co. will receive access to the following features of the Rellm product:\n\n- **AI-Driven Analytics**: Predictive insights into risk exposures tailored for the reinsurance industry.\n- **Seamless Integrations**: Compatibility with existing systems for policy management and claims processing.\n- **Risk Assessment Module**: Comprehensive evaluation of risk profiles using advanced modeling techniques."
+    },
+    {
+      "headline": "Additional Rellm Features and Support Services",
+      "summary": "This chunk continues listing the features of Rellm and introduces the support services provided by Insurellm, including technical support and training.",
+      "original_text": "- **Risk Assessment Module**: Comprehensive evaluation of risk profiles using advanced modeling techniques.\n- **Customizable Dashboard**: Tailored user interface presenting relevant metrics and performance indicators.\n- **Regulatory Compliance Tools**: Features to ensure adherence to local and international regulations.\n- **Client and Broker Portals**: Dedicated portals for enhanced communication and document sharing.\n\n## Support\nInsurellm provides Stellar Insurance Co. with the following support services:\n\n- **24/7 Technical Support**: Access to dedicated support representatives via phone and online chat."
+    },
+    {
+      "headline": "Support Services and Contract Signatures",
+      "summary": "This chunk details the remaining support services, including account reviews and updates, and concludes with the contract signatures from both parties.",
+      "original_text": "## Support\nInsurellm provides Stellar Insurance Co. with the following support services:\n\n- **24/7 Technical Support**: Access to dedicated support representatives via phone and online chat.\n- **Quarterly Account Review**: Meetings to discuss performance metrics and uncover additional needs.\n- **Training Sessions**: Initial orientation and ongoing training opportunities to maximize the effectiveness of Rellm usage.\n- **Updates and Upgrades**: Regular software updates and enhancements are included as part of the subscription.\n\nStellar Insurance Co. acknowledges receipt of the Rellm product summary and agrees to the terms set forth above. By signing below, both parties confirm their acceptance of this contract.\n\n**For Insurellm**  \n______________________________  \n[Signature]  \n[Name, Title]  \n[Date]  \n\n**For Stellar Insurance Co.**  \n______________________________  \n[Signature]  \n[Name, Title]  \n[Date]"
+    }
+  ]
+}

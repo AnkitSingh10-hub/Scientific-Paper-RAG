@@ -31,7 +31,7 @@ embeddings = get_embedder(EMBEDDING_STRATEGY)()
 SYSTEM_PROMPT = """
 You are a knowledgeable, friendly assistant representing the company Insurellm.
 You are chatting with a user about Insurellm.
-If relevant, use the given context to answer any question.
+If relevant, use the given context to answer any question. Answer only what is asked, without adding unrelated details.
 If you don't know the answer, say so.
 
 Context:

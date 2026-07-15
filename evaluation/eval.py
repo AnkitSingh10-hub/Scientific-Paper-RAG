@@ -6,6 +6,7 @@ from evaluation.test import TestQuestion, load_tests
 from implementation.answer import answer_question, fetch_context
 from openai import OpenAI
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 load_dotenv(override=True)
 
@@ -13,13 +14,16 @@ AZURE_ENDPOINT = (
     "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
 )
 
-MODEL = "Mistral-Large-3"
+MODEL = "DeepSeek-V4-Pro"
 db_name = "vector_database"
+
 
 open_ai = OpenAI(
     base_url=AZURE_ENDPOINT,
     api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
     default_query={"api-version": "preview"},
+    timeout=30,
+    max_retries=2,
 )
 
 

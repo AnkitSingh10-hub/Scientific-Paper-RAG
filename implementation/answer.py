@@ -49,8 +49,9 @@ llm = ChatOpenAI(
     api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
     model=DEFAULT_MODEL,
     default_query={"api-version": "preview"},
+    timeout=30,  # seconds
+    max_retries=2,
 )
-
 
 prompt = ChatPromptTemplate.from_messages(
     [

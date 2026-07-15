@@ -17,7 +17,12 @@ AZURE_ENDPOINT = (
 )
 
 
-DEFAULT_MODEL = "DeepSeek-V3.2"
+# LLM_MODEL = "DeepSeek-V3.2"
+# LLM_MODEL = "DeepSeek-V4-Pro"
+
+
+# LLM_MODEL = "Mistral-Large-3"
+LLM_MODEL = "mistral-medium-3-5"
 
 
 DB_NAME = str(Path(__file__).parent.parent / "vector_database")
@@ -48,7 +53,7 @@ retriever = vector_database.as_retriever(search_kwargs={"k": 10})
 llm = ChatOpenAI(
     base_url=AZURE_ENDPOINT,
     api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
-    model=DEFAULT_MODEL,
+    model=LLM_MODEL,
     default_query={"api-version": "preview"},
     timeout=30,  # seconds
     max_retries=2,

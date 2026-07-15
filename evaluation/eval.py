@@ -7,6 +7,18 @@ from implementation.answer import answer_question, fetch_context
 from openai import OpenAI
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from tenacity import (
+    retry,
+    wait_exponential_jitter,
+    stop_after_attempt,
+    retry_if_exception_type,
+)
+from openai import RateLimitError
+
+# Define once
+wait = wait_exponential_jitter(initial=1, max=30)
+stop = stop_after_attempt(6)
+retry_on_rate_limit = retry_if_exception_type(RateLimitError)
 
 load_dotenv(override=True)
 
@@ -14,7 +26,13 @@ AZURE_ENDPOINT = (
     "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
 )
 
-MODEL = "DeepSeek-V3.2"
+# LLM_MODEL = "DeepSeek-V3.2"
+
+# LLM_MODEL = "DeepSeek-V4-Pro"
+
+# LLM_MODEL = "Mistral-Large-3"
+LLM_MODEL = "mistral-medium-3-5"
+
 db_name = "vector_database"
 
 # Increased timeout slightly for parallel processing overhead
@@ -79,8 +97,13 @@ def calculate_ndcg(keyword: str, retrieved_docs: list, k: int = 10) -> float:
 # --- core Logic Functions ---
 
 
+@retry(retry=retry_on_rate_limit, wait=wait, stop=stop)
+def call_fetch_context(question: str):
+    return fetch_context(question)
+
+
 def evaluate_retrieval(test: TestQuestion, k: int = 10) -> RetrievalEval:
-    retrieved_docs = fetch_context(test.question)
+    retrieved_docs = call_fetch_context(test.question)
     mrr_scores = [calculate_mrr(keyword, retrieved_docs) for keyword in test.keywords]
     avg_mrr = sum(mrr_scores) / len(mrr_scores) if mrr_scores else 0.0
     ndcg_scores = [
@@ -102,9 +125,32 @@ def evaluate_retrieval(test: TestQuestion, k: int = 10) -> RetrievalEval:
     )
 
 
+@retry(retry=retry_on_rate_limit, wait=wait, stop=stop)
+def call_answer_question(question: str):
+    """RAG generation step, retried on 429s.
+
+    NOTE: this only retries the outer call from eval.py's perspective. If
+    answer_question() itself catches/swallows RateLimitError internally
+    before it propagates here, this decorator won't see it - the same
+    @retry treatment should also be applied inside implementation/answer.py
+    around its own open_ai calls.
+    """
+    return answer_question(question)
+
+
+@retry(retry=retry_on_rate_limit, wait=wait, stop=stop)
+def call_judge(judge_messages: list):
+    """LLM-as-a-judge step, retried on 429s."""
+    return open_ai.beta.chat.completions.parse(
+        model=LLM_MODEL,
+        messages=judge_messages,
+        response_format=AnswerEval,
+    )
+
+
 def evaluate_answer(test: TestQuestion) -> tuple[AnswerEval, str, list]:
     # 1. RAG Step
-    generated_answer, retrieved_docs = answer_question(test.question)
+    generated_answer, retrieved_docs = call_answer_question(test.question)
 
     # 2. Judge Step
     judge_messages = [
@@ -118,11 +164,7 @@ def evaluate_answer(test: TestQuestion) -> tuple[AnswerEval, str, list]:
         },
     ]
 
-    judge_response = open_ai.beta.chat.completions.parse(
-        model=MODEL,
-        messages=judge_messages,
-        response_format=AnswerEval,
-    )
+    judge_response = call_judge(judge_messages)
     return judge_response.choices[0].message.parsed, generated_answer, retrieved_docs
 
 
@@ -135,6 +177,8 @@ def evaluate_all_retrieval():
     total_tests = len(tests)
 
     # max_workers=10 runs 10 retrievals at once
+    failed_tests = []
+
     with ThreadPoolExecutor(max_workers=3) as executor:
         future_to_test = {
             executor.submit(evaluate_retrieval, test): test for test in tests
@@ -142,9 +186,19 @@ def evaluate_all_retrieval():
 
         for index, future in enumerate(as_completed(future_to_test)):
             test = future_to_test[future]
-            result = future.result()
             progress = (index + 1) / total_tests
-            yield test, result, progress
+            try:
+                result = future.result()
+                yield test, result, progress
+            except Exception as e:
+                print(f"Error evaluating retrieval for '{test.question}': {e}")
+                failed_tests.append((test, str(e)))
+
+    if failed_tests:
+        print(
+            f"\n{len(failed_tests)}/{total_tests} retrieval tests failed "
+            f"after retries: {[t.question for t, _ in failed_tests]}"
+        )
 
 
 def evaluate_all_answers():
@@ -154,19 +208,31 @@ def evaluate_all_answers():
 
     # We use a lower worker count (5) for answers because it involves two LLM calls
     # (Generation + Judging) and we don't want to hit Rate Limits too hard.
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    failed_tests = []
+
+    with ThreadPoolExecutor(max_workers=2) as executor:
         future_to_test = {
             executor.submit(evaluate_answer, test): test for test in tests
         }
 
         for index, future in enumerate(as_completed(future_to_test)):
             test = future_to_test[future]
+            progress = (index + 1) / total_tests
             try:
                 result, _, _ = future.result()
-                progress = (index + 1) / total_tests
                 yield test, result, progress
             except Exception as e:
-                print(f"Error evaluating test: {e}")
+                # tenacity re-raises the original error once all retry
+                # attempts are exhausted, so this only fires for tests
+                # that genuinely couldn't recover after backoff.
+                print(f"Error evaluating test '{test.question}': {e}")
+                failed_tests.append((test, str(e)))
+
+    if failed_tests:
+        print(
+            f"\n{len(failed_tests)}/{total_tests} answer tests failed "
+            f"after retries: {[t.question for t, _ in failed_tests]}"
+        )
 
 
 # --- CLI Helpers (Unchanged) ---

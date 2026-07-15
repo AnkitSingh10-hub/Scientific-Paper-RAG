@@ -186,31 +186,7 @@ def chunk_by_doc_type(documents: list[Document]) -> list[Document]:
 
 
 # ----------------------------------------------------------------------
-# Strategy 2: plain fixed-size chunking, no doc-type awareness
-# ----------------------------------------------------------------------
-
-
-def chunk_fixed_size(
-    documents: list[Document],
-    chunk_size: int = 500,
-    chunk_overlap: int = 100,
-) -> list[Document]:
-    """Ignore document structure entirely and just split on size.
-
-    Useful as a fast baseline to compare retrieval quality against the
-    heading-aware strategy above.
-    """
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-    )
-    chunks = splitter.split_documents(documents)
-    print(f"Created {len(chunks)} chunks")
-    return chunks
-
-
-# ----------------------------------------------------------------------
-# Strategy 3: markdown headings only, no doc-type special-casing and no
+# Strategy 2: markdown headings only, no doc-type special-casing and no
 # recursive sub-splitting of oversized sections
 # ----------------------------------------------------------------------
 
@@ -240,7 +216,7 @@ def chunk_by_heading(documents: list[Document]) -> list[Document]:
 
 
 # ----------------------------------------------------------------------
-# Strategy 4: LangChain's CharacterTextSplitter — splits on a single
+# Strategy 3: LangChain's CharacterTextSplitter — splits on a single
 # separator only (default "\n\n"), falls back to a hard cut if a chunk
 # is still too big. Simplest possible splitter, no structural awareness.
 # ----------------------------------------------------------------------
@@ -263,7 +239,7 @@ def chunk_character(
 
 
 # ----------------------------------------------------------------------
-# Strategy 5: LangChain's RecursiveCharacterTextSplitter — tries a list
+# Strategy 4: LangChain's RecursiveCharacterTextSplitter — tries a list
 # of separators in order (paragraph, then line, then word, then char)
 # until chunks fit. Generally a better default than CharacterTextSplitter
 # since it degrades gracefully instead of cutting mid-word.
@@ -290,7 +266,6 @@ def chunk_recursive_character(
 
 CHUNKERS = {
     "doc_type": chunk_by_doc_type,
-    "fixed_size": chunk_fixed_size,
     "heading": chunk_by_heading,
     "character": chunk_character,
     "recursive_character": chunk_recursive_character,
@@ -301,7 +276,7 @@ def get_chunker(strategy: str = "doc_type"):
     """Return the chunking function for the given strategy name.
 
     Usage:
-        chunker = get_chunker("fixed_size")
+        chunker = get_chunker("recursive_character")
         chunks = chunker(documents)
     """
     try:

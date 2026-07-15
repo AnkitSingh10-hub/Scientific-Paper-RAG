@@ -31,6 +31,24 @@ wheels = [
 ]
 
 [[package]]
+name = "advanced-chunker"
+version = "0.1.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "matplotlib" },
+    { name = "networkx" },
+    { name = "scikit-learn" },
+    { name = "seaborn" },
+    { name = "sentence-transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b9/f5/a97bae4ba88dc640ae53c53aae61ba817c8abeb89f4a17680cd20412fc30/advanced_chunker-0.1.4.tar.gz", hash = "sha256:fbf46dc29cda5fa86294f670e74ee289428d91bae0d41fb37083e116dcd0bbf8", size = 10378, upload-time = "2025-04-12T16:16:00.454Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/64/bf/acaa9762db8f33520413c22a7ff8fab04f0c90c41399c261e513082fb46f/advanced_chunker-0.1.4-py3-none-any.whl", hash = "sha256:49b7eaea16a70c60e06e00c4dc1ed9543e7eafeca9a4f3dc87a7b9baa5f3135b", size = 11154, upload-time = "2025-04-12T16:15:59.114Z" },
+]
+
+[[package]]
 name = "aiohappyeyeballs"
 version = "2.7.1"
 source = { registry = "https://pypi.org/simple" }
@@ -4016,6 +4034,7 @@ name = "scientific-paper-rag"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "advanced-chunker" },
     { name = "azure-ai-inference" },
     { name = "azure-core" },
     { name = "chromadb" },
@@ -4045,6 +4064,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "advanced-chunker", specifier = ">=0.1.4" },
     { name = "azure-ai-inference", specifier = ">=1.0.0b9" },
     { name = "azure-core", specifier = ">=1.41.0" },
     { name = "chromadb", specifier = ">=1.5.9" },
@@ -4144,6 +4164,20 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/f7/86/5185061a1fcc41d18c5dc2463969b3a3964b31d9ac67b2fb05d4c7ff7670/scipy-1.18.0-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:9aac6192fac56bf2ca534389d24623f07b39ff83317d58287285e7fbd622ff76", size = 37472480, upload-time = "2026-06-19T15:01:35.136Z" },
     { url = "https://files.pythonhosted.org/packages/31/8e/f04c68e39919a010d34f2ee1367fd705b0a25a02f609d755f0bfbc0a15fc/scipy-1.18.0-cp314-cp314t-win_amd64.whl", hash = "sha256:e40baea28ae7f5475c779741e2d90b1247c78531207b49c7030e698ff81cee3f", size = 37365390, upload-time = "2026-06-19T15:01:38.091Z" },
     { url = "https://files.pythonhosted.org/packages/d5/19/969dc072906c84dd0a3b05dcf57ea750936087d7873549e408b35cfc3f97/scipy-1.18.0-cp314-cp314t-win_arm64.whl", hash = "sha256:368e0a705903c466aa5f08eefb39e6b1b6b2d659e7352a31fd9e2438365be0f8", size = 25279661, upload-time = "2026-06-19T15:01:40.817Z" },
+]
+
+[[package]]
+name = "seaborn"
+version = "0.13.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/86/59/a451d7420a77ab0b98f7affa3a1d78a313d2f7281a57afb1a34bae8ab412/seaborn-0.13.2.tar.gz", hash = "sha256:93e60a40988f4d65e9f4885df477e2fdaff6b73a9ded434c1ab356dd57eefff7", size = 1457696, upload-time = "2024-01-25T13:21:52.551Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl", hash = "sha256:636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987", size = 294914, upload-time = "2024-01-25T13:21:49.598Z" },
 ]
 
 [[package]]

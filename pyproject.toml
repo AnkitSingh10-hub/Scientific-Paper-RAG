@@ -3,6 +3,7 @@ name = "scientific-paper-rag"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
+    "advanced-chunker>=0.1.4",
     "azure-ai-inference>=1.0.0b9",
     "azure-core>=1.41.0",
     "chromadb>=1.5.9",

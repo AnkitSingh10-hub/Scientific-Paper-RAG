@@ -15,7 +15,7 @@ KNOWLEDGE_BASE = str(Path(__file__).parent.parent / "knowledge_base")
 # Swap these to try different embedding models / chunking strategies.
 # See EMBEDDERS in embeddings.py for embedding options ("e5", ...)
 # and CHUNKERS in chunking.py for chunking options ("doc_type",
-# "fixed_size", "heading").
+# "heading", "character", "recursive_character").
 # NOTE: whatever EMBEDDING_STRATEGY you use here must match the one in
 # answer.py, or queries will be embedded differently than the documents.
 EMBEDDING_STRATEGY = "e5"

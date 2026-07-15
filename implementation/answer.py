@@ -9,12 +9,13 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 
-from embeddings import get_embedder
+from .embeddings import get_embedder
 
 load_dotenv(override=True)
 AZURE_ENDPOINT = (
     "https://ankitsinghtheweeknd691-9348-reso.services.ai.azure.com/openai/v1"
 )
+
 
 DEFAULT_MODEL = "Mistral-Large-3"
 

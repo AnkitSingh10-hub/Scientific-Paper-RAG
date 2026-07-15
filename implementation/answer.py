@@ -17,7 +17,8 @@ AZURE_ENDPOINT = (
 )
 
 
-DEFAULT_MODEL = "Mistral-Large-3"
+DEFAULT_MODEL = "DeepSeek-V4-Pro"
+
 
 DB_NAME = str(Path(__file__).parent.parent / "vector_database")
 

@@ -1,0 +1,247 @@
+[33mcommit 62a9146b4c674bac8317a616a2d183c7bf0989ff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 20:25:20 2026 +0545
+
+    fix. testing left
+
+[33mcommit 084372392f214101a0f275ed8b62d82f6075dc78[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 20:04:48 2026 +0545
+
+    fix. added tests
+
+[33mcommit 0941cec72368d2649a5470816bfecb17b639e239[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 19:32:02 2026 +0545
+
+    fix. done rag, testing left
+
+[33mcommit 8d6936be7dd085cf9616438c3fe3e59db05f02d6[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 17:24:32 2026 +0545
+
+    fix. changed llm for semantic chunking
+
+[33mcommit 0b97317fcfc5152ae5e234b1247201e8481f5d7a[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 13:59:58 2026 +0545
+
+    fix. added another llm
+
+[33mcommit 934b852b67884375aa674edc46a0b00aa8d7386c[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 13:27:25 2026 +0545
+
+    fix. used deepseek
+
+[33mcommit 2b49082e7bc387df65844985793c9277e3c0614b[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 13:23:11 2026 +0545
+
+    fix. evalute all answers
+
+[33mcommit d4917a4a0b3c394660c029656aa60b9bc7fe481d[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 12:15:37 2026 +0545
+
+    feat. added various chunking styles
+
+[33mcommit b3179d1129f8a4e3070cb4abd4180a71caa7168b[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 11:29:48 2026 +0545
+
+    fix. added various chunking strats
+
+[33mcommit 23817682f947044712ea8acf4752cc78f2d6ccad[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 01:58:13 2026 +0545
+
+    fix
+
+[33mcommit 0a07004851503937aaa0a6bc08fe4059f4c1f4bd[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Wed Jul 15 01:13:49 2026 +0545
+
+    fix. new chunking method
+
+[33mcommit c409862cd1f24cefbc7f51517290cd243d8a1394[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Tue Jul 14 19:14:50 2026 +0545
+
+    fix. starting rag without langchain
+
+[33mcommit 25835ff501a48867cf9211bc08cf6bbed075d056[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Mon Jul 13 22:47:36 2026 +0545
+
+    fix. now testing new rag techniques
+
+[33mcommit 7f76e2d57be9a4b07f8e2effcb2e5dc558845c19[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Mon Jul 13 21:27:03 2026 +0545
+
+    feat. added e-5 large ,
+
+[33mcommit 7c605895df84bb0b2daf5f284d8932ee88fc271f[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Mon Jul 13 20:25:12 2026 +0545
+
+    feat. RAG pipeline and evals done, now only testing is left
+
+[33mcommit 2c594d83a895b6108a71a95cc13a1d7b2ef338f7[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Mon Jul 13 18:59:38 2026 +0545
+
+    feat. complete rag pipeline
+
+[33mcommit a301713080575de92a08ced4881b56f2d5d20a5b[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 22:56:35 2026 +0545
+
+    fix. now starting evals
+
+[33mcommit 94a87ed1b19393bf9fbfae4870ff62c4f6c484c9[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 20:04:40 2026 +0545
+
+    fix. fixed a rag pipeline
+
+[33mcommit 1efd3ab0acea30c7bd670bbb8565db8207e028d1[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 20:02:30 2026 +0545
+
+    feat. a simple RAG pipeline
+
+[33mcommit 2ff3aca70b2a6cf12f46f330601a379d9c7dd024[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 19:43:38 2026 +0545
+
+    fix. rag pipeline langchain
+
+[33mcommit 1a68f4e595d8d4f25218a4e14b15b73d0666f75c[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 19:08:19 2026 +0545
+
+    fix. added new langchain vectors
+
+[33mcommit 2c779a4de17fa2c9a4f138575f5cb42e85789dc0[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 18:06:49 2026 +0545
+
+    fix. langchain vector database
+
+[33mcommit d8a0f79119017ad3d3542b58d30ed0b583f2ff25[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sun Jul 12 12:33:34 2026 +0545
+
+    fix. new knowledge base
+
+[33mcommit f901e089a46207bd675505eaea18d478692712a4[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 23:49:08 2026 +0545
+
+    fix. llama prrse
+
+[33mcommit a8fda327c51f0a565f7a6c72114f633484894af4[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 21:59:16 2026 +0545
+
+    fix
+
+[33mcommit bc4e806682f55204f50c2e0234370e7f5f401f9b[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 21:59:01 2026 +0545
+
+    fix
+
+[33mcommit 524ba8b0ba035dfdf8c0b5da785120d838260cc7[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 19:58:49 2026 +0545
+
+    fix. newdata set
+
+[33mcommit 26ae6d6ac40dbb1159c68416ee46c1db088e9e01[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 19:58:18 2026 +0545
+
+    fix. new data set
+
+[33mcommit f1b53e0319a1e6101e9e7ae63d90ab468c2a8f85[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 19:32:10 2026 +0545
+
+    fix
+
+[33mcommit 70773dd957fb700c85321b25cf459a786703142c[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 18:40:18 2026 +0545
+
+    fix. named to function based views
+
+[33mcommit d44176f1b98e474e9ad5760b760d564f97a9a01e[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 17:28:58 2026 +0545
+
+    fix. added e5 large embedding
+
+[33mcommit b52f48eaf40d1506b7753b292936cab603c20210[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 13:52:42 2026 +0545
+
+    fix
+
+[33mcommit fa1c334a452001a850addeda179db4c193344824[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 13:52:40 2026 +0545
+
+    fix. added e5 large model
+
+[33mcommit fffb6dd64f7268f713fa8e99a7343b5e2a598760[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Sat Jul 11 02:17:52 2026 +0545
+
+    fix. about to add new embedfing models
+
+[33mcommit 0cc247779104dc71511fbdedf236689b5f3e9566[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 19:35:42 2026 +0545
+
+    fix
+
+[33mcommit 9151dd3f7867f2273db0370533887627326355c6[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 18:17:40 2026 +0545
+
+    fix kvalue
+
+[33mcommit 543b8c9ae40ac68ca9a7d98ace0333d9dbd8b328[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 17:08:05 2026 +0545
+
+    fix.
+
+[33mcommit 670d617d89c7e0d169a014c604b85e1a967d954e[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 17:06:36 2026 +0545
+
+    fix. tested some metrics
+
+[33mcommit 6312bcc7bfc03397e54e92708832a761f360c772[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 15:39:31 2026 +0545
+
+    used UV
+
+[33mcommit 468f076d0559ae359d79b9177d109e8e57432fd5[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 15:39:23 2026 +0545
+
+    fix. used UV
+
+[33mcommit 209942be792f89060a905de078983932aa016563[m
+Author: Ankit Singh <59360110+AnkitSingh10-hub@users.noreply.github.com>
+Date:   Fri Jul 10 13:23:15 2026 +0545
+
+    fix
+
+[33mcommit fd4a9eaf3e

@@ -17,14 +17,14 @@ AZURE_ENDPOINT = (
 )
 
 
-DEFAULT_MODEL = "mistral-medium-3-5"
+DEFAULT_MODEL = "DeepSeek-V3.2"
 
 
 DB_NAME = str(Path(__file__).parent.parent / "vector_database")
 
 # Must match EMBEDDING_STRATEGY in ingest.py — the vector store was built
 # with that embedder, and mismatching here silently breaks retrieval.
-EMBEDDING_STRATEGY = "qwen3"
+EMBEDDING_STRATEGY = "e5"
 
 embeddings = get_embedder(EMBEDDING_STRATEGY)()
 

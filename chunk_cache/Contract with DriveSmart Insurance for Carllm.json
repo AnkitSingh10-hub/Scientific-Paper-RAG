@@ -1,0 +1,84 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties",
+      "summary": "This chunk introduces the contract between Insurellm and DriveSmart Insurance, including the contract date, number, and the involved parties.",
+      "original_text": "# Contract with DriveSmart Insurance for Carllm\n\n**Contract Date:** March 20, 2025\n**Contract Number:** CR-2025-E-0078\n**Parties:**\n- Insurellm, Inc.\n- DriveSmart Insurance Corp.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide DriveSmart Insurance with enterprise access to the Carllm platform, including white-label capabilities, unlimited user licenses, dedicated infrastructure, and full API access for their multi-state auto insurance operations."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "This chunk details the initial terms of the contract, including coverage scope, duration, and the tiered payment structure over 36 months.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide DriveSmart Insurance with enterprise access to the Carllm platform, including white-label capabilities, unlimited user licenses, dedicated infrastructure, and full API access for their multi-state auto insurance operations.\n\n2. **Duration:** This agreement is effective for a period of 36 months from the contract date.\n\n3. **Payment:** DriveSmart Insurance shall pay custom Enterprise Tier pricing of $18,000 per month for the first 12 months, $19,500 per month for months 13-24, and $21,000 per month for months 25-36, totaling $702,000 over the contract term.\n\n4. **Policy Volume**: Enterprise Tier supports unlimited policies. DriveSmart currently has 85,000 active auto policies across 8 states."
+    },
+    {
+      "headline": "Contract Terms: SLA, Confidentiality, and Data Security",
+      "summary": "This chunk covers the Service Level Agreement (SLA), confidentiality clauses, and data security measures outlined in the contract.",
+      "original_text": "4. **Policy Volume**: Enterprise Tier supports unlimited policies. DriveSmart currently has 85,000 active auto policies across 8 states.\n\n5. **Service Level Agreement:** Insurellm guarantees 99.9% platform uptime measured monthly, with 8% monthly credit for each 0.1% below target, maximum 40% monthly credit.\n\n6. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary algorithms, driver data, pricing models, and business strategies.\n\n7. **Data Security:** Insurellm maintains SOC 2 Type II compliance, annual penetration testing, and comprehensive cyber insurance coverage."
+    },
+    {
+      "headline": "Renewal Terms",
+      "summary": "This chunk describes the renewal conditions, including notice periods, pricing guarantees, and extension options.",
+      "original_text": "7. **Data Security:** Insurellm maintains SOC 2 Type II compliance, annual penetration testing, and comprehensive cyber insurance coverage.\n\n---\n\n## Renewal\n\nThis agreement includes a 90-day mutual renewal notice period. DriveSmart receives most-favored-customer pricing guarantees ensuring competitive rates at renewal. Contract may be extended in 12 or 24-month increments."
+    },
+    {
+      "headline": "Features: Unlimited Policy Administration and White-Label Platform",
+      "summary": "This chunk introduces the features provided to DriveSmart, starting with unlimited policy administration and white-label platform customization options.",
+      "original_text": "---\n\n## Features\n\nDriveSmart Insurance will receive the complete Carllm Enterprise suite:\n\n1. **Unlimited Policy Administration:** Full support for DriveSmart's 85,000+ policies with scalability to 500,000+ policies.\n\n2. **White-Label Platform:** Complete customization:\n   - Custom domains (quote.drivesmartinsurance.com, portal.drivesmartinsurance.com)\n   - Branded mobile apps for iOS and Android\n   - Customized marketing materials and quote tools\n   - Co-branded agent portals"
+    },
+    {
+      "headline": "Features: Advanced AI Risk Assessment",
+      "summary": "This chunk details the advanced AI risk assessment capabilities provided by the Carllm platform, including telematics, vehicle condition, and claims history analysis.",
+      "original_text": "2. **White-Label Platform:** Complete customization:\n   - Custom domains (quote.drivesmartinsurance.com, portal.drivesmartinsurance.com)\n   - Branded mobile apps for iOS and Android\n   - Customized marketing materials and quote tools\n   - Co-branded agent portals\n\n3. **Advanced AI Risk Assessment:** Enterprise-grade risk analysis:\n   - Real-time driver behavior analysis from telematics devices\n   - Vehicle condition assessment from VIN decoding and maintenance records\n   - Claims history analysis across all carriers (LexisNexis, CLUE)\n   - Credit-based insurance scoring\n   - Geographic risk modeling with granular loss costs\n   - Multi-car and multi-driver household optimization\n   - Commercial auto risk assessment capabilities"
+    },
+    {
+      "headline": "Features: Instant Quoting Engine and Customizable Coverage Plans",
+      "summary": "This chunk covers the instant quoting engine and customizable coverage plans, highlighting performance and flexibility in product configuration.",
+      "original_text": "3. **Advanced AI Risk Assessment:** Enterprise-grade risk analysis:\n   - Real-time driver behavior analysis from telematics devices\n   - Vehicle condition assessment from VIN decoding and maintenance records\n   - Claims history analysis across all carriers (LexisNexis, CLUE)\n   - Credit-based insurance scoring\n   - Geographic risk modeling with granular loss costs\n\n4. **Instant Quoting Engine:** High-performance quoting:\n   - Sub-3-second quote generation\n   - Real-time rate optimization across 50+ rating factors\n   - Competitive intelligence with market positioning\n   - Dynamic pricing based on demand and capacity\n   - Multi-product bundling discounts (auto + home)\n   - A/B testing capabilities for pricing strategies\n\n5. **Customizable Coverage Plans:** Flexible product configuration:\n   - State-specific coverage options (all 8 operating states)\n   - Usage-based insurance (UBI) programs\n   - Pay-per-mile options"
+    },
+    {
+      "headline": "Features: Customizable Coverage Plans and Advanced Fraud Detection",
+      "summary": "This chunk continues the description of customizable coverage plans and introduces the advanced fraud detection features.",
+      "original_text": "5. **Customizable Coverage Plans:** Flexible product configuration:\n   - State-specific coverage options (all 8 operating states)\n   - Usage-based insurance (UBI) programs\n   - Pay-per-mile options\n   - Rideshare and delivery driver coverage\n   - Classic and collector car programs\n   - SR-22 and high-risk driver programs\n\n6. **Advanced Fraud Detection:** Comprehensive fraud prevention:\n   - Application fraud detection (identity verification, address validation)\n   - Claims fraud analytics with pattern recognition\n   - Agent fraud monitoring\n   - Staged accident detection\n   - Social network analysis for fraud rings\n   - Integration with NICB and SIU databases"
+    },
+    {
+      "headline": "Features: Customer Insights Dashboard and Telematics Integration",
+      "summary": "This chunk describes the customer insights dashboard and the telematics integration capabilities provided by the Carllm platform.",
+      "original_text": "6. **Advanced Fraud Detection:** Comprehensive fraud prevention:\n   - Application fraud detection (identity verification, address validation)\n   - Claims fraud analytics with pattern recognition\n   - Agent fraud monitoring\n   - Staged accident detection\n   - Social network analysis for fraud rings\n   - Integration with NICB and SIU databases\n\n7. **Customer Insights Dashboard:** Deep analytics:\n   - Real-time policy metrics and KPIs\n   - Retention and churn analysis\n   - Loss ratio tracking by segment\n   - Agent performance analytics\n   - Marketing campaign ROI measurement\n   - Customer lifetime value prediction\n\n8. **Telematics Integration:** Complete telematics platform:\n   - Device-agnostic integration (OBD-II dongles, smartphone apps, embedded)\n   - Real-time driver behavior scoring"
+    },
+    {
+      "headline": "Features: Telematics Integration and API Access",
+      "summary": "This chunk continues the telematics integration details and introduces the complete API access feature.",
+      "original_text": "8. **Telematics Integration:** Complete telematics platform:\n   - Device-agnostic integration (OBD-II dongles, smartphone apps, embedded)\n   - Real-time driver behavior scoring\n   - Trip-level data analysis (hard braking, acceleration, cornering, speeding)\n   - Mileage verification for low-mileage discounts\n   - Accident detection and emergency response\n   - Driver coaching and feedback programs\n   - Gamification and safe driving rewards\n\n9. **Complete API Access:** Unlimited API calls:\n   - Integration with DriveSmart's core systems\n   - Agent management system connectivity\n   - Third-party data providers (LexisNexis, Verisk, Experian)\n   - DMV and MVR integrations"
+    },
+    {
+      "headline": "Features: API Access and Multi-State Operations",
+      "summary": "This chunk completes the API access details and introduces the multi-state operations support provided by the Carllm platform.",
+      "original_text": "9. **Complete API Access:** Unlimited API calls:\n   - Integration with DriveSmart's core systems\n   - Agent management system connectivity\n   - Third-party data providers (LexisNexis, Verisk, Experian)\n   - DMV and MVR integrations\n   - Payment processing systems\n   - Document management platforms\n   - Marketing automation tools\n\n10. **Multi-State Operations:** Comprehensive state support:\n    - State-specific forms and endorsements\n    - Regulatory compliance monitoring\n    - Rate filing management\n    - Multi-state agent licensing tracking\n    - Surplus lines support where needed"
+    },
+    {
+      "headline": "Support: Dedicated Success Team and 24/7 Support",
+      "summary": "This chunk introduces the support section, detailing the dedicated success team and the 24/7 support commitments.",
+      "original_text": "---\n\n## Support\n\nInsurellm commits to comprehensive Enterprise-level support for DriveSmart Insurance:\n\n1. **Dedicated Success Team:**\n   - Named VP-level executive sponsor with quarterly reviews\n   - Senior Customer Success Manager with weekly check-ins\n   - Technical Account Manager for optimization\n   - Solutions Architect for strategic initiatives\n   - Quarterly executive business reviews with ROI analysis\n\n2. **24/7/365 Support:**\n   - 30-minute response time for P1 critical issues\n   - 2-hour response for P2 high-priority issues\n   - 4-hour response for P3 standard issues\n   - Dedicated support hotline with no phone tree\n   - Private Slack channel with engineering team\n   - Quarterly on-site visits (minimum 4 per year)"
+    },
+    {
+      "headline": "Support: Implementation and Training",
+      "summary": "This chunk covers the implementation process and training/enablement commitments for DriveSmart Insurance.",
+      "original_text": "2. **24/7/365 Support:**\n   - 30-minute response time for P1 critical issues\n   - 2-hour response for P2 high-priority issues\n   - 4-hour response for P3 standard issues\n   - Dedicated support hotline with no phone tree\n   - Private Slack channel with engineering team\n   - Quarterly on-site visits (minimum 4 per year)\n\n3. **Implementation:**\n   - 6-month phased implementation\n   - Dedicated project manager\n   - Migration of 85,000 policies from legacy system\n   - Training for 75+ staff and 200+ agents\n   - Parallel processing for 60 days\n   - Go-live support (4 weeks on-site)\n\n4. **Training and Enablement:**\n   - Role-based training for all users\n   - Train-the-trainer program\n   - Annual user conference attendance (5 attendees)\n   - Monthly training webinars\n   - Unlimited online learning access\n   - Custom training materials"
+    },
+    {
+      "headline": "Support: Custom Development and Integration Services",
+      "summary": "This chunk details the custom development and integration services provided as part of the support package.",
+      "original_text": "4. **Training and Enablement:**\n   - Role-based training for all users\n   - Train-the-trainer program\n   - Annual user conference attendance (5 attendees)\n   - Monthly training webinars\n   - Unlimited online learning access\n   - Custom training materials\n\n5. **Custom Development:**\n   - 800 hours annually of custom development\n   - Priority feature requests on product roadmap\n   - Beta access to new features 60 days early\n   - Co-development opportunities\n\n6. **Integration Services:**\n   - Integration with DriveSmart's systems:\n     - Duck Creek policy administration\n     - Applied Epic agency management\n     - Guidewire ClaimCenter\n     - Telematics providers (Arity, Cambridge Mobile Telematics)\n     - Payment processors\n     - Salesforce CRM\n   - Dedicated integration specialist\n   - Quarterly integration reviews"
+    },
+    {
+      "headline": "Support: Analytics, Reporting, and Continuous Improvement",
+      "summary": "This chunk covers the analytics and reporting services, as well as continuous improvement initiatives included in the support package.",
+      "original_text": "6. **Integration Services:**\n   - Integration with DriveSmart's systems:\n     - Duck Creek policy administration\n     - Applied Epic agency management\n     - Guidewire ClaimCenter\n     - Telematics providers (Arity, Cambridge Mobile Telematics)\n     - Payment processors\n     - Salesforce CRM\n   - Dedicated integration specialist\n   - Quarterly integration reviews\n\n7. **Analytics and Reporting:**\n   - Custom dashboard development (up to 15 dashboards)\n   - Automated daily, weekly, monthly reporting\n   - Ad-hoc analytics support (20 requests/month)\n   - Industry benchmarking\n   - Predictive modeling consultation\n\n8. **Continuous Improvement:**\n   - Quarterly optimization workshops\n   - Annual efficiency audits\n   - Best practice sharing\n   - Innovation lab for emerging tech (AI, IoT, connected cars)"
+    },
+    {
+      "headline": "Signatures and Contract Conclusion",
+      "summary": "This chunk includes the signatures of the authorized representatives from both parties and the concluding statement of the contract.",
+      "original_text": "8. **Continuous Improvement:**\n   - Quarterly optimization workshops\n   - Annual efficiency audits\n   - Best practice sharing\n   - Innovation lab for emerging tech (AI, IoT, connected cars)\n\n---\n\n**Signatures:**\n\n_________________________________\n**Jennifer Rodriguez**\n**Title**: Chief Executive Officer\n**Insurellm, Inc.**\n**Date**: March 20, 2025\n\n_________________________________\n**Steven Brooks**\n**Title**: President & Chief Operating Officer\n**DriveSmart Insurance Corp.**\n**Date**: March 20, 2025\n\n---\n\nThis agreement establishes DriveSmart Insurance as a premier enterprise partner leveraging Carllm's advanced AI and telematics capabilities to transform auto insurance operations. This contract supersedes all prior agreements."
+    }
+  ]
+}

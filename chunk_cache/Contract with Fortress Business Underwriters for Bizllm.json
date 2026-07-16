@@ -1,0 +1,59 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Effective Date",
+      "summary": "The contract between Insurellm and Fortress Business Underwriters for Bizllm is effective from February 1, 2025, and outlines the terms of their partnership for commercial insurance underwriting operations.",
+      "original_text": "# Contract with Fortress Business Underwriters for Bizllm\n\n---\n\n## Terms\n\n1. **Agreement Effective Date**: This contract is effective as of February 1, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on January 31, 2027.\n3. **Subscription Type**: Fortress Business Underwriters agrees to subscribe to the **Professional Tier** of Bizllm, at a cost of $12,000/month, totaling $288,000 for the duration of this contract."
+    },
+    {
+      "headline": "Payment Terms and Scope of Use",
+      "summary": "Payments for the Professional Tier subscription are due on the 5th of each month with a 2% late penalty. The license covers up to 50 named users, with additional users available at $150/month each.",
+      "original_text": "2. **Subscription Type**: Fortress Business Underwriters agrees to subscribe to the **Professional Tier** of Bizllm, at a cost of $12,000/month, totaling $288,000 for the duration of this contract.\n4. **Payment Terms**: Payments are due on the 5th of each month. Late payments will incur a penalty of 2% per month.\n5. **Scope of Use**: License covers up to 50 named users within Fortress Business Underwriters' organization, with additional user licenses available at $150/month per user.\n6. **Termination Clause**: Either party may terminate this agreement with 60 days' written notice prior to the end of the term. If terminated early, a termination fee equal to 25% of remaining contract value will apply."
+    },
+    {
+      "headline": "Termination Clause and Renewal Terms",
+      "summary": "The contract includes a termination clause with a 25% fee for early termination. It also outlines automatic renewal for an additional 24 months unless either party provides 60 days' notice of non-renewal.",
+      "original_text": "6. **Termination Clause**: Either party may terminate this agreement with 60 days' written notice prior to the end of the term. If terminated early, a termination fee equal to 25% of remaining contract value will apply.\n\n---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 24-month term unless either party provides written notice of non-renewal at least 60 days before the expiration date.\n2. **Price Adjustments**: Subscription fees may be adjusted for the renewal term based on Consumer Price Index (CPI) changes or enhanced feature availability, with 90 days' prior notice provided to Fortress Business Underwriters."
+    },
+    {
+      "headline": "Renewal Price Adjustments and Upgrade Options",
+      "summary": "Subscription fees for renewal may be adjusted based on CPI changes or new features, with 90 days' notice. Fortress can upgrade to the Enterprise Tier with 30 days' notice and prorated pricing.",
+      "original_text": "2. **Price Adjustments**: Subscription fees may be adjusted for the renewal term based on Consumer Price Index (CPI) changes or enhanced feature availability, with 90 days' prior notice provided to Fortress Business Underwriters.\n3. **Upgrade Options**: Client may upgrade to Enterprise Tier at any time with 30 days' notice and prorated pricing adjustment.\n\n---\n\n## Features"
+    },
+    {
+      "headline": "Professional Tier Features Overview",
+      "summary": "Fortress Business Underwriters gains access to all Professional Tier features, including multi-line underwriting, business intelligence integration, cyber risk assessment, and more.",
+      "original_text": "## Features\n\n1. **Access to Professional Tier Features**: Fortress Business Underwriters will have access to all Professional Tier features, including:\n   - Multi-Line Underwriting Engine for general liability, professional liability, property, workers' comp, and cyber insurance\n   - Business Intelligence Integration with automated data gathering\n   - Cyber Risk Assessment with digital security posture evaluation\n   - Workers' Compensation Optimization tools\n   - Commercial Property Evaluation with catastrophe modeling"
+    },
+    {
+      "headline": "Additional Professional Tier Features",
+      "summary": "The Professional Tier includes specialized tools like professional liability coverage, portfolio management, agent portals, and claims management with AI-powered subrogation.",
+      "original_text": "   - Professional Liability Specialization for multiple industry sectors\n   - Portfolio Management Dashboard with predictive analytics\n   - Agent and Broker Portal with commission tracking\n   - Claims Management Integration with AI-powered subrogation identification\n\n2. **Advanced Analytics**: Access to enhanced reporting capabilities including loss ratio analysis, geographic heat maps, and competitive benchmarking tools."
+    },
+    {
+      "headline": "API Access and Custom Workflows",
+      "summary": "The contract includes limited API access (100,000 calls/month) and the ability to configure up to 10 custom underwriting workflows tailored to Fortress's business needs.",
+      "original_text": "2. **Advanced Analytics**: Access to enhanced reporting capabilities including loss ratio analysis, geographic heat maps, and competitive benchmarking tools.\n\n3. **API Access**: Limited API access for integrating Bizllm with existing underwriting workbenches and agency management systems (up to 100,000 API calls/month).\n\n4. **Custom Workflows**: Ability to configure up to 10 custom underwriting workflows tailored to Fortress's specific business lines and risk appetites.\n\n---\n\n## Support"
+    },
+    {
+      "headline": "Technical Support and Dedicated Account Management",
+      "summary": "Fortress receives priority technical support, including a dedicated account manager with monthly check-ins, a 24/7 emergency hotline, and guaranteed response times for critical and standard issues.",
+      "original_text": "## Support\n\n1. **Technical Support**: Fortress Business Underwriters will receive priority technical support from Insurellm, including:\n   - Dedicated account manager with monthly check-ins\n   - 24/7 emergency technical support hotline\n   - Response time guarantee: 2 hours for critical issues, 8 hours for standard issues\n\n2. **Training**: Insurellm will provide:"
+    },
+    {
+      "headline": "Training and Onboarding Details",
+      "summary": "Insurellm provides comprehensive onboarding (40 hours for up to 20 staff), quarterly advanced training, access to an online learning portal, and an annual certification program for power users.",
+      "original_text": "2. **Training**: Insurellm will provide:\n   - Initial comprehensive onboarding (40 hours) for up to 20 staff members\n   - Quarterly advanced training sessions on new features and best practices\n   - Access to online learning portal with video tutorials and documentation\n   - Annual certification program for power users\n\n3. **Updates and Maintenance**:\n   - Monthly platform updates with new features and enhancements"
+    },
+    {
+      "headline": "Updates, Maintenance, and Integration Support",
+      "summary": "The contract includes monthly platform updates, scheduled maintenance windows with 72 hours' notice, zero-downtime updates, and dedicated integration support for systems like Duck Creek and Guidewire.",
+      "original_text": "3. **Updates and Maintenance**:\n   - Monthly platform updates with new features and enhancements\n   - Scheduled maintenance windows: Saturday 11 PM - Sunday 3 AM EST\n   - Minimum 72 hours advance notice for all planned maintenance\n   - Zero-downtime updates for non-critical improvements\n\n4. **Integration Support**: Dedicated integration specialist to assist with:\n   - Connection to policy administration systems (Duck Creek, Guidewire, etc.)\n   - Data migration from legacy underwriting platforms\n   - Third-party data provider integrations (Verisk, LexisNexis, CoreLogic)"
+    },
+    {
+      "headline": "Signatures and Contract Conclusion",
+      "summary": "The contract is signed by Michael Torres (CRO, Insurellm) and Robert Chen (Chief Underwriting Officer, Fortress Business Underwriters) on February 1, 2025, formalizing their partnership for Bizllm.",
+      "original_text": "4. **Integration Support**: Dedicated integration specialist to assist with:\n   - Connection to policy administration systems (Duck Creek, Guidewire, etc.)\n   - Data migration from legacy underwriting platforms\n   - Third-party data provider integrations (Verisk, LexisNexis, CoreLogic)\n\n---\n\n**Signatures:**\n\n_________________________________\n**Michael Torres**\n**Title**: Chief Revenue Officer\n**Insurellm, Inc.**\n**Date**: February 1, 2025\n\n_________________________________\n**Robert Chen**\n**Title**: Chief Underwriting Officer\n**Fortress Business Underwriters**\n**Date**: February 1, 2025\n\n---\n\n*This contract outlines the terms of the relationship between Insurellm and Fortress Business Underwriters for the Bizllm product, establishing a partnership to transform commercial insurance underwriting operations.*"
+    }
+  ]
+}

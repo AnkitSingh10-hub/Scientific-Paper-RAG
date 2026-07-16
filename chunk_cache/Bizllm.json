@@ -1,0 +1,49 @@
+{
+  "chunks": [
+    {
+      "headline": "Bizllm Product Overview and Purpose",
+      "summary": "Bizllm is Insurellm's enterprise-grade commercial insurance platform designed to modernize how insurers serve business customers, from small businesses to large corporations. It offers comprehensive tools for underwriting, policy administration, and risk management across multiple commercial lines.",
+      "original_text": "# Product Summary\n\n# Bizllm\n\n## Summary\n\nBizllm is Insurellm's enterprise-grade commercial insurance platform designed to revolutionize how insurers serve business customers. From small businesses to large corporations, Bizllm provides comprehensive tools for underwriting, policy administration, and risk management across multiple commercial lines including general liability, professional liability, property, workers' compensation, and cyber insurance. By leveraging AI and industry-specific data analytics, Bizllm enables commercial insurers to assess complex risks accurately, price policies competitively, and deliver exceptional service to business clients."
+    },
+    {
+      "headline": "Multi-Line Underwriting Engine and Business Intelligence",
+      "summary": "Bizllm's underwriting platform handles diverse commercial insurance products in a unified system. It uses AI-powered risk assessment to evaluate business operations, industry exposures, and financial stability. The platform also integrates business intelligence by gathering data from registries, financial databases, and third-party sources for comprehensive underwriting insights.",
+      "original_text": "## Features\n\n### 1. Multi-Line Underwriting Engine\nBizllm's sophisticated underwriting platform handles diverse commercial insurance products within a single unified system. AI-powered risk assessment evaluates business operations, industry-specific exposures, and financial stability to generate accurate quotes across multiple coverage types.\n\n### 2. Business Intelligence Integration\nThe platform automatically gathers and analyzes data from business registries, financial databases, industry reports, and third-party risk intelligence sources to provide comprehensive underwriting insights without manual research."
+    },
+    {
+      "headline": "Cyber Risk and Workers' Compensation Features",
+      "summary": "Bizllm includes specialized cyber insurance capabilities such as automated evaluation of digital security postures, breach history analysis, and IT infrastructure assessment. It also offers workers' compensation optimization tools that analyze payroll data, industry classifications, claims history, and safety programs to price coverage accurately.",
+      "original_text": "### 3. Cyber Risk Assessment\nSpecialized cyber insurance capabilities include automated evaluation of digital security postures, breach history analysis, and IT infrastructure assessment. The platform identifies vulnerabilities and recommends risk mitigation measures to reduce exposure.\n\n### 4. Workers' Compensation Optimization\nIntegrated workers' comp tools analyze payroll data, industry classifications, claims history, and safety programs to accurately price coverage and identify opportunities for premium credits through loss control initiatives."
+    },
+    {
+      "headline": "Commercial Property and Professional Liability Features",
+      "summary": "Bizllm's commercial property evaluation uses advanced risk modeling with location data, building characteristics, and catastrophe modeling. It also provides industry-specific professional liability underwriting for sectors like healthcare, legal, and technology, evaluating credentials and claims history.",
+      "original_text": "### 5. Commercial Property Evaluation\nAdvanced property risk modeling incorporates location data, building characteristics, catastrophe modeling, and environmental hazards to assess property risks accurately. Integration with aerial imagery and IoT sensors provides real-time property condition monitoring.\n\n### 6. Professional Liability Specialization\nIndustry-specific professional liability underwriting for sectors including healthcare, legal, accounting, technology, and consulting. The platform evaluates professional credentials, claims history, and industry-specific risk factors."
+    },
+    {
+      "headline": "Portfolio Management and Agent Portal",
+      "summary": "Bizllm offers a portfolio management dashboard with analytics for line-of-business performance, loss ratios, and renewal rates. It also includes a dedicated agent and broker portal for quoting, binding, and servicing commercial policies, with real-time commission tracking and marketing resources.",
+      "original_text": "### 7. Portfolio Management Dashboard\nComprehensive analytics provide insurers with portfolio-level insights including line-of-business performance, loss ratios, renewal rates, and geographic concentrations. Predictive analytics identify profitable growth opportunities and emerging risks.\n\n### 8. Agent and Broker Portal\nDedicated portals enable distribution partners to quote, bind, and service commercial policies efficiently. Real-time commission tracking, marketing materials, and training resources support productive agency relationships."
+    },
+    {
+      "headline": "Claims Management and Pricing Structure",
+      "summary": "Bizllm integrates seamlessly with claims systems for fast incident reporting and loss tracking, using AI to identify subrogation opportunities. Its pricing structure includes three tiers: Business ($6,000/month), Professional ($12,000/month), and Enterprise (custom pricing), all including implementation services and updates.",
+      "original_text": "### 9. Claims Management Integration\nSeamless connection with claims systems enables fast incident reporting, reserve establishment, and loss tracking. AI-powered tools identify subrogation opportunities and predict claim severity for better reserves.\n\n## Pricing\n\nBizllm's pricing structure reflects the complexity and value of commercial insurance operations:\n\n- **Business Tier:** $6,000/month for regional commercial insurers writing select lines of business, including core underwriting and policy administration.\n- **Professional Tier:** $12,000/month for multi-line carriers, adding cyber risk tools, advanced analytics, and expanded integration capabilities.\n- **Enterprise Tier:** Custom pricing for national and specialty commercial insurers requiring full customization, API access, dedicated environments, and white-label options.\n\nAll tiers include implementation services, staff training, and continuous platform updates."
+    },
+    {
+      "headline": "Bizllm Development Roadmap Q2 2025 to Q2 2026",
+      "summary": "Bizllm's roadmap includes the launch of version 1.0 in Q2 2025 with core underwriting and policy administration. In Q4 2025, it will introduce enhanced cyber insurance capabilities. By Q2 2026, embedded IoT integration for real-time risk monitoring in property and workers' comp lines will be released.",
+      "original_text": "## Roadmap\n\nBizllm's forward-looking development roadmap includes:\n\n- **Q2 2025:** Launch of Bizllm version 1.0 with core multi-line underwriting, quoting, and policy administration.\n- **Q4 2025:** Introduction of enhanced cyber insurance capabilities including active threat monitoring and breach response coordination.\n- **Q2 2026:** Release of embedded IoT integration for real-time risk monitoring in property and workers' comp lines."
+    },
+    {
+      "headline": "Bizllm Roadmap Q4 2026 to Q4 2027",
+      "summary": "The roadmap continues with the launch of a parametric insurance module in Q4 2026 for rapid payout triggers. In Q2 2027, climate risk modeling tools will be introduced. By Q4 2027, Bizllm will expand into international markets with country-specific products and regulatory compliance.",
+      "original_text": "- **Q4 2026:** Launch of parametric insurance module enabling rapid payout triggers for weather events and business interruption.\n- **Q2 2027:** Introduction of climate risk modeling tools incorporating forward-looking environmental data and transition risk analysis.\n- **Q4 2027:** Expansion into international markets with country-specific commercial insurance products and regulatory compliance."
+    },
+    {
+      "headline": "Bizllm Value Proposition and Closing Statement",
+      "summary": "Bizllm empowers commercial insurers to compete effectively in complex markets while delivering modern digital experiences to business customers. The platform aims to transform commercial insurance operations with its comprehensive tools and forward-looking features.",
+      "original_text": "Bizllm empowers commercial insurers to compete effectively in complex markets while delivering the digital experiences today's business customers demand. Transform your commercial insurance operations with Bizllm!"
+    }
+  ]
+}

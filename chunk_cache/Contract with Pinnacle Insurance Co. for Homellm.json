@@ -1,0 +1,34 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "This section introduces the contract between Insurellm and Pinnacle Insurance Co., specifying the effective date, parties involved, and their principal places of business.",
+      "original_text": "# Contract with Pinnacle Insurance Co. for Homellm\n\n## Terms\nThis contract (\"Contract\") is entered into as of this 1st day of January 2024 (\"Effective Date\") by and between Insurellm (\"Provider\"), a Delaware corporation with its principal place of business at 1234 Innovation Drive, San Francisco, CA 94105, and Pinnacle Insurance Co. (\"Client\"), a Texas corporation with its principal place of business at 4567 Protection Plaza, Houston, TX 77001."
+    },
+    {
+      "headline": "License Grant, Payment Terms, and Contract Term",
+      "summary": "This chunk details the license grant to Pinnacle Insurance Co., the payment terms including setup and monthly fees, and the initial two-year term of the contract.",
+      "original_text": "This contract (\"Contract\") is entered into as of this 1st day of January 2024 (\"Effective Date\") by and between Insurellm (\"Provider\"), a Delaware corporation with its principal place of business at 1234 Innovation Drive, San Francisco, CA 94105, and Pinnacle Insurance Co. (\"Client\"), a Texas corporation with its principal place of business at 4567 Protection Plaza, Houston, TX 77001. \n\n1. **License Grant**: Insurellm hereby grants the Client a non-exclusive, non-transferable license to use Homellm in accordance with the terms of this Contract.\n2. **Payment Terms**: The Client agrees to pay an initial setup fee of $15,000 and a monthly subscription fee of $10,000 for the duration of the Contract.\n3. **Term**: The initial term of this Contract shall last for a period of two (2) years from the Effective Date."
+    },
+    {
+      "headline": "Contract Renewal and Fee Adjustments",
+      "summary": "This section covers the automatic renewal terms of the contract, including the notice period for termination and the annual adjustment of subscription fees based on the consumer price index.",
+      "original_text": "3. **Term**: The initial term of this Contract shall last for a period of two (2) years from the Effective Date.\n\n## Renewal\n1. **Renewal Terms**: At the end of the initial term, this Contract shall automatically renew for additional one-year terms unless either party provides written notice of termination at least thirty (30) days prior to the expiration of the current term.\n2. **Adjustment of Fees**: Subscription fees may be adjusted annually based on consumer price index changes, not to exceed 5% per year."
+    },
+    {
+      "headline": "Homellm Features for Pinnacle Insurance",
+      "summary": "This chunk lists the key features of Homellm, including AI-powered risk assessment, dynamic pricing, instant claim processing, predictive maintenance alerts, multi-channel integration, and a customer portal.",
+      "original_text": "## Renewal\n1. **Renewal Terms**: At the end of the initial term, this Contract shall automatically renew for additional one-year terms unless either party provides written notice of termination at least thirty (30) days prior to the expiration of the current term.\n2. **Adjustment of Fees**: Subscription fees may be adjusted annually based on consumer price index changes, not to exceed 5% per year.\n\n## Features\n1. **AI-Powered Risk Assessment**: Utilized for tailored underwriting decisions specific to individual homeowner policies.\n2. **Dynamic Pricing Model**: Monthly premiums adjusted based on real-time risk evaluations, ensuring fair pricing for Pinnacle’s customers.\n3. **Instant Claim Processing**: Claims resolved in hours rather than weeks, significantly improving customer satisfaction and operational efficiency."
+    },
+    {
+      "headline": "Additional Homellm Features and Support Terms",
+      "summary": "This section continues the list of Homellm features, including predictive maintenance alerts, multi-channel integration, and a customer portal, and introduces the support terms.",
+      "original_text": "3. **Instant Claim Processing**: Claims resolved in hours rather than weeks, significantly improving customer satisfaction and operational efficiency.\n4. **Predictive Maintenance Alerts**: Alerts sent to customers advising them of potential risks unique to their property, supporting proactive maintenance.\n5. **Multi-Channel Integration**: Seamless access to customer data through existing systems in Pinnacle Insurance's infrastructure.\n6. **Customer Portal**: A user-friendly interface allowing policy management, claims submission, and coverage updates at any time.\n\n## Support\n1. **Technical Support**: Insurellm shall provide 24/7 technical support via an email and phone assistance for the duration of this Contract."
+    },
+    {
+      "headline": "Support Details and Contract Signatures",
+      "summary": "This chunk outlines the remaining support terms, including training and updates, and concludes with the signatures of authorized representatives from both Insurellm and Pinnacle Insurance Co.",
+      "original_text": "## Support\n1. **Technical Support**: Insurellm shall provide 24/7 technical support via an email and phone assistance for the duration of this Contract.\n2. **Training**: Insurellm will conduct an onsite training session for Client employees upon implementation, and quarterly training webinars will be made available thereafter.\n3. **Updates and Maintenance**: Insurellm will provide regular system updates and maintenance, ensuring that the software is operating at peak efficiency.\n\nBy signing below, both parties agree to the terms set forth in this Contract for the use of the Homellm product.\n\n____  \n**Insurellm Authorized Signature**  \nName: Sarah Johnson  \nTitle: VP of Sales  \nDate: ____________\n\n____  \n**Pinnacle Insurance Co. Authorized Signature**  \nName: Tom Anderson  \nTitle: Chief Operating Officer  \nDate: ____________"
+    }
+  ]
+}

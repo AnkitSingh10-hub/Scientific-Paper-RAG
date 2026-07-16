@@ -1,0 +1,84 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties",
+      "summary": "This chunk introduces the contract between Insurellm, Inc. and National Claims Network Corp., including the contract date, number, and involved parties.",
+      "original_text": "# Contract with National Claims Network for Claimllm\n\n**Contract Date:** April 20, 2025\n**Contract Number:** CL-2025-E-0198\n**Parties:**\n- Insurellm, Inc.\n- National Claims Network Corp.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide National Claims Network with enterprise access to the Claimllm platform, including white-label capabilities, unlimited claims capacity, advanced fraud analytics, and dedicated infrastructure to support their nationwide claims operations processing over 100,000 claims annually."
+    },
+    {
+      "headline": "Contract Terms: Coverage and Duration",
+      "summary": "Details the coverage provided by Insurellm to National Claims Network, including platform access and infrastructure, and the 36-month duration of the agreement.",
+      "original_text": "1. **Coverage:** Insurellm agrees to provide National Claims Network with enterprise access to the Claimllm platform, including white-label capabilities, unlimited claims capacity, advanced fraud analytics, and dedicated infrastructure to support their nationwide claims operations processing over 100,000 claims annually.\n\n2. **Duration:** This agreement is effective for a period of 36 months from the contract date, representing Insurellm's longest-term contract commitment to date.\n\n3. **Payment:** National Claims Network shall pay custom Enterprise Tier pricing of $35,000 per month for months 1-12, $38,000 per month for months 13-24, and $41,000 per month for months 25-36, totaling $1,368,000 over the contract term."
+    },
+    {
+      "headline": "Payment and Service Level Agreement",
+      "summary": "Outlines the payment structure for the contract, including tiered pricing over 36 months, and the Service Level Agreement with uptime guarantees and financial credits for downtime.",
+      "original_text": "3. **Payment:** National Claims Network shall pay custom Enterprise Tier pricing of $35,000 per month for months 1-12, $38,000 per month for months 13-24, and $41,000 per month for months 25-36, totaling $1,368,000 over the contract term.\n\n4. **Service Level Agreement:** Insurellm guarantees 99.95% uptime with financial credits for downtime: 5% monthly credit for each hour of unplanned downtime, maximum 50% monthly credit.\n\n5. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding proprietary AI models, fraud detection algorithms, claimant PII, and business strategies."
+    },
+    {
+      "headline": "Confidentiality, Data Security, and Business Continuity",
+      "summary": "Covers the confidentiality agreement, data security commitments including SOC 2 compliance and encryption, and business continuity measures with specific RTO and RPO targets.",
+      "original_text": "5. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding proprietary AI models, fraud detection algorithms, claimant PII, and business strategies.\n\n6. **Data Security:** Insurellm commits to maintaining SOC 2 Type II compliance, annual penetration testing, and end-to-end encryption for all data at rest and in transit.\n\n7. **Business Continuity:** Insurellm provides disaster recovery with 4-hour RTO (Recovery Time Objective) and 1-hour RPO (Recovery Point Objective).\n\n---\n\n## Renewal"
+    },
+    {
+      "headline": "Contract Renewal Terms",
+      "summary": "Describes the renewal process, including the 120-day notice period, guaranteed enterprise pricing, and the option to extend the contract in 12-month increments.",
+      "original_text": "---\n\n## Renewal\n\nThis agreement includes a mutual 120-day renewal notice period. National Claims Network receives guaranteed enterprise pricing for renewal equal to or better than new enterprise customers at renewal time. Contract may be extended in 12-month increments with mutual written agreement.\n\n---\n\n## Features\n\nNational Claims Network will receive the complete Claimllm Enterprise suite:"
+    },
+    {
+      "headline": "Enterprise Features: Unlimited Claims and White-Label Platform",
+      "summary": "Introduces the features of the Claimllm Enterprise suite, starting with unlimited claims processing and white-label platform capabilities, including custom domains, mobile apps, and branding options.",
+      "original_text": "---\n\n## Features\n\nNational Claims Network will receive the complete Claimllm Enterprise suite:\n\n1. **Unlimited Claims Processing:** No volume restrictions, supporting National's processing of 100,000+ claims annually with scalability to 500,000+ claims as business grows.\n\n2. **White-Label Platform:** Complete branding customization including:\n   - Custom domain names (claims.nationalclaimsnetwork.com)\n   - Branded mobile apps (iOS and Android)\n   - Customized email templates and communications\n   - Co-branded claimant portals\n\n3. **Advanced Computer Vision:** State-of-the-art damage assessment:"
+    },
+    {
+      "headline": "Advanced Computer Vision and Enterprise Fraud Analytics",
+      "summary": "Details the advanced computer vision capabilities for damage assessment and introduces the enterprise fraud analytics features, including real-time scoring and social network analysis.",
+      "original_text": "3. **Advanced Computer Vision:** State-of-the-art damage assessment:\n   - Auto damage analysis with 95%+ accuracy on repair estimates\n   - Property damage evaluation (roofs, siding, interiors, water damage)\n   - Medical imaging analysis for injury claims\n   - 3D reconstruction from photo sets\n   - Integration with all major estimating platforms\n\n4. **Enterprise Fraud Analytics:**\n   - Real-time fraud scoring on all claims\n   - Social network analysis across 10+ years of historical data\n   - Dark web monitoring for organized fraud rings\n   - Predictive models trained on 5M+ historical claims\n   - Link analysis connecting related parties, addresses, and claims patterns\n   - Integration with third-party fraud databases (NICB, ISO ClaimSearch)"
+    },
+    {
+      "headline": "Complete API Access and AI-Powered Litigation Prediction",
+      "summary": "Covers the complete API access for integrations and the AI-powered litigation prediction features, including attorney involvement prediction and settlement recommendations.",
+      "original_text": "4. **Enterprise Fraud Analytics:**\n   - Real-time fraud scoring on all claims\n   - Social network analysis across 10+ years of historical data\n   - Dark web monitoring for organized fraud rings\n   - Predictive models trained on 5M+ historical claims\n   - Link analysis connecting related parties, addresses, and claims patterns\n   - Integration with third-party fraud databases (NICB, ISO ClaimSearch)\n\n5. **Complete API Access:** Unlimited API calls supporting:\n   - Real-time integrations with 50+ carrier policy systems\n   - Bi-directional data sync with National's data warehouse\n   - Third-party integrations (repair networks, medical providers, legal vendors)\n   - Custom automation workflows\n\n6. **AI-Powered Litigation Prediction:** Predictive analytics identifying claims with high litigation probability:\n   - Attorney involvement prediction (85%+ accuracy)\n   - Recommended settlement ranges based on jurisdiction and case law\n   - Early intervention recommendations\n   - Litigation cost estimation"
+    },
+    {
+      "headline": "Catastrophe Claims Management and Advanced Vendor Management",
+      "summary": "Describes the specialized tools for catastrophe claims management, including rapid deployment playbooks and real-time damage assessment, and the advanced vendor management features.",
+      "original_text": "6. **AI-Powered Litigation Prediction:** Predictive analytics identifying claims with high litigation probability:\n   - Attorney involvement prediction (85%+ accuracy)\n   - Recommended settlement ranges based on jurisdiction and case law\n   - Early intervention recommendations\n   - Litigation cost estimation\n\n7. **Catastrophe Claims Management:** Specialized tools for major events:\n   - Rapid deployment playbooks for natural disasters\n   - Geographic clustering and resource allocation\n   - Emergency vendor network activation\n   - Real-time damage assessment using satellite imagery\n   - Mobile claims units with offline capability\n\n8. **Advanced Vendor Management:**\n   - Network of 5,000+ preferred vendors nationwide\n   - AI-powered vendor matching and assignment\n   - Real-time capacity management and scheduling\n   - Quality scoring and performance analytics\n   - Automated vendor payments and 1099 management"
+    },
+    {
+      "headline": "Predictive Analytics Suite and Support Introduction",
+      "summary": "Outlines the predictive analytics suite features, including claim outcome prediction and subrogation identification, and introduces the comprehensive support section.",
+      "original_text": "8. **Advanced Vendor Management:**\n   - Network of 5,000+ preferred vendors nationwide\n   - AI-powered vendor matching and assignment\n   - Real-time capacity management and scheduling\n   - Quality scoring and performance analytics\n   - Automated vendor payments and 1099 management\n\n9. **Predictive Analytics Suite:**\n   - Claim outcome prediction and reserve optimization\n   - Subrogation opportunity identification\n   - Salvage value estimation\n   - Customer satisfaction prediction and intervention triggers\n   - Cycle time optimization recommendations\n\n---\n\n## Support\n\nInsurellm commits to comprehensive Enterprise-level support for National Claims Network:"
+    },
+    {
+      "headline": "Dedicated Success Team and Premium Support",
+      "summary": "Details the dedicated success team, including executive sponsors and customer success managers, and the 24/7 premium support with guaranteed response times for different priority levels.",
+      "original_text": "---\n\n## Support\n\nInsurellm commits to comprehensive Enterprise-level support for National Claims Network:\n\n1. **Dedicated Success Team:**\n   - Executive sponsor (VP level) with monthly strategic reviews\n   - Dedicated Customer Success Manager with daily availability\n   - Technical Account Manager for system optimization\n   - Solutions Architect for ongoing innovation\n   - Quarterly executive business reviews with CEO participation\n\n2. **24/7/365 Premium Support:**\n   - Guaranteed 10-minute response time for P1 critical issues\n   - 30-minute response for P2 high-priority issues\n   - 2-hour response for P3 standard issues\n   - Dedicated support hotline with no phone tree\n   - Private Slack channel with engineering team access\n   - Annual on-site support visits (minimum 4 per year)"
+    },
+    {
+      "headline": "Comprehensive Implementation and Training",
+      "summary": "Covers the comprehensive implementation plan, including a 9-month phased program and migration of historical data, and the training and enablement programs for National Claims Network staff.",
+      "original_text": "2. **24/7/365 Premium Support:**\n   - Guaranteed 10-minute response time for P1 critical issues\n   - 30-minute response for P2 high-priority issues\n   - 2-hour response for P3 standard issues\n   - Dedicated support hotline with no phone tree\n   - Private Slack channel with engineering team access\n   - Annual on-site support visits (minimum 4 per year)\n\n3. **Comprehensive Implementation:**\n   - 9-month phased implementation program\n   - Dedicated project management office (PMO)\n   - Executive steering committee with monthly meetings\n   - Migration of 3 years of historical claims data\n   - Training for 200+ National Claims Network staff\n   - Parallel processing period with legacy system\n   - Go-live support with on-site Insurellm team (4 weeks)\n\n4. **Training and Enablement:**\n   - Role-based training programs (adjusters, supervisors, fraud investigators, IT, executives)\n   - Train-the-trainer program for National's learning team\n   - Certification programs with continuing education credits"
+    },
+    {
+      "headline": "Training Continuation and Custom Development",
+      "summary": "Continues the training and enablement details, including annual user conference attendance and unlimited access to the online learning platform, and introduces the custom development services.",
+      "original_text": "4. **Training and Enablement:**\n   - Role-based training programs (adjusters, supervisors, fraud investigators, IT, executives)\n   - Train-the-trainer program for National's learning team\n   - Certification programs with continuing education credits\n   - Annual user conference attendance (3 attendees)\n   - Quarterly advanced training sessions\n   - Unlimited access to online learning platform\n\n5. **Custom Development:**\n   - 1,000 hours annually of custom development included\n   - Dedicated development team for National-specific features\n   - Priority feature requests with guaranteed roadmap inclusion\n   - Beta program participation for all new features\n   - Input into product strategy and direction"
+    },
+    {
+      "headline": "Integration Services and Analytics",
+      "summary": "Describes the integration services for National's systems, including policy administration and financial systems, and the analytics and reporting services, such as custom dashboards and automated reporting.",
+      "original_text": "5. **Custom Development:**\n   - 1,000 hours annually of custom development included\n   - Dedicated development team for National-specific features\n   - Priority feature requests with guaranteed roadmap inclusion\n   - Beta program participation for all new features\n   - Input into product strategy and direction\n\n6. **Integration Services:**\n   - Enterprise integration with National's systems:\n     - Policy administration systems (multiple carriers)\n     - Data warehouse and business intelligence platforms\n     - Financial systems (SAP, Oracle)\n     - Document management (SharePoint, M-Files)\n     - Communication platforms (Twilio, SendGrid)\n   - Ongoing integration support with 4-hour response SLA\n   - Quarterly integration health assessments\n\n7. **Analytics and Reporting:**\n   - Custom executive dashboard development\n   - Real-time operational dashboards\n   - Automated daily, weekly, and monthly reporting"
+    },
+    {
+      "headline": "Analytics Continuation and Continuous Improvement",
+      "summary": "Continues the analytics and reporting services, including ad-hoc analytics and industry benchmarking, and details the continuous improvement initiatives, such as process optimization workshops and innovation labs.",
+      "original_text": "7. **Analytics and Reporting:**\n   - Custom executive dashboard development\n   - Real-time operational dashboards\n   - Automated daily, weekly, and monthly reporting\n   - Ad-hoc analytics support (up to 20 requests/month)\n   - Industry benchmarking and competitive analysis\n   - Predictive modeling consultation\n\n8. **Continuous Improvement:**\n   - Quarterly process optimization workshops\n   - Annual efficiency audits with recommendations\n   - Best practice sharing from across Insurellm customer base\n   - Innovation labs to pilot emerging technologies (AI, blockchain, IoT)"
+    },
+    {
+      "headline": "Signatures and Strategic Partnership",
+      "summary": "Includes the signatures of the executives from both Insurellm and National Claims Network, along with their titles and the date, and concludes with a statement about the strategic partnership.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Jennifer Rodriguez**\n**Title**: Chief Executive Officer\n**Insurellm, Inc.**\n**Date**: April 20, 2025\n\n_________________________________\n**Amanda Richardson**\n**Title**: President & Chief Operating Officer\n**National Claims Network Corp.**\n**Date**: April 20, 2025\n\n---\n\nThis agreement represents a strategic partnership between Insurellm and National Claims Network, establishing National Claims Network as Insurellm's flagship enterprise claims processing partner. This contract supersedes all prior agreements and communications."
+    }
+  ]
+}

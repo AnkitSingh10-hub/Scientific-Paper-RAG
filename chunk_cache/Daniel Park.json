@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Daniel Park HR Record Overview",
+      "summary": "This chunk introduces Daniel Park's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Daniel Park\n\n## Summary\n- **Date of Birth:** October 3, 1991\n- **Job Title:** QA Engineer\n- **Location:** Austin, Texas\n- **Current Salary:** $88,000\n\n## Insurellm Career Progression\n- **September 2020 - Present:** QA Engineer"
+    },
+    {
+      "headline": "Daniel Park Career Progression at Insurellm",
+      "summary": "Details Daniel Park's role as a QA Engineer at Insurellm, including his responsibilities such as developing test plans, building automated test suites, and collaborating with development teams.",
+      "original_text": "- **September 2020 - Present:** QA Engineer\n  - Develops and executes test plans for all Insurellm products\n  - Builds automated test suites using Selenium and Cypress\n  - Manages bug tracking and quality metrics\n  - Collaborates with development teams on quality standards\n\n- **May 2018 - August 2020:** QA Analyst at SoftwareTest Inc.\n  - Performed manual and automated testing for web applications\n  - Created test documentation and test cases"
+    },
+    {
+      "headline": "Daniel Park Early Career and Performance History",
+      "summary": "Covers Daniel Park's early career as a Junior QA Tester and his performance ratings from 2020 to 2023, highlighting his growth and achievements in QA roles.",
+      "original_text": "- **July 2016 - April 2018:** Junior QA Tester at AppQuality Corp.\n  - Conducted manual testing and regression testing\n  - Learned QA fundamentals and testing methodologies\n\n## Annual Performance History\n- **2023:** Rating: 4.2/5\n  *Strong performance. Expanded test automation coverage to 65%. Found critical bugs preventing major production issues.*\n\n- **2022:** Rating: 3.9/5\n  *Good performance. Improved automated testing but missed some edge cases in major release. Learning from experience.*"
+    },
+    {
+      "headline": "Daniel Park Performance and Compensation History",
+      "summary": "Includes Daniel Park's performance ratings for 2021 and 2020, as well as his compensation history from 2020 to 2023, showing salary and bonus details.",
+      "original_text": "- **2021:** Rating: 4.0/5\n  *Solid year. Successfully implemented new test framework. Good collaboration with engineering teams.*\n\n- **2020:** Rating: 3.7/5\n  *Adequate performance in first year. Building knowledge of products and establishing testing processes.*\n\n## Compensation History\n- **2023:** Base Salary: $88,000 + Bonus: $7,000\n- **2022:** Base Salary: $82,000 + Bonus: $5,000\n- **2021:** Base Salary: $76,000 + Bonus: $6,000\n- **2020:** Base Salary: $72,000 + Bonus: $3,000"
+    },
+    {
+      "headline": "Daniel Park Education, Skills, and Recognition",
+      "summary": "Provides details on Daniel Park's education, certifications, skills, professional development, recognition, and feedback, highlighting his expertise in QA and test automation.",
+      "original_text": "## Other HR Notes\n- **Education:** BS in Computer Science from Texas State University\n- **Certifications:** ISTQB Certified Tester, Selenium WebDriver Certified\n- **Skills:** Expert in test automation (Selenium, Cypress, Jest), API testing, performance testing, CI/CD integration\n- **Professional Development:** Completed Advanced Test Automation workshop (2023). Learning performance testing tools.\n- **Recognition:** Quality Champion Award 2023 for preventing critical production bug\n- **Feedback:** Detail-oriented QA professional with strong technical skills. Proactive in identifying quality risks. Good advocate for quality throughout development process."
+    }
+  ]
+}

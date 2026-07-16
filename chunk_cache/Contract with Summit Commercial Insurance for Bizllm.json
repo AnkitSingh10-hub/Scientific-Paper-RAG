@@ -1,0 +1,49 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "This chunk introduces the contract between Insurellm, Inc. and Summit Commercial Insurance, LLC, including the contract date, number, and the parties involved.",
+      "original_text": "# Contract with Summit Commercial Insurance for Bizllm\n\n**Contract Date:** March 15, 2025\n**Contract Number:** BZ-2025-0091\n**Parties:**\n- Insurellm, Inc.\n- Summit Commercial Insurance, LLC\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide Summit Commercial Insurance with access to the Bizllm platform, enabling comprehensive commercial insurance underwriting and policy administration across multiple lines including general liability, professional liability, and property coverage."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "This chunk details the initial terms of the contract, including coverage scope, duration, and payment obligations for Summit Commercial Insurance.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide Summit Commercial Insurance with access to the Bizllm platform, enabling comprehensive commercial insurance underwriting and policy administration across multiple lines including general liability, professional liability, and property coverage.\n\n2. **Duration:** This agreement is effective for a period of 18 months from the contract date, after which it will automatically renew unless terminated by either party with a written 45-day notice.\n\n3. **Payment:** Summit Commercial Insurance shall pay a monthly fee of $6,000, due by the 1st of every month for the Business Tier package.\n\n4. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary information, trade secrets, and customer data disclosed during the execution of this contract."
+    },
+    {
+      "headline": "Contract Terms: Confidentiality, Liability, and Data Security",
+      "summary": "This chunk covers the confidentiality, liability limitations, and data security commitments outlined in the contract terms.",
+      "original_text": "3. **Payment:** Summit Commercial Insurance shall pay a monthly fee of $6,000, due by the 1st of every month for the Business Tier package.\n\n4. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary information, trade secrets, and customer data disclosed during the execution of this contract.\n\n5. **Liability:** Insurellm's liability under this agreement shall be limited to direct damages and shall not exceed the total fees paid by Summit Commercial Insurance in the last 12 months prior to the date of the claim.\n\n6. **Data Security:** Insurellm commits to maintaining industry-standard encryption and security protocols to protect all client data processed through the Bizllm platform.\n\n---\n\n## Renewal"
+    },
+    {
+      "headline": "Contract Renewal Terms",
+      "summary": "This chunk explains the automatic renewal clause of the contract, including the notice period and terms for renewal.",
+      "original_text": "## Renewal\n\nUnless either party provides a written notice of termination at least 45 days prior to the expiration of the contract term, this agreement will automatically renew for an additional 18-month term under the same terms and conditions, subject to pricing adjustments communicated at least 90 days in advance.\n\n---\n\n## Features\n\nSummit Commercial Insurance will receive the following features with Bizllm Business Tier:"
+    },
+    {
+      "headline": "Bizllm Business Tier Features: Underwriting and Intelligence",
+      "summary": "This chunk lists the first three features of the Bizllm Business Tier, focusing on underwriting capabilities and business intelligence integration.",
+      "original_text": "## Features\n\nSummit Commercial Insurance will receive the following features with Bizllm Business Tier:\n\n1. **Multi-Line Underwriting Engine:** Comprehensive underwriting platform supporting general liability, professional liability, property, and workers' compensation insurance products.\n\n2. **Business Intelligence Integration:** Automated data gathering from business registries, financial databases, and industry reports for streamlined underwriting.\n\n3. **Commercial Property Evaluation:** Advanced property risk modeling incorporating location data, building characteristics, and catastrophe modeling.\n\n4. **Workers' Compensation Optimization:** Integrated tools analyzing payroll data, industry classifications, and claims history for accurate pricing."
+    },
+    {
+      "headline": "Bizllm Business Tier Features: Portfolio Management and Agent Portal",
+      "summary": "This chunk covers the remaining features of the Bizllm Business Tier, including portfolio management and agent support tools.",
+      "original_text": "3. **Commercial Property Evaluation:** Advanced property risk modeling incorporating location data, building characteristics, and catastrophe modeling.\n\n4. **Workers' Compensation Optimization:** Integrated tools analyzing payroll data, industry classifications, and claims history for accurate pricing.\n\n5. **Portfolio Management Dashboard:** Analytics providing line-of-business performance, loss ratios, and renewal rates insights.\n\n6. **Agent and Broker Portal:** Dedicated portals enabling distribution partners to quote, bind, and service policies efficiently.\n\n---\n\n## Support"
+    },
+    {
+      "headline": "Support Commitments: Onboarding and Dedicated Team",
+      "summary": "This chunk outlines the onboarding process and dedicated support team commitments from Insurellm to Summit Commercial Insurance.",
+      "original_text": "## Support\n\nInsurellm commits to providing comprehensive support to Summit Commercial Insurance, which includes:\n\n1. **Onboarding:** A 3-week intensive training program for up to 15 Summit Commercial staff members to ensure effective use of Bizllm, including hands-on workshops and certification.\n\n2. **Dedicated Support Team:** A dedicated account manager and technical support team available Monday-Friday 7 AM to 7 PM EST, with emergency support available 24/7.\n\n3. **Regular Updates:** Insurellm will provide quarterly platform updates and enhancements, including new features, security improvements, and regulatory compliance updates."
+    },
+    {
+      "headline": "Support Commitments: Integration and Performance Reviews",
+      "summary": "This chunk details the integration assistance and performance review commitments as part of Insurellm's support to Summit Commercial Insurance.",
+      "original_text": "2. **Dedicated Support Team:** A dedicated account manager and technical support team available Monday-Friday 7 AM to 7 PM EST, with emergency support available 24/7.\n\n3. **Regular Updates:** Insurellm will provide quarterly platform updates and enhancements, including new features, security improvements, and regulatory compliance updates.\n\n4. **Integration Assistance:** Technical support for integrating Bizllm with Summit's existing policy administration and claims management systems.\n\n5. **Performance Reviews:** Quarterly business reviews to assess platform utilization, identify optimization opportunities, and discuss strategic initiatives.\n\n---\n\n**Signatures:**"
+    },
+    {
+      "headline": "Contract Signatures and Final Clause",
+      "summary": "This chunk includes the signatures of the authorized representatives from both parties and the final clause stating the completeness of the agreement.",
+      "original_text": "**Signatures:**\n\n_________________________________\n**Michael Torres**\n**Title**: Chief Revenue Officer\n**Insurellm, Inc.**\n\n_________________________________\n**Patricia Lawson**\n**Title**: Vice President of Operations\n**Summit Commercial Insurance, LLC**\n\n---\n\nThis agreement represents the complete understanding of both parties regarding the use of the Bizllm product and supersedes any prior agreements or communications."
+    }
+  ]
+}

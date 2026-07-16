@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Kevin Zhang HR Record Overview",
+      "summary": "This chunk introduces Kevin Zhang's HR record, including his date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Kevin Zhang\n\n## Summary\n- **Date of Birth:** March 27, 1990\n- **Job Title:** Mobile Developer\n- **Location:** San Francisco, California\n- **Current Salary:** $128,000\n\n## Insurellm Career Progression\n- **May 2020 - Present:** Mobile Developer"
+    },
+    {
+      "headline": "Kevin Zhang Career Progression at Insurellm",
+      "summary": "Details Kevin Zhang's role as a Mobile Developer at Insurellm, including his achievements in iOS and Android development, and his previous roles at AppWorks Studio and StartupTech.",
+      "original_text": "- **May 2020 - Present:** Mobile Developer\n  - Leads iOS development for Marketllm consumer mobile app\n  - Built Android version achieving 4.6 star rating on Play Store\n  - Implemented push notification system increasing user engagement by 42%\n  - Manages mobile release cycles and app store submissions\n\n- **February 2018 - April 2020:** iOS Developer at AppWorks Studio\n  - Developed consumer mobile applications for various clients\n  - Specialized in Swift and iOS frameworks\n\n- **July 2015 - January 2018:** Junior Mobile Developer at StartupTech\n  - Built mobile features for social networking app\n  - Learned iOS and Android development fundamentals"
+    },
+    {
+      "headline": "Kevin Zhang Performance History 2020-2023",
+      "summary": "Covers Kevin Zhang's annual performance ratings from 2020 to 2023, highlighting his consistent high performance and key achievements in mobile development.",
+      "original_text": "- **July 2015 - January 2018:** Junior Mobile Developer at StartupTech\n  - Built mobile features for social networking app\n  - Learned iOS and Android development fundamentals\n\n## Annual Performance History\n- **2023:** Rating: 4.6/5\n  *Excellent performance. Successfully launched Android app on time and under budget. Strong technical leadership.*\n\n- **2022:** Rating: 4.4/5\n  *Exceeded expectations with major iOS app redesign. Improved app performance and user retention significantly.*\n\n- **2021:** Rating: 4.2/5\n  *Strong performance. Delivered all planned features and maintained high app quality standards.*\n\n- **2020:** Rating: 4.0/5\n  *Good first year at Insurellm. Quick to learn insurance domain and contribute meaningfully to mobile strategy.*"
+    },
+    {
+      "headline": "Kevin Zhang Compensation History",
+      "summary": "Lists Kevin Zhang's base salary and bonus from 2020 to 2023, showing his compensation growth over time.",
+      "original_text": "- **2020:** Rating: 4.0/5\n  *Good first year at Insurellm. Quick to learn insurance domain and contribute meaningfully to mobile strategy.*\n\n## Compensation History\n- **2023:** Base Salary: $128,000 + Bonus: $16,000\n- **2022:** Base Salary: $120,000 + Bonus: $14,000\n- **2021:** Base Salary: $112,000 + Bonus: $12,000\n- **2020:** Base Salary: $105,000 + Bonus: $8,000"
+    },
+    {
+      "headline": "Kevin Zhang Education, Skills, and Recognition",
+      "summary": "Provides additional HR notes about Kevin Zhang, including his education, technical skills, awards, open-source contributions, speaking engagements, and feedback from colleagues.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $128,000 + Bonus: $16,000\n- **2022:** Base Salary: $120,000 + Bonus: $14,000\n\n## Other HR Notes\n- **Education:** BS in Computer Science from UC Berkeley\n- **Skills:** Expert in Swift, Kotlin, React Native, mobile UI/UX patterns, App Store optimization\n- **Recognition:** Mobile Innovation Award 2023 for Android app launch\n- **Open Source:** Active contributor to mobile development open-source projects\n- **Speaking:** Presented at Mobile DevCon 2023 on cross-platform development strategies\n- **Feedback:** Highly skilled mobile developer with excellent product sense. Takes ownership of mobile platform and drives continuous improvement. Strong mentor to other developers."
+    }
+  ]
+}

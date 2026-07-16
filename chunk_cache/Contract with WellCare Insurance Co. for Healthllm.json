@@ -1,0 +1,69 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview with WellCare Insurance Co.",
+      "summary": "This document outlines the contract between Insurellm, Inc. and WellCare Insurance Co. for access to the Healthllm platform, including contract date, number, and parties involved.",
+      "original_text": "# Contract with WellCare Insurance Co. for Healthllm\n\n**Contract Date:** March 8, 2025\n**Contract Number:** HL-2025-0021\n**Parties:**\n- Insurellm, Inc.\n- WellCare Insurance Co.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide WellCare Insurance Co. with access to the Healthllm platform, enabling comprehensive health insurance operations including plan design, eligibility verification, claims adjudication, and member engagement."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "The contract specifies the coverage scope, duration of 12 months with automatic renewal, and a monthly fee of $8,000 for the Essential Tier package.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide WellCare Insurance Co. with access to the Healthllm platform, enabling comprehensive health insurance operations including plan design, eligibility verification, claims adjudication, and member engagement.\n\n2. **Duration:** This agreement is effective for a period of 12 months from the contract date, with automatic renewal unless terminated with 30-day written notice.\n\n3. **Payment:** WellCare Insurance Co. shall pay a monthly fee of $8,000, due by the 1st of every month for the Essential Tier package.\n\n4. **Member Coverage**: Essential Tier supports health insurance administration for up to 15,000 covered members. Current enrollment: 11,000 members."
+    },
+    {
+      "headline": "Contract Terms: Confidentiality, HIPAA Compliance, and Liability",
+      "summary": "The contract includes clauses on confidentiality, HIPAA compliance as a Business Associate, and liability limits capped at fees paid in the preceding 12 months.",
+      "original_text": "4. **Member Coverage**: Essential Tier supports health insurance administration for up to 15,000 covered members. Current enrollment: 11,000 members.\n\n5. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary information, protected health information (PHI), and member data in compliance with HIPAA regulations.\n\n6. **HIPAA Compliance:** Insurellm operates as a Business Associate and maintains full HIPAA compliance including Business Associate Agreement (BAA).\n\n7. **Liability:** Insurellm's liability is limited to direct damages not exceeding the total fees paid in the preceding 12 months."
+    },
+    {
+      "headline": "Contract Renewal Terms",
+      "summary": "The contract automatically renews for 12-month terms unless terminated with 30-day notice. Pricing may adjust annually with a 10% cap and 60 days' advance notice.",
+      "original_text": "---\n\n## Renewal\n\nUnless either party provides written notice of termination at least 30 days prior to contract expiration, this agreement automatically renews for successive 12-month terms. Pricing may be adjusted annually with 60 days' advance notice, capped at 10% increase per year.\n\n---\n\n## Features"
+    },
+    {
+      "headline": "Essential Tier Features: Intelligent Plan Design",
+      "summary": "The Essential Tier includes AI-powered tools for creating competitive health plans, such as market trend analysis, demographic analysis, and benefit structure optimization.",
+      "original_text": "## Features\n\nWellCare Insurance Co. will receive the following Essential Tier features:\n\n1. **Intelligent Plan Design:** AI-powered tools for creating competitive health plans:\n   - Market trend analysis and competitive benchmarking\n   - Member demographic analysis\n   - Healthcare utilization pattern analysis\n   - Benefit structure optimization\n   - Deductible and copay modeling\n   - Network configuration recommendations"
+    },
+    {
+      "headline": "Essential Tier Features: Real-Time Eligibility Verification and AI-Driven Claims Adjudication",
+      "summary": "Features include real-time eligibility verification with provider network integration and AI-driven claims adjudication with fraud detection and auto-adjudication for clean claims.",
+      "original_text": "2. **Real-Time Eligibility Verification:** Instant coverage verification:\n   - Provider network integration for real-time checking\n   - Member status validation\n   - Coverage level confirmation\n   - Dependent eligibility verification\n   - Prior authorization status\n   - Reduces claim denials due to eligibility issues\n\n3. **AI-Driven Claims Adjudication:** Automated claims processing:\n   - Machine learning-based claims review\n   - Fraud detection and prevention\n   - Payment accuracy verification\n   - Auto-adjudication for clean claims\n   - Denial management and appeals tracking\n   - Learning from historical claim patterns"
+    },
+    {
+      "headline": "Essential Tier Features: Provider Network Management and Member Engagement Platform",
+      "summary": "The contract includes comprehensive provider network management and a mobile-first member engagement platform with digital ID cards, claims tracking, and telehealth integration.",
+      "original_text": "3. **AI-Driven Claims Adjudication:** Automated claims processing:\n   - Machine learning-based claims review\n   - Fraud detection and prevention\n   - Payment accuracy verification\n   - Auto-adjudication for clean claims\n   - Denial management and appeals tracking\n   - Learning from historical claim patterns\n\n4. **Provider Network Management:** Comprehensive network administration:\n   - Provider contract management\n   - Credentialing and re-credentialing workflows\n   - Network adequacy monitoring\n   - Provider performance metrics\n   - Contract negotiation analytics\n   - Cost savings opportunity identification\n\n5. **Member Engagement Platform:** Mobile-first member portal:\n   - Digital ID cards\n   - Claims status tracking\n   - Provider directory search\n   - Coverage information access\n   - Telehealth service integration\n   - Push notifications for preventive care"
+    },
+    {
+      "headline": "Essential Tier Features: Medication Management and Regulatory Compliance",
+      "summary": "Features include basic medication management tools like formulary management and prior authorization workflows, as well as a regulatory compliance engine for ACA, HIPAA, and state mandates.",
+      "original_text": "5. **Member Engagement Platform:** Mobile-first member portal:\n   - Digital ID cards\n   - Claims status tracking\n   - Provider directory search\n   - Coverage information access\n   - Telehealth service integration\n   - Push notifications for preventive care\n\n6. **Basic Medication Management:**\n   - Formulary management tools\n   - Prior authorization workflows\n   - Generic substitution recommendations\n   - Drug interaction checking\n   - Medication adherence tracking\n\n7. **Regulatory Compliance Engine:**\n   - ACA (Affordable Care Act) compliance monitoring\n   - State mandate tracking\n   - HIPAA privacy and security compliance\n   - Automated regulatory reporting\n   - Form filing and approval tracking"
+    },
+    {
+      "headline": "Essential Tier Features: Standard Analytics",
+      "summary": "The Standard Analytics feature provides dashboards tracking claims volume, medical loss ratio, member satisfaction, provider network utilization, and cost per member per month.",
+      "original_text": "7. **Regulatory Compliance Engine:**\n   - ACA (Affordable Care Act) compliance monitoring\n   - State mandate tracking\n   - HIPAA privacy and security compliance\n   - Automated regulatory reporting\n   - Form filing and approval tracking\n\n8. **Standard Analytics:** Dashboards tracking:\n   - Claims volume and processing time\n   - Medical loss ratio (MLR)\n   - Member satisfaction scores\n   - Provider network utilization\n   - Cost per member per month (PMPM)\n\n---\n\n## Support"
+    },
+    {
+      "headline": "Support: Onboarding and Technical Support",
+      "summary": "Insurellm provides a 4-week onboarding program with system configuration, staff training, and data migration, along with email/phone support and an online ticketing system.",
+      "original_text": "## Support\n\nInsurellm commits to providing comprehensive support to WellCare Insurance Co.:\n\n1. **Onboarding:** 4-week implementation program including:\n   - System configuration for WellCare's plan designs\n   - Training for up to 15 staff members (30 hours total)\n   - Integration with existing systems (policy admin, provider network)\n   - Data migration for current 11,000 members\n   - Provider network data import and validation\n\n2. **Technical Support:**\n   - Email and phone support Monday-Friday 7 AM - 7 PM EST\n   - Response time: 8 hours for critical issues, 24 hours for standard\n   - Online ticketing system with status tracking\n   - Knowledge base and FAQ library\n   - Video tutorials and user guides"
+    },
+    {
+      "headline": "Support: Platform Updates and Account Management",
+      "summary": "Support includes quarterly feature releases, monthly security patches, a named customer success manager, and quarterly business review meetings.",
+      "original_text": "2. **Technical Support:**\n   - Email and phone support Monday-Friday 7 AM - 7 PM EST\n   - Response time: 8 hours for critical issues, 24 hours for standard\n   - Online ticketing system with status tracking\n   - Knowledge base and FAQ library\n   - Video tutorials and user guides\n\n3. **Platform Updates:**\n   - Quarterly feature releases with new capabilities\n   - Monthly security patches and bug fixes\n   - Regulatory compliance updates as laws change\n   - Release notes and upgrade documentation\n   - Advance notice of updates (minimum 21 days)\n\n4. **Account Management:**\n   - Named customer success manager\n   - Quarterly business review meetings\n   - Usage analytics and optimization recommendations\n   - Industry trends and best practices sharing\n   - Assistance with tier upgrade evaluation"
+    },
+    {
+      "headline": "Support: Compliance and Integration Support",
+      "summary": "Insurellm offers compliance support including annual HIPAA reviews, regulatory updates, and audit assistance, as well as integration support for policy admin systems, PBMs, and EDI transactions.",
+      "original_text": "4. **Account Management:**\n   - Named customer success manager\n   - Quarterly business review meetings\n   - Usage analytics and optimization recommendations\n   - Industry trends and best practices sharing\n   - Assistance with tier upgrade evaluation\n\n5. **Compliance Support:**\n   - Annual HIPAA compliance review\n   - Regulatory update notifications\n   - State insurance department filing assistance\n   - ACA reporting support (1095 forms)\n   - Audit preparation assistance\n\n6. **Integration Support:** Technical assistance connecting Healthllm with:\n   - Existing policy administration systems\n   - Provider credentialing systems\n   - Pharmacy benefit managers (PBMs)\n   - Clearinghouses for EDI transactions\n   - Member portal and mobile apps"
+    },
+    {
+      "headline": "Contract Signatures",
+      "summary": "The contract is signed by Sarah Chen, Vice President of Sales at Insurellm, Inc., and Dr. Raymond Foster, Chief Medical Officer & COO at WellCare Insurance Co., both on March 8, 2025.",
+      "original_text": "---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: March 8, 2025\n\n_________________________________\n**Dr. Raymond Foster**\n**Title**: Chief Medical Officer & COO\n**WellCare Insurance Co.**\n**Date**: March 8, 2025\n\n---\n\nThis agreement enables WellCare Insurance Co. to modernize their health insurance operations with AI-powered technology while ensuring regulatory compliance and improved member outcomes."
+    }
+  ]
+}

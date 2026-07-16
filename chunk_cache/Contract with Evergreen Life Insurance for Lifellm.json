@@ -1,0 +1,59 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview: Insurellm and Evergreen Life Insurance Agreement",
+      "summary": "This chunk introduces the contract between Insurellm and Evergreen Life Insurance, including the contract date, number, and the parties involved. It sets the stage for the detailed terms and conditions that follow.",
+      "original_text": "# Contract with Evergreen Life Insurance for Lifellm\n\n**Contract Date:** January 20, 2025\n**Contract Number:** LF-2025-0012\n**Parties:**\n- Insurellm, Inc.\n- Evergreen Life Insurance Company\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide Evergreen Life Insurance with access to the Lifellm platform, enabling AI-powered life insurance underwriting, policy administration, and risk assessment for individual and group life policies."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "This chunk details the initial terms of the contract, including the scope of coverage provided by Insurellm, the duration of the agreement, and the payment structure for Evergreen Life Insurance.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide Evergreen Life Insurance with access to the Lifellm platform, enabling AI-powered life insurance underwriting, policy administration, and risk assessment for individual and group life policies.\n\n2. **Duration:** This agreement is effective for a period of 12 months from the contract date, with automatic renewal provisions unless terminated with 30-day written notice.\n\n3. **Payment:** Evergreen Life Insurance shall pay a monthly fee of $3,500, due by the 5th of every month for the Starter Tier package.\n\n4. **Policy Volume:** Starter Tier supports underwriting and administration for up to 2,000 active policies. Current baseline: 1,400 policies."
+    },
+    {
+      "headline": "Contract Terms: Confidentiality, HIPAA Compliance, and Liability",
+      "summary": "This chunk covers the confidentiality, HIPAA compliance, and liability clauses in the contract, outlining the responsibilities and limitations of both parties.",
+      "original_text": "4. **Policy Volume:** Starter Tier supports underwriting and administration for up to 2,000 active policies. Current baseline: 1,400 policies.\n\n5. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary underwriting models, policyholder health information (PHI), and business strategies.\n\n6. **HIPAA Compliance:** Insurellm maintains full HIPAA compliance for all health data processed through the Lifellm platform.\n\n7. **Liability:** Insurellm's liability is limited to direct damages not exceeding the total fees paid in the preceding 6 months.\n\n---\n\n## Renewal"
+    },
+    {
+      "headline": "Contract Renewal Terms",
+      "summary": "This chunk explains the renewal conditions of the contract, including the automatic renewal process, notice requirements, and pricing adjustments.",
+      "original_text": "## Renewal\n\nUnless either party provides written notice of termination at least 30 days prior to contract expiration, this agreement automatically renews for successive 12-month terms under the same terms, subject to pricing adjustments with 60 days' advance notice (capped at 10% annual increase).\n\n---\n\n## Features\n\nEvergreen Life Insurance will receive the following Starter Tier features:"
+    },
+    {
+      "headline": "Starter Tier Features: AI-Powered Underwriting and Risk Assessment",
+      "summary": "This chunk describes the AI-powered underwriting and risk assessment features included in the Starter Tier package, detailing the data sources and factors considered.",
+      "original_text": "## Features\n\nEvergreen Life Insurance will receive the following Starter Tier features:\n\n1. **AI-Powered Underwriting:** Accelerated underwriting process analyzing:\n   - Medical histories and prescription databases (Milliman IntelliScript)\n   - Motor vehicle records (MVRs)\n   - Credit-based insurance scores\n   - Lifestyle and occupation risk factors\n   - Automated underwriting decisions for standard risks\n\n2. **Risk Assessment:** AI-driven mortality risk modeling considering:\n   - Age, gender, and family medical history\n   - Current health conditions and lab values\n   - Tobacco and alcohol use\n   - High-risk activities and occupations"
+    },
+    {
+      "headline": "Starter Tier Features: Automated Policy Management and Smart Document Processing",
+      "summary": "This chunk outlines the automated policy management and smart document processing capabilities provided in the Starter Tier, including digital policy issuance and OCR/NLP extraction.",
+      "original_text": "2. **Risk Assessment:** AI-driven mortality risk modeling considering:\n   - Age, gender, and family medical history\n   - Current health conditions and lab values\n   - Tobacco and alcohol use\n   - High-risk activities and occupations\n\n3. **Automated Policy Management:**\n   - Digital policy issuance and delivery\n   - Beneficiary management and updates\n   - Premium calculation and billing integration\n   - Coverage adjustments and conversions\n   - Policy reinstatement processing\n\n4. **Smart Document Processing:** OCR and NLP extraction from:\n   - Medical records and attending physician statements (APS)\n   - Lab results and paramedical exams\n   - Application forms\n   - Financial documentation"
+    },
+    {
+      "headline": "Starter Tier Features: Customer Portal and Regulatory Compliance",
+      "summary": "This chunk details the customer portal and regulatory compliance features of the Starter Tier, including self-service capabilities and compliance monitoring.",
+      "original_text": "4. **Smart Document Processing:** OCR and NLP extraction from:\n   - Medical records and attending physician statements (APS)\n   - Lab results and paramedical exams\n   - Application forms\n   - Financial documentation\n\n5. **Customer Portal:** Policyholder self-service portal featuring:\n   - Policy document access\n   - Beneficiary updates\n   - Premium payment processing\n   - Coverage summary and statements\n   - Digital insurance cards\n\n6. **Regulatory Compliance:** Built-in compliance monitoring for:\n   - State insurance regulations\n   - NAIC model laws and regulations\n   - Anti-money laundering (AML) requirements\n   - Policy form approvals"
+    },
+    {
+      "headline": "Starter Tier Features: Basic Analytics",
+      "summary": "This chunk describes the basic analytics capabilities included in the Starter Tier, such as dashboards tracking application rates, underwriting cycle times, and policy persistency.",
+      "original_text": "6. **Regulatory Compliance:** Built-in compliance monitoring for:\n   - State insurance regulations\n   - NAIC model laws and regulations\n   - Anti-money laundering (AML) requirements\n   - Policy form approvals\n\n7. **Basic Analytics:** Standard dashboards tracking:\n   - Application submission and approval rates\n   - Average underwriting cycle time\n   - Policy persistency and lapse rates\n   - Face amount in force\n\n---\n\n## Support"
+    },
+    {
+      "headline": "Support: Onboarding and Technical Support",
+      "summary": "This chunk covers the onboarding and technical support commitments from Insurellm, including implementation programs, training, and response times for support requests.",
+      "original_text": "## Support\n\nInsurellm commits to providing comprehensive support to Evergreen Life Insurance:\n\n1. **Onboarding:** 2-week implementation program including:\n   - System configuration and setup\n   - Training for up to 8 underwriters and administrators\n   - Integration with Evergreen's policy administration system\n   - Data migration from legacy system (up to 1,400 policies)\n\n2. **Technical Support:**\n   - Email and phone support Monday-Friday 8 AM - 6 PM EST\n   - Response time: 12 hours for critical issues, 24 hours for standard\n   - Online ticketing system for issue tracking\n   - Knowledge base and FAQ access"
+    },
+    {
+      "headline": "Support: Platform Updates, Account Management, and Compliance Support",
+      "summary": "This chunk details the platform updates, account management, and compliance support provided by Insurellm, including feature releases, customer success management, and regulatory assistance.",
+      "original_text": "2. **Technical Support:**\n   - Email and phone support Monday-Friday 8 AM - 6 PM EST\n   - Response time: 12 hours for critical issues, 24 hours for standard\n   - Online ticketing system for issue tracking\n   - Knowledge base and FAQ access\n\n3. **Platform Updates:**\n   - Quarterly feature releases\n   - Monthly security patches and improvements\n   - Advance notice of updates (minimum 14 days)\n   - Release notes and user documentation\n\n4. **Account Management:**\n   - Named customer success manager\n   - Semi-annual business review meetings\n   - Usage analytics and optimization recommendations\n   - Assistance with tier upgrade when volume grows\n\n5. **Compliance Support:**\n   - Annual compliance review and audit support\n   - Regulatory update notifications\n   - State insurance department filing assistance"
+    },
+    {
+      "headline": "Contract Signatures and Conclusion",
+      "summary": "This final chunk includes the signatures of the authorized representatives from both Insurellm and Evergreen Life Insurance, along with a concluding statement about the purpose of the agreement.",
+      "original_text": "5. **Compliance Support:**\n   - Annual compliance review and audit support\n   - Regulatory update notifications\n   - State insurance department filing assistance\n\n---\n\n**Signatures:**\n\n_________________________________\n**Michael Torres**\n**Title**: Chief Revenue Officer\n**Insurellm, Inc.**\n**Date**: January 20, 2025\n\n_________________________________\n**Catherine Wu**\n**Title**: Chief Underwriting Officer\n**Evergreen Life Insurance Company**\n**Date**: January 20, 2025\n\n---\n\nThis agreement enables Evergreen Life Insurance to modernize their life insurance operations with AI-powered underwriting and administration technology."
+    }
+  ]
+}

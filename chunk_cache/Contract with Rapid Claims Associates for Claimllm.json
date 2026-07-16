@@ -1,0 +1,64 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview: Insurellm and Rapid Claims Associates Agreement",
+      "summary": "This chunk introduces the contract between Insurellm, Inc. and Rapid Claims Associates, LLC for the Claimllm platform, including the contract date, number, and parties involved.",
+      "original_text": "# Contract with Rapid Claims Associates for Claimllm\n\n**Contract Date:** March 1, 2025\n**Contract Number:** CL-2025-0063\n**Parties:**\n- Insurellm, Inc.\n- Rapid Claims Associates, LLC\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide Rapid Claims Associates with access to the Claimllm platform, enabling AI-powered claims processing, automated triage, and streamlined claims management across property, casualty, and auto lines."
+    },
+    {
+      "headline": "Contract Terms: Coverage, Duration, and Payment",
+      "summary": "This chunk details the initial terms of the contract, including coverage scope, duration, and payment obligations for Rapid Claims Associates.",
+      "original_text": "## Terms\n\n1. **Coverage:** Insurellm agrees to provide Rapid Claims Associates with access to the Claimllm platform, enabling AI-powered claims processing, automated triage, and streamlined claims management across property, casualty, and auto lines.\n\n2. **Duration:** This agreement is effective for a period of 12 months from the contract date, with automatic renewal provisions unless terminated with 30-day written notice.\n\n3. **Payment:** Rapid Claims Associates shall pay a monthly fee of $4,500, due by the 1st of every month for the Core Tier package, supporting up to 5,000 claims annually.\n\n4. **Overage Fees:** If claims volume exceeds 5,000 annually, overage fees of $0.90 per claim apply, billed quarterly."
+    },
+    {
+      "headline": "Contract Terms: Confidentiality, Data Ownership, and Liability",
+      "summary": "This chunk covers the confidentiality, data ownership, and liability clauses in the contract between Insurellm and Rapid Claims Associates.",
+      "original_text": "3. **Payment:** Rapid Claims Associates shall pay a monthly fee of $4,500, due by the 1st of every month for the Core Tier package, supporting up to 5,000 claims annually.\n\n4. **Overage Fees:** If claims volume exceeds 5,000 annually, overage fees of $0.90 per claim apply, billed quarterly.\n\n5. **Confidentiality:** Both parties agree to maintain confidentiality of proprietary information, claimant data, and processing methodologies disclosed during this contract.\n\n6. **Data Ownership:** Rapid Claims Associates retains ownership of all claims data. Insurellm may use anonymized, aggregated data for product improvement.\n\n7. **Liability:** Insurellm's liability is limited to direct damages not exceeding total fees paid in the preceding 6 months."
+    },
+    {
+      "headline": "Contract Renewal Terms",
+      "summary": "This chunk explains the automatic renewal provisions of the contract, including notice requirements and pricing adjustments.",
+      "original_text": "7. **Liability:** Insurellm's liability is limited to direct damages not exceeding total fees paid in the preceding 6 months.\n\n---\n\n## Renewal\n\nUnless either party provides written notice of termination at least 30 days prior to contract expiration, this agreement automatically renews for successive 12-month terms. Pricing may be adjusted annually with 60 days' advance notice, capped at 10% increase per year."
+    },
+    {
+      "headline": "Core Tier Features: Intelligent FNOL Processing",
+      "summary": "This chunk describes the Intelligent FNOL Processing feature of the Claimllm platform, including its multi-channel intake capabilities.",
+      "original_text": "---\n\n## Features\n\nRapid Claims Associates will receive the following Core Tier features:\n\n1. **Intelligent FNOL Processing:** Multi-channel first notice of loss intake via:\n   - Mobile app integration\n   - Web portal submission\n   - Email parsing with NLP extraction\n   - Phone system integration with IVR\n   - Chatbot-assisted intake\n\n2. **Automated Triage and Routing:** Machine learning algorithms assess claim severity and complexity to route appropriately:"
+    },
+    {
+      "headline": "Core Tier Features: Automated Triage and Basic Document Processing",
+      "summary": "This chunk covers the Automated Triage and Routing feature, as well as the Basic Document Processing capabilities of the Claimllm platform.",
+      "original_text": "2. **Automated Triage and Routing:** Machine learning algorithms assess claim severity and complexity to route appropriately:\n   - Low-complexity claims → automated processing\n   - Medium-complexity claims → junior adjuster queue\n   - High-complexity/high-value claims → senior adjuster assignment\n   - Fraud-flagged claims → special investigation unit\n\n3. **Basic Document Processing:** OCR and NLP extraction from:\n   - Police reports\n   - Repair estimates\n   - Medical bills and records\n   - Witness statements\n   - Photo and video evidence\n\n4. **Standard Fraud Detection:** Rule-based fraud screening including:"
+    },
+    {
+      "headline": "Core Tier Features: Fraud Detection, Communication Hub, and Reporting",
+      "summary": "This chunk details the Standard Fraud Detection, Claimant Communication Hub, and Basic Reporting features of the Claimllm platform.",
+      "original_text": "4. **Standard Fraud Detection:** Rule-based fraud screening including:\n   - Duplicate claim detection\n   - Unusual pattern identification\n   - Loss location verification\n   - Claimant history review\n\n5. **Claimant Communication Hub:** Automated status updates via:\n   - SMS text messages\n   - Email notifications\n   - Mobile app push notifications\n   - Scheduled status update intervals\n\n6. **Basic Reporting:** Standard dashboards tracking:\n   - Claims volume and cycle time\n   - Average settlement amounts\n   - Adjuster productivity metrics\n   - Customer satisfaction scores"
+    },
+    {
+      "headline": "Core Tier Features: Payment Processing",
+      "summary": "This chunk describes the Payment Processing feature of the Claimllm platform, including its integration capabilities.",
+      "original_text": "6. **Basic Reporting:** Standard dashboards tracking:\n   - Claims volume and cycle time\n   - Average settlement amounts\n   - Adjuster productivity metrics\n   - Customer satisfaction scores\n\n7. **Payment Processing:** Integration with payment systems for:\n   - Direct deposit (ACH)\n   - Check issuance\n   - Digital wallets (PayPal, Venmo)\n   - Simple multi-party splits\n\n---\n\n## Support"
+    },
+    {
+      "headline": "Support: Onboarding and Technical Support",
+      "summary": "This chunk outlines the onboarding process and technical support commitments provided by Insurellm to Rapid Claims Associates.",
+      "original_text": "---\n\n## Support\n\nInsurellm commits to providing comprehensive support to Rapid Claims Associates:\n\n1. **Onboarding:** 2-week implementation program including:\n   - System configuration and data migration\n   - Training for up to 10 claims staff members (12 hours total)\n   - Process workflow mapping and optimization\n   - Integration with existing claims management system\n\n2. **Technical Support:**\n   - Email and phone support Monday-Friday 8 AM - 6 PM EST\n   - Response time: 8 hours for critical issues, 24 hours for standard requests\n   - Online knowledge base and FAQ access\n   - Monthly platform office hours for questions"
+    },
+    {
+      "headline": "Support: Platform Updates and Account Management",
+      "summary": "This chunk details the platform updates and account management services provided by Insurellm as part of the support package.",
+      "original_text": "2. **Technical Support:**\n   - Email and phone support Monday-Friday 8 AM - 6 PM EST\n   - Response time: 8 hours for critical issues, 24 hours for standard requests\n   - Online knowledge base and FAQ access\n   - Monthly platform office hours for questions\n\n3. **Platform Updates:**\n   - Quarterly feature releases with new capabilities\n   - Monthly security patches and bug fixes\n   - Release notes and changelog documentation\n   - Advance notice of breaking changes (minimum 30 days)\n\n4. **Account Management:**\n   - Named customer success manager\n   - Semi-annual business review meetings\n   - Usage analytics and optimization recommendations\n   - Assistance with tier upgrade evaluation when volume grows"
+    },
+    {
+      "headline": "Support: Integration Support and Signatures",
+      "summary": "This chunk covers the integration support provided by Insurellm and includes the signatures of the authorized representatives from both parties.",
+      "original_text": "4. **Account Management:**\n   - Named customer success manager\n   - Semi-annual business review meetings\n   - Usage analytics and optimization recommendations\n   - Assistance with tier upgrade evaluation when volume grows\n\n5. **Integration Support:** Technical assistance connecting Claimllm with:\n   - Existing claims management systems\n   - Policy administration platforms\n   - Vendor management networks (repair shops, medical providers)\n   - Payment processing systems\n\n---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: March 1, 2025\n\n_________________________________\n**Marcus Johnson**\n**Title**: Chief Claims Officer\n**Rapid Claims Associates, LLC**\n**Date**: March 1, 2025"
+    },
+    {
+      "headline": "Contract Conclusion: Final Provisions",
+      "summary": "This chunk concludes the contract with a statement affirming that it represents the complete understanding between the parties and supersedes prior agreements.",
+      "original_text": "5. **Integration Support:** Technical assistance connecting Claimllm with:\n   - Existing claims management systems\n   - Policy administration platforms\n   - Vendor management networks (repair shops, medical providers)\n   - Payment processing systems\n\n---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: March 1, 2025\n\n_________________________________\n**Marcus Johnson**\n**Title**: Chief Claims Officer\n**Rapid Claims Associates, LLC**\n**Date**: March 1, 2025\n\n---\n\nThis agreement represents the complete understanding between Insurellm and Rapid Claims Associates regarding the Claimllm platform and supersedes any prior communications or agreements."
+    }
+  ]
+}

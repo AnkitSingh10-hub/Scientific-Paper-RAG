@@ -1,0 +1,39 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Duration",
+      "summary": "The contract between Insurellm and TechDrive Insurance for the Carllm product is dated October 1, 2024, with a duration of 12 months.",
+      "original_text": "# Contract with TechDrive Insurance for Carllm\n\n**Contract Date:** October 1, 2024  \n**Contract Duration:** 12 months\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm (the \"Provider\") and TechDrive Insurance (the \"Customer\")."
+    },
+    {
+      "headline": "License Grant and Payment Terms",
+      "summary": "Insurellm grants TechDrive Insurance a non-exclusive license to use Carllm under the Professional Tier at $2,500/month, with payments due on the 5th of each month.",
+      "original_text": "1. **Parties Involved**: This contract is entered into between Insurellm (the \"Provider\") and TechDrive Insurance (the \"Customer\").\n   \n2. **License Grant**: Insurellm grants TechDrive Insurance a non-exclusive, non-transferable license to use the Carllm product as per the selected pricing tier (Professional Tier at $2,500/month).\n   \n3. **Payment Terms**: TechDrive Insurance agrees to make monthly payments of $2,500 for the duration of this contract, due on the 5th of each month.\n   \n4. **Confidentiality**: Both parties shall maintain confidentiality regarding each other’s proprietary information throughout the duration of this contract and for three years following its termination."
+    },
+    {
+      "headline": "Confidentiality and Renewal Terms",
+      "summary": "The contract includes a confidentiality clause lasting three years post-termination and outlines automatic renewal terms unless notice is given 30 days prior to expiration.",
+      "original_text": "4. **Confidentiality**: Both parties shall maintain confidentiality regarding each other’s proprietary information throughout the duration of this contract and for three years following its termination.\n\n## Renewal\n\n1. **Automatic Renewal**: This contract shall automatically renew for additional one-year terms unless either party provides written notice of non-renewal at least 30 days prior to the contract expiration.\n   \n2. **Pricing Review**: The pricing for any renewal period shall be discussed 60 days prior to the end of the term and agreed upon in writing."
+    },
+    {
+      "headline": "Renewal Pricing and Included Features",
+      "summary": "Renewal pricing is reviewed 60 days before term-end. The Professional Tier includes AI-Powered Risk Assessment, Instant Quoting, Customizable Coverage Plans, and more.",
+      "original_text": "2. **Pricing Review**: The pricing for any renewal period shall be discussed 60 days prior to the end of the term and agreed upon in writing.\n\n## Features\n\n1. **Included Features**: Under the Professional Tier, TechDrive Insurance will have access to the following features of Carllm:\n   - AI-Powered Risk Assessment\n   - Instant Quoting\n   - Customizable Coverage Plans\n   - Fraud Detection\n   - Customer Insights Dashboard\n   - Mobile Integration\n   - Automated Customer Support"
+    },
+    {
+      "headline": "System Requirements and Support Overview",
+      "summary": "TechDrive Insurance must meet technical requirements for Carllm integration. Insurellm provides 24/7 AI-driven support, onboarding training, and regular system updates.",
+      "original_text": "1. **Included Features**: Under the Professional Tier, TechDrive Insurance will have access to the following features of Carllm:\n   - AI-Powered Risk Assessment\n   - Instant Quoting\n   - Customizable Coverage Plans\n   - Fraud Detection\n   - Customer Insights Dashboard\n   - Mobile Integration\n   - Automated Customer Support\n\n2. **System Requirements**: TechDrive Insurance must ensure that their existing systems meet the technical requirements to integrate with Carllm, as outlined in the onboarding documentation provided by Insurellm.\n\n## Support\n\n1. **Customer Support**: Insurellm will provide 24/7 customer support to TechDrive Insurance via AI-driven chatbots, ensuring timely resolution of inquiries and issues."
+    },
+    {
+      "headline": "Training, Updates, and Signatures",
+      "summary": "Onboarding training is scheduled within the first two weeks. Insurellm provides prior notice for significant upgrades. The contract includes signatures from both parties.",
+      "original_text": "1. **Customer Support**: Insurellm will provide 24/7 customer support to TechDrive Insurance via AI-driven chatbots, ensuring timely resolution of inquiries and issues.\n\n2. **Training**: TechDrive Insurance staff will receive onboarding training sessions to ensure effective utilization of the Carllm platform, scheduled within the first two weeks of contract commencement.\n\n3. **System Updates**: The Provider will push regular updates to improve system performance and add new features. TechDrive Insurance will receive prior notification of any significant upgrades that may affect current operations.\n\n---\n\n**Signatures:**\n\n**Insurellm Representative:**  \nName: John Smith  \nTitle: Account Manager  \nDate: ____________\n\n**TechDrive Insurance Representative:**  \nName: Sarah Johnson  \nTitle: Operations Director  \nDate: ____________"
+    },
+    {
+      "headline": "Contract Conclusion and Purpose",
+      "summary": "The contract serves as the foundational agreement for collaboration between Insurellm and TechDrive Insurance to optimize auto insurance offerings using Carllm.",
+      "original_text": "**Signatures:**\n\n**Insurellm Representative:**  \nName: John Smith  \nTitle: Account Manager  \nDate: ____________\n\n**TechDrive Insurance Representative:**  \nName: Sarah Johnson  \nTitle: Operations Director  \nDate: ____________  \n\nThis contract will serve as the foundational agreement for the ongoing collaboration between Insurellm and TechDrive Insurance in optimizing their auto insurance offerings through the Carllm product."
+    }
+  ]
+}

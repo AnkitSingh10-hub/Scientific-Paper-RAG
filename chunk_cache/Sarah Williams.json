@@ -1,0 +1,29 @@
+{
+  "chunks": [
+    {
+      "headline": "Sarah Williams HR Record Overview",
+      "summary": "This chunk introduces Sarah Williams, a UX Designer at Insurellm, including her date of birth, job title, location, and current salary.",
+      "original_text": "# HR Record\n\n# Sarah Williams\n\n## Summary\n- **Date of Birth:** November 3, 1994\n- **Job Title:** UX Designer\n- **Location:** Remote (Based in Portland, Oregon)\n- **Current Salary:** $95,000"
+    },
+    {
+      "headline": "Sarah Williams Career Progression at Insurellm",
+      "summary": "Details Sarah Williams' career progression at Insurellm, starting from her role as a Junior UX Designer in 2020 to her current position as UX Designer. Includes her responsibilities and achievements in each role.",
+      "original_text": "## Insurellm Career Progression\n- **January 2022 - Present:** UX Designer\n  - Leads design for Homellm home insurance portal\n  - Conducted comprehensive user research resulting in 35% improvement in user satisfaction scores\n  - Collaborates with product and engineering teams on feature design\n\n- **June 2020 - December 2021:** Junior UX Designer\n  - Supported senior designers on Marketllm marketplace redesign\n  - Created wireframes, prototypes, and user flow diagrams\n  - Participated in user testing and feedback sessions"
+    },
+    {
+      "headline": "Sarah Williams Early Career and Performance History",
+      "summary": "Covers Sarah Williams' early career at StartupHub Inc. and her performance history at Insurellm from 2020 to 2023, including ratings and feedback.",
+      "original_text": "- **August 2018 - May 2020:** UI/UX Designer at StartupHub Inc.\n  - Designed mobile and web interfaces for various startup clients\n  - Worked closely with developers to implement design systems\n\n## Annual Performance History\n- **2023:** Rating: 4.4/5\n  *Strong design contributions with excellent user research skills. Led successful Homellm redesign project.*\n\n- **2022:** Rating: 4.0/5\n  *Good first year as UX Designer. Showed initiative and creativity, though sometimes needed guidance on complex projects.*\n\n- **2021:** Rating: 3.6/5"
+    },
+    {
+      "headline": "Sarah Williams Performance and Compensation History",
+      "summary": "Includes Sarah Williams' performance ratings for 2020 and her compensation history from 2020 to 2023, detailing base salary and bonuses.",
+      "original_text": "*Adequate performance but struggled with time management on multiple concurrent projects. Improved by year end.*\n\n- **2020:** Rating: 4.2/5\n  *Solid performance as Junior Designer. Quick to learn Insurellm's design system and processes.*\n\n## Compensation History\n- **2023:** Base Salary: $95,000 + Bonus: $8,000\n- **2022:** Base Salary: $88,000 + Bonus: $6,000\n- **2021:** Base Salary: $78,000 + Bonus: $3,000\n- **2020:** Base Salary: $70,000"
+    },
+    {
+      "headline": "Sarah Williams Education, Skills, and HR Notes",
+      "summary": "Provides additional HR notes about Sarah Williams, including her education, skills, professional development, portfolio, and feedback from colleagues.",
+      "original_text": "## Other HR Notes\n- **Education:** BFA in Graphic Design from Rhode Island School of Design\n- **Skills:** Expert in Figma, Sketch, Adobe Creative Suite. Proficient in HTML/CSS for design prototyping.\n- **Professional Development:** Completed UX Research Certification from Nielsen Norman Group (2023). Regularly attends design conferences.\n- **Portfolio:** Maintains active design portfolio showcasing Insurellm work (approved for external sharing).\n- **Feedback:** Creative thinker with strong empathy for users. Works well remotely and maintains excellent communication with distributed teams."
+    }
+  ]
+}

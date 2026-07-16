@@ -1,0 +1,39 @@
+{
+  "chunks": [
+    {
+      "headline": "Contract Overview and Parties Involved",
+      "summary": "This chunk introduces the contract between Insurellm and FastTrack Insurance Services, including the contract date, number, and the parties involved. It outlines the initial terms of the agreement.",
+      "original_text": "# Contract with FastTrack Insurance Services for Claimllm\n\n**Contract Date:** May 10, 2025\n**Contract Number:** CL-2025-0234\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and FastTrack Insurance Services (\"Client\") on May 10, 2025.\n\n2. **License Grant**: Insurellm grants FastTrack Insurance Services a non-exclusive, non-transferable license to use the Claimllm Advanced Tier platform."
+    },
+    {
+      "headline": "Payment Terms and Claims Volume",
+      "summary": "This chunk details the payment terms, including the monthly and total amounts, as well as the claims volume supported by the Advanced Tier platform and FastTrack's projections.",
+      "original_text": "2. **License Grant**: Insurellm grants FastTrack Insurance Services a non-exclusive, non-transferable license to use the Claimllm Advanced Tier platform.\n\n3. **Payment Terms**: FastTrack Insurance Services agrees to make monthly payments of $9,500 for the duration of this 18-month contract, totaling $171,000. Payments due on the 1st of each month.\n\n4. **Claims Volume**: Advanced Tier supports up to 25,000 claims annually. FastTrack projects 22,000 claims in year 1.\n\n5. **Confidentiality**: Both parties shall maintain confidentiality regarding each other's proprietary information for the contract duration plus 5 years post-termination."
+    },
+    {
+      "headline": "Confidentiality and Renewal Terms",
+      "summary": "This chunk covers the confidentiality clause and the renewal terms of the contract, including automatic renewal and pricing review details.",
+      "original_text": "5. **Confidentiality**: Both parties shall maintain confidentiality regarding each other's proprietary information for the contract duration plus 5 years post-termination.\n\n## Renewal\n\n1. **Automatic Renewal**: This contract automatically renews for successive 12-month terms unless either party provides written notice of non-renewal at least 45 days prior to expiration.\n\n2. **Pricing Review**: Renewal pricing will be discussed 60 days prior to term end. Price increases limited to 8% annually."
+    },
+    {
+      "headline": "Included Features of Claimllm Advanced Tier",
+      "summary": "This chunk lists the features included in the Claimllm Advanced Tier platform, such as intelligent FNOL processing, automated triage, and predictive fraud detection.",
+      "original_text": "## Features\n\n1. **Included Features**: FastTrack Insurance Services will have access to Claimllm Advanced Tier features:\n   - Intelligent FNOL Processing with multi-channel intake\n   - Automated Triage and Routing with ML algorithms\n   - Computer Vision Damage Assessment for auto and property claims\n   - Predictive Fraud Detection with network analysis\n   - Smart Document Processing with OCR and NLP\n   - Dynamic Reserve Setting with AI-powered modeling\n   - Vendor Management Platform for 150+ vendors\n   - Payment Automation with multi-party splits\n   - Claimant Communication Hub (SMS, email, app)\n   - Advanced Analytics and reporting dashboards"
+    },
+    {
+      "headline": "Integration and Mobile Access",
+      "summary": "This chunk describes the integration capabilities of the Claimllm platform with FastTrack's existing systems and the mobile access features for adjusters.",
+      "original_text": "   - Advanced Analytics and reporting dashboards\n\n2. **Integration Capabilities**: API integration with FastTrack's existing claims systems (Guidewire, Duck Creek compatibility).\n\n3. **Mobile Access**: Full-featured mobile app for adjusters in the field with offline capability."
+    },
+    {
+      "headline": "Customer Support and Training",
+      "summary": "This chunk outlines the customer support and training services provided by Insurellm, including support hours, response times, and training programs.",
+      "original_text": "## Support\n\n1. **Customer Support**: Insurellm will provide priority support to FastTrack Insurance Services:\n   - Dedicated support team available Monday-Saturday 6 AM - 8 PM EST\n   - Emergency support 24/7 for critical issues\n   - Response time: 3 hours for critical, 8 hours for standard\n\n2. **Training**: Comprehensive training program:\n   - 3-week implementation with dedicated project manager\n   - Training for up to 30 claims staff members\n   - Quarterly refresher webinars\n   - Online knowledge base access"
+    },
+    {
+      "headline": "System Updates and Signatures",
+      "summary": "This chunk covers the system update schedule and includes the signatures of the representatives from both Insurellm and FastTrack Insurance Services, finalizing the contract.",
+      "original_text": "   - Online knowledge base access\n\n3. **System Updates**: Regular platform enhancements pushed monthly with advance notification. Maintenance windows on Sundays 12 AM - 4 AM EST.\n\n---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nSarah Chen, VP of Sales\nDate: May 10, 2025\n\n**FastTrack Insurance Services**\nRebecca Martinez, COO\nDate: May 10, 2025\n\n---\n\nThis contract represents the agreement between Insurellm and FastTrack Insurance Services for streamlined, AI-powered claims processing operations."
+    }
+  ]
+}

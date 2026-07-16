@@ -1,0 +1,39 @@
+{
+  "chunks": [
+    {
+      "headline": "Priya Sharma HR Record Overview",
+      "summary": "This chunk introduces Priya Sharma's HR record, including her date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Priya Sharma\n\n## Summary\n- **Date of Birth:** January 8, 1986\n- **Job Title:** Senior Data Scientist\n- **Location:** San Francisco, California\n- **Current Salary:** $145,000\n\n## Insurellm Career Progression\n- **March 2018 - Present:** Senior Data Scientist"
+    },
+    {
+      "headline": "Priya Sharma Career Progression at Insurellm",
+      "summary": "Details Priya Sharma's role as Senior Data Scientist at Insurellm, including her responsibilities, achievements, and previous roles at FinML Analytics and UC Berkeley AI Lab.",
+      "original_text": "- **March 2018 - Present:** Senior Data Scientist\n  - Leads machine learning initiatives for risk prediction models\n  - Built recommendation engine for Marketllm increasing conversion by 28%\n  - Mentors team of 3 junior data scientists\n  - Published 2 research papers on insurance ML applications\n\n- **June 2015 - February 2018:** Data Scientist at FinML Analytics\n  - Developed predictive models for financial services clients\n  - Specialized in customer churn prediction and fraud detection\n\n- **August 2012 - May 2015:** Research Scientist at UC Berkeley AI Lab\n  - Conducted research in machine learning and natural language processing\n  - Published 5 peer-reviewed papers"
+    },
+    {
+      "headline": "Priya Sharma Annual Performance History 2023-2021",
+      "summary": "Covers Priya Sharma's annual performance ratings and feedback from 2023 to 2021, highlighting her exceptional contributions and leadership.",
+      "original_text": "## Annual Performance History\n- **2023:** Rating: 4.9/5\n  *Exceptional performance. Led breakthrough AI-driven underwriting project. Excellent technical leadership and mentorship.*\n\n- **2022:** Rating: 4.7/5\n  *Outstanding work on risk prediction models. Strong collaboration with product team and technical innovation.*\n\n- **2021:** Rating: 4.5/5\n  *Exceeded expectations with successful launch of recommendation engine. Effective mentor to junior team members.*\n\n- **2020:** Rating: 4.3/5"
+    },
+    {
+      "headline": "Priya Sharma Annual Performance History 2020-2018",
+      "summary": "Details Priya Sharma's performance ratings and feedback from 2020 to 2018, showing consistent high performance and domain expertise.",
+      "original_text": "- **2020:** Rating: 4.3/5\n  *Strong performance despite remote transition challenges. Maintained high-quality model development.*\n\n- **2019:** Rating: 4.6/5\n  *Excellent contributions to fraud detection systems. Recognized for thought leadership in ML applications.*\n\n- **2018:** Rating: 4.2/5\n  *Solid first year. Quick to understand insurance domain and apply ML expertise effectively.*\n\n## Compensation History"
+    },
+    {
+      "headline": "Priya Sharma Compensation History",
+      "summary": "Lists Priya Sharma's annual compensation, including base salary and bonuses, from 2018 to 2023.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $145,000 + Bonus: $25,000\n- **2022:** Base Salary: $138,000 + Bonus: $22,000\n- **2021:** Base Salary: $130,000 + Bonus: $20,000\n- **2020:** Base Salary: $122,000 + Bonus: $18,000\n- **2019:** Base Salary: $115,000 + Bonus: $15,000\n- **2018:** Base Salary: $108,000 + Bonus: $12,000\n\n## Other HR Notes"
+    },
+    {
+      "headline": "Priya Sharma Education and Publications",
+      "summary": "Highlights Priya Sharma's educational background, publications, speaking engagements, patents, and recognition in the field of machine learning and InsurTech.",
+      "original_text": "## Other HR Notes\n- **Education:** PhD in Computer Science (Machine Learning) from Stanford University\n- **Publications:** 7+ peer-reviewed papers in ML conferences and journals\n- **Speaking:** Regular speaker at ML and InsurTech conferences. Represented Insurellm at 4 major conferences in 2023.\n- **Patents:** Co-inventor on 2 pending patents for insurance ML applications\n- **Recognition:** Data Science Excellence Award 2023, featured in InsureTech Innovation Magazine"
+    },
+    {
+      "headline": "Priya Sharma Skills and Feedback",
+      "summary": "Describes Priya Sharma's technical skills, feedback from HR, and her importance as a key retention priority for Insurellm.",
+      "original_text": "- **Skills:** Expert in Python, TensorFlow, PyTorch, scikit-learn, SQL, and cloud ML platforms\n- **Feedback:** World-class technical talent with strong business acumen. Natural leader who elevates entire team. Key retention priority."
+    }
+  ]
+}

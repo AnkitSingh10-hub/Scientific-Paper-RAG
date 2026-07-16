@@ -1,0 +1,34 @@
+{
+  "chunks": [
+    {
+      "headline": "Jessica Liu HR Record Overview",
+      "summary": "This chunk introduces Jessica Liu's HR record, including her date of birth, job title, location, and current salary at Insurellm.",
+      "original_text": "# HR Record\n\n# Jessica Liu\n\n## Summary\n- **Date of Birth:** April 30, 1996\n- **Job Title:** Frontend Developer\n- **Location:** Remote (Based in Seattle, Washington)\n- **Current Salary:** $92,000\n\n## Insurellm Career Progression\n- **July 2022 - Present:** Frontend Developer"
+    },
+    {
+      "headline": "Jessica Liu Career Progression at Insurellm",
+      "summary": "Details Jessica Liu's career progression at Insurellm, including her roles as Frontend Developer and Junior Frontend Developer, along with her responsibilities.",
+      "original_text": "## Insurellm Career Progression\n- **July 2022 - Present:** Frontend Developer\n  - Develops user interfaces for Rellm reinsurance platform using React\n  - Implements responsive designs and ensures cross-browser compatibility\n  - Collaborates with UX designers and backend engineers\n\n- **January 2020 - June 2022:** Junior Frontend Developer\n  - Built UI components for internal tools and customer-facing applications\n  - Fixed bugs and improved performance of existing web applications\n  - Participated in code reviews and learned best practices\n\n- **June 2018 - December 2019:** Web Developer Intern at StartupLabs"
+    },
+    {
+      "headline": "Jessica Liu Early Career and Internship",
+      "summary": "Covers Jessica Liu's early career, including her internship at StartupLabs and her initial role as a Junior Frontend Developer at Insurellm.",
+      "original_text": "- **January 2020 - June 2022:** Junior Frontend Developer\n  - Built UI components for internal tools and customer-facing applications\n  - Fixed bugs and improved performance of existing web applications\n  - Participated in code reviews and learned best practices\n\n- **June 2018 - December 2019:** Web Developer Intern at StartupLabs\n  - Created landing pages and marketing websites\n  - Learned HTML, CSS, JavaScript, and React fundamentals\n\n## Annual Performance History\n- **2023:** Rating: 4.1/5"
+    },
+    {
+      "headline": "Jessica Liu Performance History",
+      "summary": "Outlines Jessica Liu's annual performance ratings and feedback from 2020 to 2023, highlighting her growth and areas of improvement.",
+      "original_text": "## Annual Performance History\n- **2023:** Rating: 4.1/5\n  *Good performance with steady contribution to team goals. Delivered features on time with good code quality.*\n\n- **2022:** Rating: 3.7/5\n  *Solid transition to Frontend Developer role. Showed improvement in technical skills but needed more guidance on complex features.*\n\n- **2021:** Rating: 3.4/5\n  *Adequate performance with some challenges. Struggled with React state management initially but improved after mentoring.*\n\n- **2020:** Rating: 3.8/5\n  *Good start as Junior Developer. Eager to learn and receptive to feedback.*\n\n## Compensation History"
+    },
+    {
+      "headline": "Jessica Liu Compensation and HR Notes",
+      "summary": "Provides details on Jessica Liu's compensation history from 2020 to 2023, along with additional HR notes about her education, skills, and work style.",
+      "original_text": "## Compensation History\n- **2023:** Base Salary: $92,000 + Bonus: $6,000\n- **2022:** Base Salary: $85,000 + Bonus: $4,000\n- **2021:** Base Salary: $72,000 + Bonus: $2,000\n- **2020:** Base Salary: $68,000\n\n## Other HR Notes\n- **Education:** BS in Computer Science from University of Manchester\n- **Skills:** Proficient in React, TypeScript, HTML/CSS, Jest for testing. Learning Next.js and GraphQL.\n- **Professional Development:** Completed Advanced React Patterns course (2023). Actively contributes to open-source projects."
+    },
+    {
+      "headline": "Jessica Liu Work Style and Feedback",
+      "summary": "Describes Jessica Liu's work style, professional development, and feedback from HR, including her preference for remote work and areas for improvement.",
+      "original_text": "- **Professional Development:** Completed Advanced React Patterns course (2023). Actively contributes to open-source projects.\n- **Work Style:** Prefers remote work. Strong written communicator. Participates actively in team standups and planning sessions.\n- **Feedback:** Reliable developer with good attention to UI details. Improving technical decision-making skills. Would benefit from more ownership of larger features."
+    }
+  ]
+}

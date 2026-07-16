@@ -31,7 +31,8 @@ AZURE_ENDPOINT = (
 # LLM_MODEL = "DeepSeek-V4-Pro"
 
 # LLM_MODEL = "Mistral-Large-3"
-LLM_MODEL = "mistral-medium-3-5"
+# LLM_MODEL = "DeepSeek-V4-Flash"
+LLM_MODEL = "openai--gpt-oss-20b"
 
 db_name = "vector_database"
 

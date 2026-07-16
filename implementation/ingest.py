@@ -18,7 +18,7 @@ KNOWLEDGE_BASE = str(Path(__file__).parent.parent / "knowledge_base")
 # "heading", "character", "recursive_character").
 # NOTE: whatever EMBEDDING_STRATEGY you use here must match the one in
 # answer.py, or queries will be embedded differently than the documents.
-EMBEDDING_STRATEGY = "e5"
+EMBEDDING_STRATEGY = "gte"
 CHUNKING_STRATEGY = "doc_type"
 
 load_dotenv(override=True)

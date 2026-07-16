@@ -100,6 +100,100 @@ class AzureQwen3Embeddings(Embeddings):
         return response.data[0].embedding
 
 
+class AzureOpenAIEmbeddings(Embeddings):
+    """LangChain-compatible wrapper around an OpenAI embedding model
+    (e.g. text-embedding-3-small) deployed in Azure AI Foundry.
+
+    Unlike e5 or Qwen3, OpenAI's text-embedding-3-* models do NOT use any
+    "passage:"/"query:" or instruction-style prefixing scheme — texts and
+    queries are both embedded as-is. Adding a prefix here would just be
+    extra tokens with no benefit (and would deviate from how the model
+    was trained), so embed_documents and embed_query are symmetric.
+
+    Must be used identically at ingest time and query time (same model,
+    same deployment) or retrieval quality silently degrades.
+    """
+
+    def __init__(
+        self,
+        endpoint: str,
+        api_key: str,
+        model: str = "text-embedding-3-small",
+        batch_size: int = 32,
+        dimensions: int | None = None,
+        verbose: bool = False,
+    ):
+        self.client = EmbeddingsClient(
+            endpoint=endpoint, credential=AzureKeyCredential(api_key)
+        )
+        self.model = model
+        self.batch_size = batch_size
+        self.dimensions = dimensions
+        self.verbose = verbose
+
+    def _embed(self, texts: list[str]) -> list[list[float]]:
+        kwargs = {"model": self.model, "input": texts}
+        if self.dimensions is not None:
+            kwargs["dimensions"] = self.dimensions
+        response = self.client.embed(**kwargs)
+        return [item.embedding for item in response.data]
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        all_embeddings = []
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            all_embeddings.extend(self._embed(batch))
+            if self.verbose:
+                print(f"  embedded {min(i + self.batch_size, len(texts))}/{len(texts)}")
+        return all_embeddings
+
+    def embed_query(self, text: str) -> list[float]:
+        return self._embed([text])[0]
+
+
+class AzureGTEEmbeddings(Embeddings):
+    """LangChain-compatible wrapper around Azure AI Foundry's gte-large
+    (thenlper/gte-large).
+
+    Like the OpenAI embedding models, GTE does NOT use a "passage:"/"query:"
+    prefixing scheme (unlike e5) or an instruction-style prefix (unlike
+    Qwen3) — texts and queries are both embedded as-is. embed_documents
+    and embed_query are symmetric.
+
+    Must be used identically at ingest time and query time (same model,
+    same deployment) or retrieval quality silently degrades.
+    """
+
+    def __init__(
+        self,
+        endpoint: str,
+        api_key: str,
+        model: str = "thenlper--gte-large",
+        batch_size: int = 32,
+        verbose: bool = False,
+    ):
+        self.client = EmbeddingsClient(
+            endpoint=endpoint, credential=AzureKeyCredential(api_key)
+        )
+        self.model = model
+        self.batch_size = batch_size
+        self.verbose = verbose
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        all_embeddings = []
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            response = self.client.embed(model=self.model, input=batch)
+            all_embeddings.extend(item.embedding for item in response.data)
+            if self.verbose:
+                print(f"  embedded {min(i + self.batch_size, len(texts))}/{len(texts)}")
+        return all_embeddings
+
+    def embed_query(self, text: str) -> list[float]:
+        response = self.client.embed(model=self.model, input=[text])
+        return response.data[0].embedding
+
+
 # ----------------------------------------------------------------------
 # Strategy 1: Azure AI Foundry e5-large-v2
 # ----------------------------------------------------------------------
@@ -139,11 +233,49 @@ def get_qwen3_embeddings(verbose: bool = False) -> AzureQwen3Embeddings:
 
 
 # ----------------------------------------------------------------------
+# Strategy 3: Azure AI Foundry text-embedding-3-small
+# ----------------------------------------------------------------------
+
+
+def get_openai_3_small_embeddings(verbose: bool = False) -> AzureOpenAIEmbeddings:
+    """Azure AI Foundry text-embedding-3-small, batch size 32.
+
+    No passage:/query: prefixing — OpenAI embeddings are used as-is on
+    both the ingest and query side. If your Foundry deployment name
+    differs from the model name (e.g. a custom deployment alias), pass
+    it via `model=`.
+    """
+    return AzureOpenAIEmbeddings(
+        endpoint=AZURE_EMBEDDING_ENDPOINT,
+        api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
+        model="text-embedding-3-small",
+        batch_size=32,
+        verbose=verbose,
+    )
+
+
+# ----------------------------------------------------------------------
+# Strategy 4: Azure AI Foundry gte-large
+# ----------------------------------------------------------------------
+
+
+def get_gte_embeddings(verbose: bool = False) -> AzureGTEEmbeddings:
+    """Azure AI Foundry thenlper/gte-large, batch size 32.
+
+    No passage:/query: prefixing — GTE is used as-is on both the ingest
+    and query side, same as the OpenAI embedding models above.
+    """
+    return AzureGTEEmbeddings(
+        endpoint=AZURE_EMBEDDING_ENDPOINT,
+        api_key=os.getenv("AZURE_FOUNDRY_API_KEY"),
+        model="thenlper--gte-large",
+        batch_size=32,
+        verbose=verbose,
+    )
+
+
+# ----------------------------------------------------------------------
 # Add more strategies here as you try them, e.g.:
-#
-# def get_openai_embeddings(verbose: bool = False):
-#     from langchain_openai import OpenAIEmbeddings
-#     return OpenAIEmbeddings(model="text-embedding-3-large")
 #
 # def get_bge_embeddings(verbose: bool = False) -> AzureE5Embeddings:
 #     return AzureE5Embeddings(
@@ -164,6 +296,8 @@ def get_qwen3_embeddings(verbose: bool = False) -> AzureQwen3Embeddings:
 EMBEDDERS = {
     "e5": get_e5_embeddings,
     "qwen3": get_qwen3_embeddings,
+    "openai-3-small": get_openai_3_small_embeddings,
+    "gte": get_gte_embeddings,
 }
 
 

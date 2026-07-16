@@ -22,14 +22,15 @@ AZURE_ENDPOINT = (
 
 
 # LLM_MODEL = "Mistral-Large-3"
-LLM_MODEL = "mistral-medium-3-5"
+# LLM_MODEL = "DeepSeek-V4-Flash"
+LLM_MODEL = "openai--gpt-oss-20b"
 
 
 DB_NAME = str(Path(__file__).parent.parent / "vector_database")
 
 # Must match EMBEDDING_STRATEGY in ingest.py — the vector store was built
 # with that embedder, and mismatching here silently breaks retrieval.
-EMBEDDING_STRATEGY = "e5"
+EMBEDDING_STRATEGY = "gte"
 
 embeddings = get_embedder(EMBEDDING_STRATEGY)()
 

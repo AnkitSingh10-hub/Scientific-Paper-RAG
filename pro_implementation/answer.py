@@ -17,7 +17,7 @@ COLLECTION_NAME = "docs"  # must match ingest.py exactly
 # Generation/rerank/query-rewrite model — Mistral direct API (not Azure).
 DEFAULT_MODEL = "mistral-large-2512"
 
-RETRIEVAL_K = 20
+RETRIEVAL_K = 10
 
 # Client for chat completions (Mistral direct API)
 client = OpenAI(

@@ -185,7 +185,7 @@ def evaluate_all_retrieval():
     # max_workers=10 runs 10 retrievals at once
     failed_tests = []
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         future_to_test = {
             executor.submit(evaluate_retrieval, test): test for test in tests
         }

@@ -48,7 +48,10 @@ With this context, please answer the user's question. Be accurate, relevant and 
 
 
 def fetch_context_unranked(question: str) -> list[Result]:
-    query_embedding = embed_query(question)
+    query_embedding = embed_query(
+        question,
+        embedding_model="e5",
+    )
     results = collection.query(
         query_embeddings=[query_embedding], n_results=RETRIEVAL_K
     )
